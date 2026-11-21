@@ -1,0 +1,5 @@
+# One-file install for Windows + RTX 5080 (Blackwell, sm_120): PyTorch from the CUDA 12.8 index + everything else.
+# Used by VS Code "Create Python Environment" (venv) or:  pip install -r requirements-windows-cu128.txt
+--extra-index-url https://download.pytorch.org/whl/cu128
+torch
+-r requirements.txt

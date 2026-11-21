@@ -1,0 +1,32 @@
+Checks run 2026-11-21 17:43:25 (61 s)
+
+| # | Check | Result | Detail |
+|---|---|---|---|
+| 1 | metrics (random): UAR==balanced_accuracy, macroF1==f1(macro), acc, mean(recalls)==UAR | PASS | /dUAR/=0.0e+00 /dF1/=0.0e+00 /dAcc/=0.0e+00 /dRec/=0.0e+00 |
+| 2 | metrics (class never predicted): UAR==balanced_accuracy, macroF1==f1(macro), acc, mean(recalls)==UAR | PASS | /dUAR/=0.0e+00 /dF1/=0.0e+00 /dAcc/=0.0e+00 /dRec/=0.0e+00 |
+| 3 | metrics (imbalanced): UAR==balanced_accuracy, macroF1==f1(macro), acc, mean(recalls)==UAR | PASS | /dUAR/=0.0e+00 /dF1/=0.0e+00 /dAcc/=0.0e+00 /dRec/=0.0e+00 |
+| 4 | data: exactly 1440 files | PASS | n=1440 |
+| 5 | data: neutral=96, other emotions=192 | PASS | {'neutral': 96, 'calm': 192, 'happy': 192, 'sad': 192, 'angry': 192, 'fearful': 192, 'disgust': 192, 'surprised': 192} |
+| 6 | data: 60 files per actor (24 actors) | PASS | [60] |
+| 7 | data: 12 F / 12 M actors | PASS | {'M': 12, 'F': 12} |
+| 8 | data: label map fixed (index = code-1) and saved | PASS | {'neutral': 0, 'calm': 1, 'happy': 2, 'sad': 3, 'angry': 4, 'fearful': 5, 'disgust': 6, 'surprised': 7} |
+| 9 | folds: 6 folds x 4 actors, every actor exactly once | PASS | [[4, 7, 14, 17], [11, 15, 18, 20], [1, 2, 21, 24], [6, 8, 9, 19], [3, 12, 16, 23], [5, 10, 13, 22]] |
+| 10 | folds: each fold 2 F + 2 M | PASS | [['4F', '7M', '14F', '17M'], ['11M', '15M', '18F', '20F'], ['1M', '2F', '21M', '24F'], ['6F', '8F', '9M', '19M'], ['3M', '12F', '16F', '23M'], ['5M', '10F', '13M', '22F']] |
+| 11 | folds: train/val/test actors pairwise disjoint in every round | PASS |  |
+| 12 | folds: sizes 960/240/240 in every round | PASS | [[960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240]] |
+| 13 | folds: every actor in test exactly once across 6 rounds | PASS |  |
+| 14 | random split: 960/240/240, utterances disjoint | PASS |  |
+| 15 | random split: actors ARE shared (leakage present by design) | PASS | 24/24 test actors also in train |
+| 16 | random split: stratified by emotion (counts per subset) | PASS | {'train': [64, 128, 128, 128, 128, 128, 128, 128], 'val': [16, 32, 32, 32, 32, 32, 32, 32], 'test': [16, 32, 32, 32, 32, 32, 32, 32]} |
+| 17 | pipeline: standardiser fitted on ORIGINAL (non-augmented) training utterances only (round 0) | PASS | fit actors=[1, 2, 3, 5, 6, 8, 9, 10, 12, 13, 16, 19, 21, 22, 23, 24] |
+| 18 | pipeline: augmentation only in training dataset (val returns clean, deterministic) | PASS | val deterministic+clean=True, train varies=True, train p_variant=0.8 |
+| 19 | pipeline (D-01): augmented copies only for training actors; ONE version per utterance per epoch | PASS | aug for val actors blocked=True; epoch length=960 (= 960 train utts); augmented draws in 1 epoch=778 |
+| 20 | pipeline: test fold untouched until final eval | PASS | by construction: run_single builds the test DataLoader only after training and the best-checkpoint restore; AccessCounter asserts exactly one pass (test_access_count in runs/*.json) |
+| 21 | mask invariance (strict): m1/logmel padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 4.23e-06 |
+| 22 | mask invariance (strict): m1/mfcc padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 2.55e-06 |
+| 23 | mask invariance (strict): m2/logmel padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 8.76e-06 |
+| 24 | mask invariance (strict): m3/logmel padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 1.79e-07 |
+| 25 | sanity: m1/logmel overfits a tiny batch (32 utts) | PASS | loss 2.074 -> 0.0008, acc 1.000 |
+| 26 | sanity: m1/mfcc overfits a tiny batch (32 utts) | PASS | loss 2.077 -> 0.0003, acc 1.000 |
+| 27 | sanity: m2/logmel overfits a tiny batch (32 utts) | PASS | loss 2.095 -> 0.0013, acc 1.000 |
+| 28 | sanity: m3/logmel overfits a tiny batch (32 utts) | PASS | loss 2.303 -> 0.0026, acc 1.000 |

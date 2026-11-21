@@ -1,0 +1,8 @@
+# M1 — 2-layer BiLSTM (128/direction) + attention pooling (Mirsamadi et al., 2017)
+model:
+  name: m1
+  hidden: 128
+  layers: 2
+  dropout: 0.3
+train:
+  lr: 1.0e-3

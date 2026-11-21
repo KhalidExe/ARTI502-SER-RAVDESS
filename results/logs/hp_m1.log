@@ -1,0 +1,16 @@
+python -u -m src.hparam_search --model m1
+== m1_logmel_actor_f0_s0_hp65c4b81c8c | cuda | params 596,232 (trainable 596,232) | cfg 65c4b81c8c
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   1 lr 1.00e-03 | train loss 1.990 acc 0.216 | val loss 1.932 UAR 0.242 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   2 lr 1.00e-03 | train loss 1.883 acc 0.302 | val loss 1.880 UAR 0.266 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   3 lr 1.00e-03 | train loss 1.864 acc 0.314 | val loss 1.845 UAR 0.309 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   4 lr 1.00e-03 | train loss 1.790 acc 0.345 | val loss 1.810 UAR 0.305
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   5 lr 1.00e-03 | train loss 1.730 acc 0.379 | val loss 1.752 UAR 0.359 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   6 lr 1.00e-03 | train loss 1.720 acc 0.393 | val loss 1.711 UAR 0.367 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   7 lr 1.00e-03 | train loss 1.663 acc 0.435 | val loss 1.670 UAR 0.398 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   8 lr 1.00e-03 | train loss 1.617 acc 0.453 | val loss 1.672 UAR 0.387
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep   9 lr 1.00e-03 | train loss 1.588 acc 0.469 | val loss 1.616 UAR 0.441 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep  10 lr 1.00e-03 | train loss 1.522 acc 0.489 | val loss 1.716 UAR 0.387
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep  11 lr 1.00e-03 | train loss 1.498 acc 0.505 | val loss 1.631 UAR 0.469 *
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep  12 lr 1.00e-03 | train loss 1.468 acc 0.512 | val loss 1.613 UAR 0.414
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep  13 lr 1.00e-03 | train loss 1.450 acc 0.544 | val loss 1.611 UAR 0.426
+[m1_logmel_actor_f0_s0_hp65c4b81c8c] ep  14 lr 1.00e-03 | train loss 1.424 acc 0.551 | val loss 1.682 UAR 0.379

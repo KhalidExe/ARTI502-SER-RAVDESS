@@ -1,0 +1,19 @@
+# M4 — wav2vec 2.0 Base (facebook/wav2vec2-base), CNN feature encoder frozen, Transformer fine-tuned
+model:
+  name: m4
+  pretrained: facebook/wav2vec2-base
+  freeze_feature_encoder: true
+  dropout: 0.3            # dropout before the linear head
+  pass_attention_mask: false   # HF guidance for wav2vec2-base (group-norm extractor), see D-09
+  config_overrides: {}    # e.g. {mask_time_prob: 0.05, layerdrop: 0.05}; {} = pretrained defaults
+train:
+  lr: 3.0e-5              # Transformer layers
+  head_lr: 1.0e-3         # randomly initialised linear head (D-09)
+  batch_size: 8
+  grad_accum: 4           # effective batch 32
+  eval_batch_size: 1      # exact, padding-free predictions for val/test
+  max_epochs: 30
+  warmup_epochs: 1
+  amp: bf16
+  bucket_by_length: true
+  grad_clip: 1.0

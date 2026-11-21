@@ -1,0 +1,95 @@
+python -u -m src.run_experiments --model m1 --protocol random --seeds 0 --tag prelim --skip-existing
+== m1_logmel_random_fR_s0_prelim | cuda | params 596,232 (trainable 596,232) | cfg 65c4b81c8c
+[m1_logmel_random_fR_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.006 acc 0.208 | val loss 1.873 UAR 0.293 *
+[m1_logmel_random_fR_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.907 acc 0.270 | val loss 1.769 UAR 0.363 *
+[m1_logmel_random_fR_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.868 acc 0.289 | val loss 1.727 UAR 0.434 *
+[m1_logmel_random_fR_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.833 acc 0.316 | val loss 1.671 UAR 0.445 *
+[m1_logmel_random_fR_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.776 acc 0.344 | val loss 1.604 UAR 0.480 *
+[m1_logmel_random_fR_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.720 acc 0.385 | val loss 1.540 UAR 0.469
+[m1_logmel_random_fR_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.684 acc 0.405 | val loss 1.492 UAR 0.488 *
+[m1_logmel_random_fR_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.628 acc 0.460 | val loss 1.422 UAR 0.566 *
+[m1_logmel_random_fR_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.633 acc 0.444 | val loss 1.472 UAR 0.500
+[m1_logmel_random_fR_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.593 acc 0.470 | val loss 1.367 UAR 0.562
+[m1_logmel_random_fR_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.548 acc 0.508 | val loss 1.349 UAR 0.555
+[m1_logmel_random_fR_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.550 acc 0.486 | val loss 1.362 UAR 0.555
+[m1_logmel_random_fR_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.481 acc 0.533 | val loss 1.370 UAR 0.531
+[m1_logmel_random_fR_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.517 acc 0.503 | val loss 1.427 UAR 0.465
+[m1_logmel_random_fR_s0_prelim] ep  15 lr 5.00e-04 | train loss 1.443 acc 0.541 | val loss 1.269 UAR 0.613 *
+[m1_logmel_random_fR_s0_prelim] ep  16 lr 5.00e-04 | train loss 1.395 acc 0.566 | val loss 1.231 UAR 0.598
+[m1_logmel_random_fR_s0_prelim] ep  17 lr 5.00e-04 | train loss 1.377 acc 0.586 | val loss 1.250 UAR 0.566
+[m1_logmel_random_fR_s0_prelim] ep  18 lr 5.00e-04 | train loss 1.304 acc 0.619 | val loss 1.243 UAR 0.605
+[m1_logmel_random_fR_s0_prelim] ep  19 lr 5.00e-04 | train loss 1.313 acc 0.606 | val loss 1.247 UAR 0.645 *
+[m1_logmel_random_fR_s0_prelim] ep  20 lr 5.00e-04 | train loss 1.356 acc 0.598 | val loss 1.199 UAR 0.633
+[m1_logmel_random_fR_s0_prelim] ep  21 lr 5.00e-04 | train loss 1.310 acc 0.615 | val loss 1.178 UAR 0.641
+[m1_logmel_random_fR_s0_prelim] ep  22 lr 5.00e-04 | train loss 1.262 acc 0.648 | val loss 1.164 UAR 0.672 *
+[m1_logmel_random_fR_s0_prelim] ep  23 lr 5.00e-04 | train loss 1.271 acc 0.637 | val loss 1.115 UAR 0.688 *
+[m1_logmel_random_fR_s0_prelim] ep  24 lr 5.00e-04 | train loss 1.247 acc 0.636 | val loss 1.147 UAR 0.684
+[m1_logmel_random_fR_s0_prelim] ep  25 lr 5.00e-04 | train loss 1.234 acc 0.647 | val loss 1.132 UAR 0.672
+[m1_logmel_random_fR_s0_prelim] ep  26 lr 5.00e-04 | train loss 1.234 acc 0.637 | val loss 1.164 UAR 0.672
+[m1_logmel_random_fR_s0_prelim] ep  27 lr 5.00e-04 | train loss 1.182 acc 0.671 | val loss 1.144 UAR 0.676
+[m1_logmel_random_fR_s0_prelim] ep  28 lr 5.00e-04 | train loss 1.231 acc 0.667 | val loss 1.137 UAR 0.699 *
+[m1_logmel_random_fR_s0_prelim] ep  29 lr 5.00e-04 | train loss 1.195 acc 0.676 | val loss 1.159 UAR 0.664
+[m1_logmel_random_fR_s0_prelim] ep  30 lr 5.00e-04 | train loss 1.184 acc 0.666 | val loss 1.120 UAR 0.711 *
+[m1_logmel_random_fR_s0_prelim] ep  31 lr 5.00e-04 | train loss 1.171 acc 0.676 | val loss 1.124 UAR 0.691
+[m1_logmel_random_fR_s0_prelim] ep  32 lr 5.00e-04 | train loss 1.186 acc 0.660 | val loss 1.112 UAR 0.680
+[m1_logmel_random_fR_s0_prelim] ep  33 lr 5.00e-04 | train loss 1.162 acc 0.698 | val loss 1.099 UAR 0.684
+[m1_logmel_random_fR_s0_prelim] ep  34 lr 5.00e-04 | train loss 1.155 acc 0.693 | val loss 1.068 UAR 0.711
+[m1_logmel_random_fR_s0_prelim] ep  35 lr 5.00e-04 | train loss 1.135 acc 0.711 | val loss 1.117 UAR 0.707
+[m1_logmel_random_fR_s0_prelim] ep  36 lr 5.00e-04 | train loss 1.155 acc 0.700 | val loss 1.117 UAR 0.711
+[m1_logmel_random_fR_s0_prelim] ep  37 lr 2.50e-04 | train loss 1.080 acc 0.733 | val loss 1.128 UAR 0.715 *
+[m1_logmel_random_fR_s0_prelim] ep  38 lr 2.50e-04 | train loss 1.109 acc 0.698 | val loss 1.070 UAR 0.715
+[m1_logmel_random_fR_s0_prelim] ep  39 lr 2.50e-04 | train loss 1.112 acc 0.707 | val loss 1.073 UAR 0.707
+[m1_logmel_random_fR_s0_prelim] ep  40 lr 2.50e-04 | train loss 1.057 acc 0.743 | val loss 1.070 UAR 0.699
+[m1_logmel_random_fR_s0_prelim] ep  41 lr 2.50e-04 | train loss 1.098 acc 0.718 | val loss 1.036 UAR 0.715
+[m1_logmel_random_fR_s0_prelim] ep  42 lr 2.50e-04 | train loss 1.072 acc 0.748 | val loss 1.046 UAR 0.730 *
+[m1_logmel_random_fR_s0_prelim] ep  43 lr 2.50e-04 | train loss 1.039 acc 0.748 | val loss 1.035 UAR 0.723
+[m1_logmel_random_fR_s0_prelim] ep  44 lr 2.50e-04 | train loss 1.025 acc 0.760 | val loss 1.064 UAR 0.703
+[m1_logmel_random_fR_s0_prelim] ep  45 lr 2.50e-04 | train loss 1.054 acc 0.748 | val loss 1.031 UAR 0.711
+[m1_logmel_random_fR_s0_prelim] ep  46 lr 2.50e-04 | train loss 1.038 acc 0.766 | val loss 1.050 UAR 0.699
+[m1_logmel_random_fR_s0_prelim] ep  47 lr 2.50e-04 | train loss 1.028 acc 0.770 | val loss 1.069 UAR 0.703
+[m1_logmel_random_fR_s0_prelim] ep  48 lr 2.50e-04 | train loss 1.011 acc 0.772 | val loss 1.047 UAR 0.719
+[m1_logmel_random_fR_s0_prelim] ep  49 lr 1.25e-04 | train loss 1.031 acc 0.764 | val loss 1.027 UAR 0.719
+[m1_logmel_random_fR_s0_prelim] ep  50 lr 1.25e-04 | train loss 1.047 acc 0.754 | val loss 1.050 UAR 0.699
+[m1_logmel_random_fR_s0_prelim] ep  51 lr 1.25e-04 | train loss 0.989 acc 0.775 | val loss 1.052 UAR 0.715
+[m1_logmel_random_fR_s0_prelim] ep  52 lr 1.25e-04 | train loss 1.014 acc 0.770 | val loss 1.039 UAR 0.730
+[m1_logmel_random_fR_s0_prelim] ep  53 lr 1.25e-04 | train loss 1.018 acc 0.775 | val loss 1.031 UAR 0.734 *
+[m1_logmel_random_fR_s0_prelim] ep  54 lr 1.25e-04 | train loss 0.982 acc 0.797 | val loss 1.042 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  55 lr 1.25e-04 | train loss 0.996 acc 0.781 | val loss 1.040 UAR 0.727
+[m1_logmel_random_fR_s0_prelim] ep  56 lr 1.25e-04 | train loss 0.983 acc 0.792 | val loss 1.042 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  57 lr 1.25e-04 | train loss 0.984 acc 0.783 | val loss 1.022 UAR 0.738 *
+[m1_logmel_random_fR_s0_prelim] ep  58 lr 1.25e-04 | train loss 0.956 acc 0.795 | val loss 1.035 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  59 lr 1.25e-04 | train loss 0.987 acc 0.791 | val loss 1.067 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  60 lr 1.25e-04 | train loss 0.977 acc 0.795 | val loss 1.044 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  61 lr 1.25e-04 | train loss 0.978 acc 0.793 | val loss 1.032 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  62 lr 1.25e-04 | train loss 0.942 acc 0.803 | val loss 1.042 UAR 0.719
+[m1_logmel_random_fR_s0_prelim] ep  63 lr 1.25e-04 | train loss 0.961 acc 0.802 | val loss 1.022 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  64 lr 6.25e-05 | train loss 0.954 acc 0.791 | val loss 1.018 UAR 0.750 *
+[m1_logmel_random_fR_s0_prelim] ep  65 lr 6.25e-05 | train loss 0.971 acc 0.799 | val loss 1.024 UAR 0.730
+[m1_logmel_random_fR_s0_prelim] ep  66 lr 6.25e-05 | train loss 0.973 acc 0.776 | val loss 1.020 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  67 lr 6.25e-05 | train loss 0.946 acc 0.791 | val loss 1.023 UAR 0.730
+[m1_logmel_random_fR_s0_prelim] ep  68 lr 6.25e-05 | train loss 0.953 acc 0.790 | val loss 1.015 UAR 0.754 *
+[m1_logmel_random_fR_s0_prelim] ep  69 lr 6.25e-05 | train loss 0.950 acc 0.796 | val loss 1.017 UAR 0.750
+[m1_logmel_random_fR_s0_prelim] ep  70 lr 6.25e-05 | train loss 0.946 acc 0.805 | val loss 1.014 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  71 lr 6.25e-05 | train loss 0.931 acc 0.809 | val loss 1.020 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  72 lr 6.25e-05 | train loss 0.925 acc 0.805 | val loss 1.015 UAR 0.742
+[m1_logmel_random_fR_s0_prelim] ep  73 lr 6.25e-05 | train loss 0.955 acc 0.792 | val loss 1.012 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  74 lr 6.25e-05 | train loss 0.923 acc 0.811 | val loss 1.017 UAR 0.742
+[m1_logmel_random_fR_s0_prelim] ep  75 lr 3.13e-05 | train loss 0.949 acc 0.805 | val loss 1.016 UAR 0.742
+[m1_logmel_random_fR_s0_prelim] ep  76 lr 3.13e-05 | train loss 0.937 acc 0.810 | val loss 1.019 UAR 0.746
+[m1_logmel_random_fR_s0_prelim] ep  77 lr 3.13e-05 | train loss 0.911 acc 0.824 | val loss 1.017 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  78 lr 3.13e-05 | train loss 0.972 acc 0.787 | val loss 1.017 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  79 lr 3.13e-05 | train loss 0.941 acc 0.795 | val loss 1.011 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  80 lr 3.13e-05 | train loss 0.914 acc 0.817 | val loss 1.018 UAR 0.738
+[m1_logmel_random_fR_s0_prelim] ep  81 lr 1.56e-05 | train loss 0.927 acc 0.799 | val loss 1.016 UAR 0.734
+[m1_logmel_random_fR_s0_prelim] ep  82 lr 1.56e-05 | train loss 0.930 acc 0.815 | val loss 1.020 UAR 0.730
+[m1_logmel_random_fR_s0_prelim] ep  83 lr 1.56e-05 | train loss 0.930 acc 0.807 | val loss 1.024 UAR 0.723
+   best epoch 68 val UAR 0.7539 | TEST UAR 0.7148 acc 0.7208 F1 0.7101 | 198s
+
+fold  seed  best_epoch  val_uar  test_uar  test_acc  test_macro_f1  train_time_s
+   R     0          68 0.753906  0.714844  0.720833        0.71015         197.7
+test_uar: 0.7148 ± 0.0000 (n=1)
+test_acc: 0.7208 ± 0.0000 (n=1)
+test_macro_f1: 0.7101 ± 0.0000 (n=1)
+total time 198 s
+
+[exit 3221226505] 200 s

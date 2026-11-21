@@ -1,0 +1,4 @@
+model,actor-wise UAR (%),n_actor,random-split UAR (%),n_random,inflation UAR (points),inflation acc (points)
+M1 BiLSTM+Att,54.69 ± 4.83,6,71.48 ± 0.00,1,16.8,15.83
+M2 CNN-BiLSTM,61.13 ± 4.00,6,68.36 ± 0.00,1,7.23,7.64
+M3 Transformer,53.65 ± 6.14,6,67.97 ± 0.00,1,14.32,13.54

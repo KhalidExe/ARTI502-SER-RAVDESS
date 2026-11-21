@@ -1,0 +1,28 @@
+{
+  "model": "m3",
+  "features": "logmel",
+  "rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    0
+  ],
+  "selection": "one-factor-at-a-time on VALIDATION folds only (test never evaluated); per factor, the value with the highest mean validation UAR; values combined. Limitation: OFAT does not capture interactions between hyper-parameters.",
+  "defaults": {
+    "train.lr": 0.0005,
+    "model.dropout": 0.3,
+    "model.n_layers": 4,
+    "model.n_heads": 4
+  },
+  "overrides": {
+    "train.lr": 0.001,
+    "model.dropout": 0.2,
+    "model.n_layers": 2,
+    "model.n_heads": 8
+  }
+}

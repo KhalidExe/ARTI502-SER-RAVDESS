@@ -1,0 +1,24 @@
+# data (RAVDESS licence CC BY-NC-SA 4.0: do not redistribute in the repo)
+data/
+*.zip
+*.wav
+# model weights / caches
+checkpoints/
+*.pt
+*.pth
+*.safetensors
+.cache/
+# python / notebooks
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+# OS / editors
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+# keep results (small CSV/PNG/JSON) — the paper needs them.
+# large per-run JSONs can be excluded later if the repo grows:
+# results/**/runs/*.json

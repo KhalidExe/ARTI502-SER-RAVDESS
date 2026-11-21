@@ -1,0 +1,368 @@
+python -u -m src.run_experiments --model m2 --folds 0-5 --seeds 0 --tag prelim --skip-existing
+== m2_logmel_actor_f0_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f0_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.020 acc 0.198 | val loss 1.927 UAR 0.234 *
+[m2_logmel_actor_f0_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.883 acc 0.296 | val loss 1.855 UAR 0.297 *
+[m2_logmel_actor_f0_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.815 acc 0.330 | val loss 1.828 UAR 0.297
+[m2_logmel_actor_f0_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.776 acc 0.358 | val loss 1.784 UAR 0.316 *
+[m2_logmel_actor_f0_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.711 acc 0.392 | val loss 1.744 UAR 0.363 *
+[m2_logmel_actor_f0_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.664 acc 0.446 | val loss 1.657 UAR 0.430 *
+[m2_logmel_actor_f0_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.633 acc 0.423 | val loss 1.863 UAR 0.293
+[m2_logmel_actor_f0_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.580 acc 0.476 | val loss 1.770 UAR 0.328
+[m2_logmel_actor_f0_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.541 acc 0.501 | val loss 1.721 UAR 0.371
+[m2_logmel_actor_f0_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.474 acc 0.521 | val loss 1.697 UAR 0.395
+[m2_logmel_actor_f0_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.461 acc 0.527 | val loss 1.586 UAR 0.422
+[m2_logmel_actor_f0_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.433 acc 0.547 | val loss 1.585 UAR 0.414
+[m2_logmel_actor_f0_s0_prelim] ep  13 lr 5.00e-04 | train loss 1.361 acc 0.572 | val loss 1.563 UAR 0.438 *
+[m2_logmel_actor_f0_s0_prelim] ep  14 lr 5.00e-04 | train loss 1.329 acc 0.602 | val loss 1.605 UAR 0.422
+[m2_logmel_actor_f0_s0_prelim] ep  15 lr 5.00e-04 | train loss 1.326 acc 0.605 | val loss 1.600 UAR 0.422
+[m2_logmel_actor_f0_s0_prelim] ep  16 lr 5.00e-04 | train loss 1.278 acc 0.631 | val loss 1.466 UAR 0.480 *
+[m2_logmel_actor_f0_s0_prelim] ep  17 lr 5.00e-04 | train loss 1.268 acc 0.632 | val loss 1.447 UAR 0.480
+[m2_logmel_actor_f0_s0_prelim] ep  18 lr 5.00e-04 | train loss 1.233 acc 0.656 | val loss 1.475 UAR 0.512 *
+[m2_logmel_actor_f0_s0_prelim] ep  19 lr 5.00e-04 | train loss 1.203 acc 0.648 | val loss 1.416 UAR 0.527 *
+[m2_logmel_actor_f0_s0_prelim] ep  20 lr 5.00e-04 | train loss 1.201 acc 0.659 | val loss 1.695 UAR 0.465
+[m2_logmel_actor_f0_s0_prelim] ep  21 lr 5.00e-04 | train loss 1.181 acc 0.671 | val loss 1.440 UAR 0.516
+[m2_logmel_actor_f0_s0_prelim] ep  22 lr 5.00e-04 | train loss 1.168 acc 0.670 | val loss 1.441 UAR 0.500
+[m2_logmel_actor_f0_s0_prelim] ep  23 lr 5.00e-04 | train loss 1.159 acc 0.692 | val loss 1.486 UAR 0.504
+[m2_logmel_actor_f0_s0_prelim] ep  24 lr 5.00e-04 | train loss 1.147 acc 0.682 | val loss 1.483 UAR 0.500
+[m2_logmel_actor_f0_s0_prelim] ep  25 lr 5.00e-04 | train loss 1.137 acc 0.705 | val loss 1.535 UAR 0.496
+[m2_logmel_actor_f0_s0_prelim] ep  26 lr 2.50e-04 | train loss 1.126 acc 0.694 | val loss 1.394 UAR 0.531 *
+[m2_logmel_actor_f0_s0_prelim] ep  27 lr 2.50e-04 | train loss 1.074 acc 0.726 | val loss 1.449 UAR 0.500
+[m2_logmel_actor_f0_s0_prelim] ep  28 lr 2.50e-04 | train loss 1.079 acc 0.728 | val loss 1.445 UAR 0.504
+[m2_logmel_actor_f0_s0_prelim] ep  29 lr 2.50e-04 | train loss 1.059 acc 0.731 | val loss 1.435 UAR 0.539 *
+[m2_logmel_actor_f0_s0_prelim] ep  30 lr 2.50e-04 | train loss 1.061 acc 0.738 | val loss 1.397 UAR 0.555 *
+[m2_logmel_actor_f0_s0_prelim] ep  31 lr 2.50e-04 | train loss 1.038 acc 0.759 | val loss 1.429 UAR 0.551
+[m2_logmel_actor_f0_s0_prelim] ep  32 lr 2.50e-04 | train loss 1.015 acc 0.778 | val loss 1.387 UAR 0.520
+[m2_logmel_actor_f0_s0_prelim] ep  33 lr 2.50e-04 | train loss 0.996 acc 0.772 | val loss 1.395 UAR 0.551
+[m2_logmel_actor_f0_s0_prelim] ep  34 lr 2.50e-04 | train loss 1.003 acc 0.769 | val loss 1.402 UAR 0.539
+[m2_logmel_actor_f0_s0_prelim] ep  35 lr 2.50e-04 | train loss 1.021 acc 0.761 | val loss 1.358 UAR 0.559 *
+[m2_logmel_actor_f0_s0_prelim] ep  36 lr 2.50e-04 | train loss 0.993 acc 0.772 | val loss 1.358 UAR 0.555
+[m2_logmel_actor_f0_s0_prelim] ep  37 lr 2.50e-04 | train loss 0.979 acc 0.784 | val loss 1.433 UAR 0.535
+[m2_logmel_actor_f0_s0_prelim] ep  38 lr 2.50e-04 | train loss 0.980 acc 0.790 | val loss 1.436 UAR 0.496
+[m2_logmel_actor_f0_s0_prelim] ep  39 lr 2.50e-04 | train loss 0.976 acc 0.790 | val loss 1.384 UAR 0.551
+[m2_logmel_actor_f0_s0_prelim] ep  40 lr 2.50e-04 | train loss 0.992 acc 0.783 | val loss 1.403 UAR 0.531
+[m2_logmel_actor_f0_s0_prelim] ep  41 lr 2.50e-04 | train loss 0.954 acc 0.802 | val loss 1.381 UAR 0.543
+[m2_logmel_actor_f0_s0_prelim] ep  42 lr 1.25e-04 | train loss 0.944 acc 0.815 | val loss 1.372 UAR 0.566 *
+[m2_logmel_actor_f0_s0_prelim] ep  43 lr 1.25e-04 | train loss 0.925 acc 0.827 | val loss 1.351 UAR 0.586 *
+[m2_logmel_actor_f0_s0_prelim] ep  44 lr 1.25e-04 | train loss 0.931 acc 0.812 | val loss 1.396 UAR 0.547
+[m2_logmel_actor_f0_s0_prelim] ep  45 lr 1.25e-04 | train loss 0.917 acc 0.818 | val loss 1.394 UAR 0.531
+[m2_logmel_actor_f0_s0_prelim] ep  46 lr 1.25e-04 | train loss 0.944 acc 0.803 | val loss 1.378 UAR 0.551
+[m2_logmel_actor_f0_s0_prelim] ep  47 lr 1.25e-04 | train loss 0.913 acc 0.823 | val loss 1.391 UAR 0.523
+[m2_logmel_actor_f0_s0_prelim] ep  48 lr 1.25e-04 | train loss 0.911 acc 0.822 | val loss 1.378 UAR 0.535
+[m2_logmel_actor_f0_s0_prelim] ep  49 lr 1.25e-04 | train loss 0.927 acc 0.806 | val loss 1.367 UAR 0.539
+[m2_logmel_actor_f0_s0_prelim] ep  50 lr 6.25e-05 | train loss 0.896 acc 0.846 | val loss 1.382 UAR 0.539
+[m2_logmel_actor_f0_s0_prelim] ep  51 lr 6.25e-05 | train loss 0.890 acc 0.836 | val loss 1.380 UAR 0.543
+[m2_logmel_actor_f0_s0_prelim] ep  52 lr 6.25e-05 | train loss 0.898 acc 0.839 | val loss 1.385 UAR 0.531
+[m2_logmel_actor_f0_s0_prelim] ep  53 lr 6.25e-05 | train loss 0.891 acc 0.843 | val loss 1.364 UAR 0.543
+[m2_logmel_actor_f0_s0_prelim] ep  54 lr 6.25e-05 | train loss 0.908 acc 0.826 | val loss 1.416 UAR 0.523
+[m2_logmel_actor_f0_s0_prelim] ep  55 lr 6.25e-05 | train loss 0.883 acc 0.846 | val loss 1.405 UAR 0.516
+[m2_logmel_actor_f0_s0_prelim] ep  56 lr 3.13e-05 | train loss 0.875 acc 0.846 | val loss 1.394 UAR 0.523
+[m2_logmel_actor_f0_s0_prelim] ep  57 lr 3.13e-05 | train loss 0.902 acc 0.823 | val loss 1.379 UAR 0.539
+[m2_logmel_actor_f0_s0_prelim] ep  58 lr 3.13e-05 | train loss 0.876 acc 0.848 | val loss 1.381 UAR 0.539
+   best epoch 43 val UAR 0.5859 | TEST UAR 0.6289 acc 0.6292 F1 0.6251 | 60s
+== m2_logmel_actor_f1_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f1_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.028 acc 0.203 | val loss 1.926 UAR 0.246 *
+[m2_logmel_actor_f1_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.909 acc 0.246 | val loss 1.820 UAR 0.359 *
+[m2_logmel_actor_f1_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.834 acc 0.331 | val loss 1.812 UAR 0.281
+[m2_logmel_actor_f1_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.785 acc 0.333 | val loss 1.680 UAR 0.441 *
+[m2_logmel_actor_f1_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.721 acc 0.384 | val loss 1.824 UAR 0.336
+[m2_logmel_actor_f1_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.688 acc 0.416 | val loss 1.623 UAR 0.395
+[m2_logmel_actor_f1_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.621 acc 0.445 | val loss 1.542 UAR 0.480 *
+[m2_logmel_actor_f1_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.586 acc 0.446 | val loss 1.554 UAR 0.457
+[m2_logmel_actor_f1_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.565 acc 0.495 | val loss 1.438 UAR 0.566 *
+[m2_logmel_actor_f1_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.528 acc 0.503 | val loss 1.511 UAR 0.480
+[m2_logmel_actor_f1_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.502 acc 0.514 | val loss 1.435 UAR 0.516
+[m2_logmel_actor_f1_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.445 acc 0.520 | val loss 1.407 UAR 0.492
+[m2_logmel_actor_f1_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.433 acc 0.533 | val loss 1.301 UAR 0.586 *
+[m2_logmel_actor_f1_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.384 acc 0.570 | val loss 1.491 UAR 0.488
+[m2_logmel_actor_f1_s0_prelim] ep  15 lr 1.00e-03 | train loss 1.367 acc 0.553 | val loss 1.380 UAR 0.527
+[m2_logmel_actor_f1_s0_prelim] ep  16 lr 1.00e-03 | train loss 1.315 acc 0.591 | val loss 1.306 UAR 0.570
+[m2_logmel_actor_f1_s0_prelim] ep  17 lr 1.00e-03 | train loss 1.302 acc 0.634 | val loss 1.265 UAR 0.602 *
+[m2_logmel_actor_f1_s0_prelim] ep  18 lr 1.00e-03 | train loss 1.280 acc 0.621 | val loss 1.286 UAR 0.574
+[m2_logmel_actor_f1_s0_prelim] ep  19 lr 1.00e-03 | train loss 1.279 acc 0.618 | val loss 1.267 UAR 0.609 *
+[m2_logmel_actor_f1_s0_prelim] ep  20 lr 1.00e-03 | train loss 1.227 acc 0.642 | val loss 1.407 UAR 0.520
+[m2_logmel_actor_f1_s0_prelim] ep  21 lr 1.00e-03 | train loss 1.245 acc 0.625 | val loss 1.274 UAR 0.645 *
+[m2_logmel_actor_f1_s0_prelim] ep  22 lr 1.00e-03 | train loss 1.248 acc 0.630 | val loss 1.187 UAR 0.680 *
+[m2_logmel_actor_f1_s0_prelim] ep  23 lr 1.00e-03 | train loss 1.196 acc 0.672 | val loss 1.253 UAR 0.586
+[m2_logmel_actor_f1_s0_prelim] ep  24 lr 1.00e-03 | train loss 1.177 acc 0.667 | val loss 1.335 UAR 0.582
+[m2_logmel_actor_f1_s0_prelim] ep  25 lr 1.00e-03 | train loss 1.144 acc 0.699 | val loss 1.316 UAR 0.613
+[m2_logmel_actor_f1_s0_prelim] ep  26 lr 1.00e-03 | train loss 1.141 acc 0.676 | val loss 1.268 UAR 0.637
+[m2_logmel_actor_f1_s0_prelim] ep  27 lr 1.00e-03 | train loss 1.112 acc 0.713 | val loss 1.203 UAR 0.660
+[m2_logmel_actor_f1_s0_prelim] ep  28 lr 1.00e-03 | train loss 1.109 acc 0.704 | val loss 1.221 UAR 0.637
+[m2_logmel_actor_f1_s0_prelim] ep  29 lr 5.00e-04 | train loss 1.077 acc 0.720 | val loss 1.155 UAR 0.648
+[m2_logmel_actor_f1_s0_prelim] ep  30 lr 5.00e-04 | train loss 1.037 acc 0.752 | val loss 1.204 UAR 0.668
+[m2_logmel_actor_f1_s0_prelim] ep  31 lr 5.00e-04 | train loss 1.009 acc 0.775 | val loss 1.190 UAR 0.648
+[m2_logmel_actor_f1_s0_prelim] ep  32 lr 5.00e-04 | train loss 1.000 acc 0.778 | val loss 1.208 UAR 0.652
+[m2_logmel_actor_f1_s0_prelim] ep  33 lr 5.00e-04 | train loss 0.985 acc 0.787 | val loss 1.152 UAR 0.703 *
+[m2_logmel_actor_f1_s0_prelim] ep  34 lr 5.00e-04 | train loss 0.990 acc 0.767 | val loss 1.202 UAR 0.656
+[m2_logmel_actor_f1_s0_prelim] ep  35 lr 5.00e-04 | train loss 0.990 acc 0.789 | val loss 1.203 UAR 0.664
+[m2_logmel_actor_f1_s0_prelim] ep  36 lr 5.00e-04 | train loss 0.992 acc 0.775 | val loss 1.184 UAR 0.660
+[m2_logmel_actor_f1_s0_prelim] ep  37 lr 5.00e-04 | train loss 0.950 acc 0.804 | val loss 1.187 UAR 0.645
+[m2_logmel_actor_f1_s0_prelim] ep  38 lr 5.00e-04 | train loss 0.941 acc 0.805 | val loss 1.223 UAR 0.656
+[m2_logmel_actor_f1_s0_prelim] ep  39 lr 5.00e-04 | train loss 0.965 acc 0.800 | val loss 1.166 UAR 0.668
+[m2_logmel_actor_f1_s0_prelim] ep  40 lr 2.50e-04 | train loss 0.922 acc 0.831 | val loss 1.205 UAR 0.645
+[m2_logmel_actor_f1_s0_prelim] ep  41 lr 2.50e-04 | train loss 0.920 acc 0.812 | val loss 1.208 UAR 0.664
+[m2_logmel_actor_f1_s0_prelim] ep  42 lr 2.50e-04 | train loss 0.895 acc 0.822 | val loss 1.173 UAR 0.672
+[m2_logmel_actor_f1_s0_prelim] ep  43 lr 2.50e-04 | train loss 0.874 acc 0.848 | val loss 1.188 UAR 0.668
+[m2_logmel_actor_f1_s0_prelim] ep  44 lr 2.50e-04 | train loss 0.878 acc 0.851 | val loss 1.195 UAR 0.660
+[m2_logmel_actor_f1_s0_prelim] ep  45 lr 2.50e-04 | train loss 0.909 acc 0.833 | val loss 1.174 UAR 0.656
+[m2_logmel_actor_f1_s0_prelim] ep  46 lr 1.25e-04 | train loss 0.859 acc 0.843 | val loss 1.203 UAR 0.652
+[m2_logmel_actor_f1_s0_prelim] ep  47 lr 1.25e-04 | train loss 0.859 acc 0.859 | val loss 1.157 UAR 0.680
+[m2_logmel_actor_f1_s0_prelim] ep  48 lr 1.25e-04 | train loss 0.862 acc 0.845 | val loss 1.170 UAR 0.680
+   best epoch 33 val UAR 0.7031 | TEST UAR 0.6172 acc 0.6250 F1 0.6151 | 47s
+== m2_logmel_actor_f2_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f2_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.018 acc 0.204 | val loss 1.947 UAR 0.258 *
+[m2_logmel_actor_f2_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.891 acc 0.274 | val loss 1.863 UAR 0.309 *
+[m2_logmel_actor_f2_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.831 acc 0.323 | val loss 1.762 UAR 0.324 *
+[m2_logmel_actor_f2_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.778 acc 0.336 | val loss 1.724 UAR 0.367 *
+[m2_logmel_actor_f2_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.725 acc 0.375 | val loss 1.813 UAR 0.383 *
+[m2_logmel_actor_f2_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.711 acc 0.407 | val loss 1.723 UAR 0.359
+[m2_logmel_actor_f2_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.664 acc 0.418 | val loss 1.659 UAR 0.391 *
+[m2_logmel_actor_f2_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.644 acc 0.424 | val loss 1.677 UAR 0.422 *
+[m2_logmel_actor_f2_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.614 acc 0.456 | val loss 1.589 UAR 0.469 *
+[m2_logmel_actor_f2_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.565 acc 0.464 | val loss 1.712 UAR 0.387
+[m2_logmel_actor_f2_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.538 acc 0.483 | val loss 1.611 UAR 0.426
+[m2_logmel_actor_f2_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.514 acc 0.494 | val loss 1.518 UAR 0.516 *
+[m2_logmel_actor_f2_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.488 acc 0.507 | val loss 1.559 UAR 0.461
+[m2_logmel_actor_f2_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.441 acc 0.544 | val loss 1.454 UAR 0.523 *
+[m2_logmel_actor_f2_s0_prelim] ep  15 lr 1.00e-03 | train loss 1.432 acc 0.530 | val loss 1.400 UAR 0.559 *
+[m2_logmel_actor_f2_s0_prelim] ep  16 lr 1.00e-03 | train loss 1.407 acc 0.555 | val loss 1.488 UAR 0.539
+[m2_logmel_actor_f2_s0_prelim] ep  17 lr 1.00e-03 | train loss 1.368 acc 0.575 | val loss 1.485 UAR 0.508
+[m2_logmel_actor_f2_s0_prelim] ep  18 lr 1.00e-03 | train loss 1.364 acc 0.576 | val loss 1.403 UAR 0.570 *
+[m2_logmel_actor_f2_s0_prelim] ep  19 lr 1.00e-03 | train loss 1.381 acc 0.569 | val loss 1.744 UAR 0.430
+[m2_logmel_actor_f2_s0_prelim] ep  20 lr 1.00e-03 | train loss 1.323 acc 0.591 | val loss 1.347 UAR 0.566
+[m2_logmel_actor_f2_s0_prelim] ep  21 lr 1.00e-03 | train loss 1.289 acc 0.617 | val loss 1.574 UAR 0.516
+[m2_logmel_actor_f2_s0_prelim] ep  22 lr 1.00e-03 | train loss 1.297 acc 0.609 | val loss 1.290 UAR 0.602 *
+[m2_logmel_actor_f2_s0_prelim] ep  23 lr 1.00e-03 | train loss 1.251 acc 0.633 | val loss 1.402 UAR 0.582
+[m2_logmel_actor_f2_s0_prelim] ep  24 lr 1.00e-03 | train loss 1.238 acc 0.636 | val loss 1.541 UAR 0.496
+[m2_logmel_actor_f2_s0_prelim] ep  25 lr 1.00e-03 | train loss 1.249 acc 0.627 | val loss 1.392 UAR 0.578
+[m2_logmel_actor_f2_s0_prelim] ep  26 lr 1.00e-03 | train loss 1.215 acc 0.659 | val loss 1.381 UAR 0.559
+[m2_logmel_actor_f2_s0_prelim] ep  27 lr 1.00e-03 | train loss 1.196 acc 0.662 | val loss 1.344 UAR 0.559
+[m2_logmel_actor_f2_s0_prelim] ep  28 lr 1.00e-03 | train loss 1.168 acc 0.682 | val loss 1.401 UAR 0.559
+[m2_logmel_actor_f2_s0_prelim] ep  29 lr 5.00e-04 | train loss 1.165 acc 0.691 | val loss 1.307 UAR 0.582
+[m2_logmel_actor_f2_s0_prelim] ep  30 lr 5.00e-04 | train loss 1.091 acc 0.736 | val loss 1.336 UAR 0.621 *
+[m2_logmel_actor_f2_s0_prelim] ep  31 lr 5.00e-04 | train loss 1.089 acc 0.722 | val loss 1.339 UAR 0.621
+[m2_logmel_actor_f2_s0_prelim] ep  32 lr 5.00e-04 | train loss 1.074 acc 0.729 | val loss 1.301 UAR 0.602
+[m2_logmel_actor_f2_s0_prelim] ep  33 lr 5.00e-04 | train loss 1.081 acc 0.738 | val loss 1.270 UAR 0.648 *
+[m2_logmel_actor_f2_s0_prelim] ep  34 lr 5.00e-04 | train loss 1.046 acc 0.762 | val loss 1.346 UAR 0.613
+[m2_logmel_actor_f2_s0_prelim] ep  35 lr 5.00e-04 | train loss 1.060 acc 0.734 | val loss 1.497 UAR 0.602
+[m2_logmel_actor_f2_s0_prelim] ep  36 lr 5.00e-04 | train loss 1.052 acc 0.767 | val loss 1.260 UAR 0.637
+[m2_logmel_actor_f2_s0_prelim] ep  37 lr 5.00e-04 | train loss 1.055 acc 0.745 | val loss 1.210 UAR 0.676 *
+[m2_logmel_actor_f2_s0_prelim] ep  38 lr 5.00e-04 | train loss 1.053 acc 0.752 | val loss 1.326 UAR 0.602
+[m2_logmel_actor_f2_s0_prelim] ep  39 lr 5.00e-04 | train loss 1.025 acc 0.771 | val loss 1.214 UAR 0.637
+[m2_logmel_actor_f2_s0_prelim] ep  40 lr 5.00e-04 | train loss 1.005 acc 0.776 | val loss 1.292 UAR 0.617
+[m2_logmel_actor_f2_s0_prelim] ep  41 lr 5.00e-04 | train loss 1.006 acc 0.768 | val loss 1.309 UAR 0.633
+[m2_logmel_actor_f2_s0_prelim] ep  42 lr 5.00e-04 | train loss 0.990 acc 0.787 | val loss 1.253 UAR 0.656
+[m2_logmel_actor_f2_s0_prelim] ep  43 lr 5.00e-04 | train loss 0.969 acc 0.780 | val loss 1.267 UAR 0.621
+[m2_logmel_actor_f2_s0_prelim] ep  44 lr 2.50e-04 | train loss 0.969 acc 0.792 | val loss 1.223 UAR 0.664
+[m2_logmel_actor_f2_s0_prelim] ep  45 lr 2.50e-04 | train loss 0.958 acc 0.798 | val loss 1.244 UAR 0.641
+[m2_logmel_actor_f2_s0_prelim] ep  46 lr 2.50e-04 | train loss 0.922 acc 0.806 | val loss 1.227 UAR 0.637
+[m2_logmel_actor_f2_s0_prelim] ep  47 lr 2.50e-04 | train loss 0.942 acc 0.807 | val loss 1.269 UAR 0.625
+[m2_logmel_actor_f2_s0_prelim] ep  48 lr 2.50e-04 | train loss 0.923 acc 0.819 | val loss 1.195 UAR 0.668
+[m2_logmel_actor_f2_s0_prelim] ep  49 lr 2.50e-04 | train loss 0.931 acc 0.808 | val loss 1.230 UAR 0.637
+[m2_logmel_actor_f2_s0_prelim] ep  50 lr 1.25e-04 | train loss 0.903 acc 0.831 | val loss 1.248 UAR 0.641
+[m2_logmel_actor_f2_s0_prelim] ep  51 lr 1.25e-04 | train loss 0.899 acc 0.831 | val loss 1.235 UAR 0.621
+[m2_logmel_actor_f2_s0_prelim] ep  52 lr 1.25e-04 | train loss 0.895 acc 0.841 | val loss 1.239 UAR 0.625
+   best epoch 37 val UAR 0.6758 | TEST UAR 0.6172 acc 0.6333 F1 0.6137 | 49s
+== m2_logmel_actor_f3_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f3_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.018 acc 0.205 | val loss 1.911 UAR 0.285 *
+[m2_logmel_actor_f3_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.903 acc 0.285 | val loss 1.899 UAR 0.277
+[m2_logmel_actor_f3_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.845 acc 0.298 | val loss 1.842 UAR 0.297 *
+[m2_logmel_actor_f3_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.800 acc 0.341 | val loss 1.815 UAR 0.281
+[m2_logmel_actor_f3_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.757 acc 0.351 | val loss 1.725 UAR 0.434 *
+[m2_logmel_actor_f3_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.710 acc 0.402 | val loss 1.687 UAR 0.359
+[m2_logmel_actor_f3_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.662 acc 0.421 | val loss 1.760 UAR 0.391
+[m2_logmel_actor_f3_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.644 acc 0.435 | val loss 1.634 UAR 0.434
+[m2_logmel_actor_f3_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.602 acc 0.469 | val loss 1.539 UAR 0.535 *
+[m2_logmel_actor_f3_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.602 acc 0.459 | val loss 1.487 UAR 0.500
+[m2_logmel_actor_f3_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.543 acc 0.496 | val loss 1.506 UAR 0.492
+[m2_logmel_actor_f3_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.511 acc 0.510 | val loss 1.474 UAR 0.492
+[m2_logmel_actor_f3_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.460 acc 0.532 | val loss 1.472 UAR 0.516
+[m2_logmel_actor_f3_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.441 acc 0.547 | val loss 1.501 UAR 0.488
+[m2_logmel_actor_f3_s0_prelim] ep  15 lr 1.00e-03 | train loss 1.423 acc 0.539 | val loss 1.488 UAR 0.461
+[m2_logmel_actor_f3_s0_prelim] ep  16 lr 5.00e-04 | train loss 1.381 acc 0.569 | val loss 1.353 UAR 0.523
+[m2_logmel_actor_f3_s0_prelim] ep  17 lr 5.00e-04 | train loss 1.315 acc 0.614 | val loss 1.365 UAR 0.543 *
+[m2_logmel_actor_f3_s0_prelim] ep  18 lr 5.00e-04 | train loss 1.302 acc 0.624 | val loss 1.318 UAR 0.555 *
+[m2_logmel_actor_f3_s0_prelim] ep  19 lr 5.00e-04 | train loss 1.286 acc 0.637 | val loss 1.277 UAR 0.586 *
+[m2_logmel_actor_f3_s0_prelim] ep  20 lr 5.00e-04 | train loss 1.284 acc 0.622 | val loss 1.327 UAR 0.531
+[m2_logmel_actor_f3_s0_prelim] ep  21 lr 5.00e-04 | train loss 1.251 acc 0.648 | val loss 1.342 UAR 0.539
+[m2_logmel_actor_f3_s0_prelim] ep  22 lr 5.00e-04 | train loss 1.202 acc 0.667 | val loss 1.334 UAR 0.523
+[m2_logmel_actor_f3_s0_prelim] ep  23 lr 5.00e-04 | train loss 1.264 acc 0.643 | val loss 1.318 UAR 0.539
+[m2_logmel_actor_f3_s0_prelim] ep  24 lr 5.00e-04 | train loss 1.222 acc 0.646 | val loss 1.272 UAR 0.605 *
+[m2_logmel_actor_f3_s0_prelim] ep  25 lr 5.00e-04 | train loss 1.198 acc 0.668 | val loss 1.333 UAR 0.520
+[m2_logmel_actor_f3_s0_prelim] ep  26 lr 5.00e-04 | train loss 1.182 acc 0.674 | val loss 1.339 UAR 0.543
+[m2_logmel_actor_f3_s0_prelim] ep  27 lr 5.00e-04 | train loss 1.150 acc 0.688 | val loss 1.247 UAR 0.570
+[m2_logmel_actor_f3_s0_prelim] ep  28 lr 5.00e-04 | train loss 1.152 acc 0.695 | val loss 1.289 UAR 0.605
+[m2_logmel_actor_f3_s0_prelim] ep  29 lr 5.00e-04 | train loss 1.118 acc 0.713 | val loss 1.236 UAR 0.582
+[m2_logmel_actor_f3_s0_prelim] ep  30 lr 5.00e-04 | train loss 1.148 acc 0.685 | val loss 1.295 UAR 0.605
+[m2_logmel_actor_f3_s0_prelim] ep  31 lr 2.50e-04 | train loss 1.090 acc 0.723 | val loss 1.278 UAR 0.586
+[m2_logmel_actor_f3_s0_prelim] ep  32 lr 2.50e-04 | train loss 1.076 acc 0.742 | val loss 1.262 UAR 0.605
+[m2_logmel_actor_f3_s0_prelim] ep  33 lr 2.50e-04 | train loss 1.051 acc 0.748 | val loss 1.231 UAR 0.598
+[m2_logmel_actor_f3_s0_prelim] ep  34 lr 2.50e-04 | train loss 1.070 acc 0.733 | val loss 1.284 UAR 0.562
+[m2_logmel_actor_f3_s0_prelim] ep  35 lr 2.50e-04 | train loss 1.060 acc 0.745 | val loss 1.220 UAR 0.598
+[m2_logmel_actor_f3_s0_prelim] ep  36 lr 2.50e-04 | train loss 1.043 acc 0.756 | val loss 1.193 UAR 0.625 *
+[m2_logmel_actor_f3_s0_prelim] ep  37 lr 2.50e-04 | train loss 1.029 acc 0.755 | val loss 1.216 UAR 0.621
+[m2_logmel_actor_f3_s0_prelim] ep  38 lr 2.50e-04 | train loss 1.023 acc 0.752 | val loss 1.193 UAR 0.613
+[m2_logmel_actor_f3_s0_prelim] ep  39 lr 2.50e-04 | train loss 1.030 acc 0.752 | val loss 1.220 UAR 0.613
+[m2_logmel_actor_f3_s0_prelim] ep  40 lr 2.50e-04 | train loss 1.035 acc 0.743 | val loss 1.224 UAR 0.594
+[m2_logmel_actor_f3_s0_prelim] ep  41 lr 2.50e-04 | train loss 0.999 acc 0.762 | val loss 1.256 UAR 0.594
+[m2_logmel_actor_f3_s0_prelim] ep  42 lr 2.50e-04 | train loss 0.981 acc 0.790 | val loss 1.209 UAR 0.617
+[m2_logmel_actor_f3_s0_prelim] ep  43 lr 1.25e-04 | train loss 0.990 acc 0.770 | val loss 1.213 UAR 0.605
+[m2_logmel_actor_f3_s0_prelim] ep  44 lr 1.25e-04 | train loss 0.961 acc 0.801 | val loss 1.222 UAR 0.598
+[m2_logmel_actor_f3_s0_prelim] ep  45 lr 1.25e-04 | train loss 0.960 acc 0.806 | val loss 1.237 UAR 0.578
+[m2_logmel_actor_f3_s0_prelim] ep  46 lr 1.25e-04 | train loss 0.971 acc 0.790 | val loss 1.207 UAR 0.594
+[m2_logmel_actor_f3_s0_prelim] ep  47 lr 1.25e-04 | train loss 0.968 acc 0.790 | val loss 1.208 UAR 0.602
+[m2_logmel_actor_f3_s0_prelim] ep  48 lr 1.25e-04 | train loss 0.962 acc 0.795 | val loss 1.223 UAR 0.594
+[m2_logmel_actor_f3_s0_prelim] ep  49 lr 6.25e-05 | train loss 0.951 acc 0.810 | val loss 1.201 UAR 0.602
+[m2_logmel_actor_f3_s0_prelim] ep  50 lr 6.25e-05 | train loss 0.960 acc 0.801 | val loss 1.212 UAR 0.594
+[m2_logmel_actor_f3_s0_prelim] ep  51 lr 6.25e-05 | train loss 0.937 acc 0.805 | val loss 1.190 UAR 0.609
+   best epoch 36 val UAR 0.6250 | TEST UAR 0.6055 acc 0.6208 F1 0.6152 | 47s
+== m2_logmel_actor_f4_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f4_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.001 acc 0.215 | val loss 1.913 UAR 0.281 *
+[m2_logmel_actor_f4_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.867 acc 0.330 | val loss 1.852 UAR 0.352 *
+[m2_logmel_actor_f4_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.831 acc 0.331 | val loss 1.845 UAR 0.324
+[m2_logmel_actor_f4_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.773 acc 0.368 | val loss 1.756 UAR 0.328
+[m2_logmel_actor_f4_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.686 acc 0.419 | val loss 1.777 UAR 0.383 *
+[m2_logmel_actor_f4_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.655 acc 0.432 | val loss 1.722 UAR 0.395 *
+[m2_logmel_actor_f4_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.629 acc 0.440 | val loss 1.718 UAR 0.414 *
+[m2_logmel_actor_f4_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.617 acc 0.445 | val loss 1.652 UAR 0.438 *
+[m2_logmel_actor_f4_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.550 acc 0.479 | val loss 1.630 UAR 0.465 *
+[m2_logmel_actor_f4_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.528 acc 0.479 | val loss 1.640 UAR 0.469 *
+[m2_logmel_actor_f4_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.486 acc 0.525 | val loss 1.610 UAR 0.426
+[m2_logmel_actor_f4_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.493 acc 0.516 | val loss 1.667 UAR 0.363
+[m2_logmel_actor_f4_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.415 acc 0.568 | val loss 1.591 UAR 0.430
+[m2_logmel_actor_f4_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.442 acc 0.550 | val loss 1.514 UAR 0.492 *
+[m2_logmel_actor_f4_s0_prelim] ep  15 lr 1.00e-03 | train loss 1.422 acc 0.544 | val loss 1.570 UAR 0.465
+[m2_logmel_actor_f4_s0_prelim] ep  16 lr 1.00e-03 | train loss 1.374 acc 0.588 | val loss 1.511 UAR 0.500 *
+[m2_logmel_actor_f4_s0_prelim] ep  17 lr 1.00e-03 | train loss 1.304 acc 0.610 | val loss 1.813 UAR 0.387
+[m2_logmel_actor_f4_s0_prelim] ep  18 lr 1.00e-03 | train loss 1.315 acc 0.602 | val loss 1.624 UAR 0.480
+[m2_logmel_actor_f4_s0_prelim] ep  19 lr 1.00e-03 | train loss 1.310 acc 0.602 | val loss 1.506 UAR 0.500
+[m2_logmel_actor_f4_s0_prelim] ep  20 lr 1.00e-03 | train loss 1.255 acc 0.619 | val loss 1.486 UAR 0.504 *
+[m2_logmel_actor_f4_s0_prelim] ep  21 lr 1.00e-03 | train loss 1.252 acc 0.639 | val loss 1.753 UAR 0.453
+[m2_logmel_actor_f4_s0_prelim] ep  22 lr 1.00e-03 | train loss 1.235 acc 0.635 | val loss 1.606 UAR 0.484
+[m2_logmel_actor_f4_s0_prelim] ep  23 lr 1.00e-03 | train loss 1.220 acc 0.652 | val loss 1.446 UAR 0.531 *
+[m2_logmel_actor_f4_s0_prelim] ep  24 lr 1.00e-03 | train loss 1.180 acc 0.668 | val loss 1.514 UAR 0.480
+[m2_logmel_actor_f4_s0_prelim] ep  25 lr 1.00e-03 | train loss 1.154 acc 0.692 | val loss 1.449 UAR 0.500
+[m2_logmel_actor_f4_s0_prelim] ep  26 lr 1.00e-03 | train loss 1.169 acc 0.668 | val loss 1.426 UAR 0.555 *
+[m2_logmel_actor_f4_s0_prelim] ep  27 lr 1.00e-03 | train loss 1.130 acc 0.699 | val loss 1.415 UAR 0.578 *
+[m2_logmel_actor_f4_s0_prelim] ep  28 lr 1.00e-03 | train loss 1.147 acc 0.695 | val loss 1.508 UAR 0.562
+[m2_logmel_actor_f4_s0_prelim] ep  29 lr 1.00e-03 | train loss 1.118 acc 0.688 | val loss 1.456 UAR 0.535
+[m2_logmel_actor_f4_s0_prelim] ep  30 lr 1.00e-03 | train loss 1.108 acc 0.697 | val loss 1.390 UAR 0.586 *
+[m2_logmel_actor_f4_s0_prelim] ep  31 lr 1.00e-03 | train loss 1.093 acc 0.721 | val loss 1.414 UAR 0.535
+[m2_logmel_actor_f4_s0_prelim] ep  32 lr 1.00e-03 | train loss 1.071 acc 0.739 | val loss 1.401 UAR 0.559
+[m2_logmel_actor_f4_s0_prelim] ep  33 lr 1.00e-03 | train loss 1.082 acc 0.728 | val loss 1.496 UAR 0.543
+[m2_logmel_actor_f4_s0_prelim] ep  34 lr 1.00e-03 | train loss 1.024 acc 0.749 | val loss 1.384 UAR 0.586
+[m2_logmel_actor_f4_s0_prelim] ep  35 lr 1.00e-03 | train loss 0.999 acc 0.772 | val loss 1.382 UAR 0.555
+[m2_logmel_actor_f4_s0_prelim] ep  36 lr 1.00e-03 | train loss 1.044 acc 0.745 | val loss 1.429 UAR 0.539
+[m2_logmel_actor_f4_s0_prelim] ep  37 lr 5.00e-04 | train loss 0.984 acc 0.804 | val loss 1.406 UAR 0.578
+[m2_logmel_actor_f4_s0_prelim] ep  38 lr 5.00e-04 | train loss 0.945 acc 0.815 | val loss 1.394 UAR 0.586
+[m2_logmel_actor_f4_s0_prelim] ep  39 lr 5.00e-04 | train loss 0.935 acc 0.804 | val loss 1.442 UAR 0.582
+[m2_logmel_actor_f4_s0_prelim] ep  40 lr 5.00e-04 | train loss 0.893 acc 0.836 | val loss 1.435 UAR 0.586
+[m2_logmel_actor_f4_s0_prelim] ep  41 lr 5.00e-04 | train loss 0.886 acc 0.852 | val loss 1.436 UAR 0.566
+[m2_logmel_actor_f4_s0_prelim] ep  42 lr 5.00e-04 | train loss 0.911 acc 0.815 | val loss 1.379 UAR 0.578
+[m2_logmel_actor_f4_s0_prelim] ep  43 lr 2.50e-04 | train loss 0.887 acc 0.833 | val loss 1.353 UAR 0.594 *
+[m2_logmel_actor_f4_s0_prelim] ep  44 lr 2.50e-04 | train loss 0.873 acc 0.852 | val loss 1.383 UAR 0.605 *
+[m2_logmel_actor_f4_s0_prelim] ep  45 lr 2.50e-04 | train loss 0.855 acc 0.850 | val loss 1.367 UAR 0.602
+[m2_logmel_actor_f4_s0_prelim] ep  46 lr 2.50e-04 | train loss 0.844 acc 0.858 | val loss 1.394 UAR 0.586
+[m2_logmel_actor_f4_s0_prelim] ep  47 lr 2.50e-04 | train loss 0.850 acc 0.856 | val loss 1.373 UAR 0.594
+[m2_logmel_actor_f4_s0_prelim] ep  48 lr 2.50e-04 | train loss 0.833 acc 0.857 | val loss 1.368 UAR 0.602
+[m2_logmel_actor_f4_s0_prelim] ep  49 lr 2.50e-04 | train loss 0.844 acc 0.850 | val loss 1.390 UAR 0.586
+[m2_logmel_actor_f4_s0_prelim] ep  50 lr 2.50e-04 | train loss 0.823 acc 0.870 | val loss 1.370 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  51 lr 1.25e-04 | train loss 0.821 acc 0.864 | val loss 1.362 UAR 0.625 *
+[m2_logmel_actor_f4_s0_prelim] ep  52 lr 1.25e-04 | train loss 0.821 acc 0.872 | val loss 1.380 UAR 0.613
+[m2_logmel_actor_f4_s0_prelim] ep  53 lr 1.25e-04 | train loss 0.818 acc 0.883 | val loss 1.377 UAR 0.621
+[m2_logmel_actor_f4_s0_prelim] ep  54 lr 1.25e-04 | train loss 0.822 acc 0.866 | val loss 1.365 UAR 0.625
+[m2_logmel_actor_f4_s0_prelim] ep  55 lr 1.25e-04 | train loss 0.824 acc 0.866 | val loss 1.363 UAR 0.609
+[m2_logmel_actor_f4_s0_prelim] ep  56 lr 1.25e-04 | train loss 0.814 acc 0.875 | val loss 1.356 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  57 lr 1.25e-04 | train loss 0.798 acc 0.883 | val loss 1.392 UAR 0.613
+[m2_logmel_actor_f4_s0_prelim] ep  58 lr 6.25e-05 | train loss 0.803 acc 0.876 | val loss 1.372 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  59 lr 6.25e-05 | train loss 0.827 acc 0.861 | val loss 1.344 UAR 0.629 *
+[m2_logmel_actor_f4_s0_prelim] ep  60 lr 6.25e-05 | train loss 0.792 acc 0.893 | val loss 1.363 UAR 0.602
+[m2_logmel_actor_f4_s0_prelim] ep  61 lr 6.25e-05 | train loss 0.797 acc 0.883 | val loss 1.359 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  62 lr 6.25e-05 | train loss 0.809 acc 0.880 | val loss 1.363 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  63 lr 6.25e-05 | train loss 0.789 acc 0.900 | val loss 1.354 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  64 lr 6.25e-05 | train loss 0.793 acc 0.892 | val loss 1.346 UAR 0.617
+[m2_logmel_actor_f4_s0_prelim] ep  65 lr 6.25e-05 | train loss 0.807 acc 0.878 | val loss 1.349 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  66 lr 3.13e-05 | train loss 0.808 acc 0.875 | val loss 1.345 UAR 0.617
+[m2_logmel_actor_f4_s0_prelim] ep  67 lr 3.13e-05 | train loss 0.784 acc 0.899 | val loss 1.339 UAR 0.633 *
+[m2_logmel_actor_f4_s0_prelim] ep  68 lr 3.13e-05 | train loss 0.796 acc 0.882 | val loss 1.346 UAR 0.625
+[m2_logmel_actor_f4_s0_prelim] ep  69 lr 3.13e-05 | train loss 0.786 acc 0.900 | val loss 1.345 UAR 0.613
+[m2_logmel_actor_f4_s0_prelim] ep  70 lr 3.13e-05 | train loss 0.771 acc 0.886 | val loss 1.348 UAR 0.609
+[m2_logmel_actor_f4_s0_prelim] ep  71 lr 3.13e-05 | train loss 0.792 acc 0.885 | val loss 1.354 UAR 0.613
+[m2_logmel_actor_f4_s0_prelim] ep  72 lr 3.13e-05 | train loss 0.777 acc 0.898 | val loss 1.355 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  73 lr 3.13e-05 | train loss 0.800 acc 0.890 | val loss 1.349 UAR 0.602
+[m2_logmel_actor_f4_s0_prelim] ep  74 lr 1.56e-05 | train loss 0.811 acc 0.865 | val loss 1.349 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  75 lr 1.56e-05 | train loss 0.796 acc 0.886 | val loss 1.348 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  76 lr 1.56e-05 | train loss 0.781 acc 0.899 | val loss 1.343 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  77 lr 1.56e-05 | train loss 0.797 acc 0.879 | val loss 1.348 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  78 lr 1.56e-05 | train loss 0.778 acc 0.898 | val loss 1.348 UAR 0.605
+[m2_logmel_actor_f4_s0_prelim] ep  79 lr 1.56e-05 | train loss 0.780 acc 0.883 | val loss 1.344 UAR 0.617
+[m2_logmel_actor_f4_s0_prelim] ep  80 lr 7.81e-06 | train loss 0.793 acc 0.886 | val loss 1.353 UAR 0.598
+[m2_logmel_actor_f4_s0_prelim] ep  81 lr 7.81e-06 | train loss 0.774 acc 0.903 | val loss 1.346 UAR 0.613
+[m2_logmel_actor_f4_s0_prelim] ep  82 lr 7.81e-06 | train loss 0.769 acc 0.891 | val loss 1.342 UAR 0.621
+   best epoch 67 val UAR 0.6328 | TEST UAR 0.6602 acc 0.6833 F1 0.6562 | 79s
+== m2_logmel_actor_f5_s0_prelim | cuda | params 1,276,904 (trainable 1,276,904) | cfg e008d30dd9
+[m2_logmel_actor_f5_s0_prelim] ep   1 lr 1.00e-03 | train loss 2.012 acc 0.216 | val loss 1.908 UAR 0.230 *
+[m2_logmel_actor_f5_s0_prelim] ep   2 lr 1.00e-03 | train loss 1.887 acc 0.295 | val loss 1.807 UAR 0.379 *
+[m2_logmel_actor_f5_s0_prelim] ep   3 lr 1.00e-03 | train loss 1.790 acc 0.348 | val loss 1.765 UAR 0.344
+[m2_logmel_actor_f5_s0_prelim] ep   4 lr 1.00e-03 | train loss 1.764 acc 0.382 | val loss 1.678 UAR 0.422 *
+[m2_logmel_actor_f5_s0_prelim] ep   5 lr 1.00e-03 | train loss 1.711 acc 0.396 | val loss 1.664 UAR 0.402
+[m2_logmel_actor_f5_s0_prelim] ep   6 lr 1.00e-03 | train loss 1.660 acc 0.418 | val loss 1.626 UAR 0.430 *
+[m2_logmel_actor_f5_s0_prelim] ep   7 lr 1.00e-03 | train loss 1.626 acc 0.447 | val loss 1.570 UAR 0.457 *
+[m2_logmel_actor_f5_s0_prelim] ep   8 lr 1.00e-03 | train loss 1.588 acc 0.463 | val loss 1.610 UAR 0.426
+[m2_logmel_actor_f5_s0_prelim] ep   9 lr 1.00e-03 | train loss 1.562 acc 0.496 | val loss 1.485 UAR 0.520 *
+[m2_logmel_actor_f5_s0_prelim] ep  10 lr 1.00e-03 | train loss 1.545 acc 0.475 | val loss 1.518 UAR 0.504
+[m2_logmel_actor_f5_s0_prelim] ep  11 lr 1.00e-03 | train loss 1.495 acc 0.508 | val loss 1.479 UAR 0.508
+[m2_logmel_actor_f5_s0_prelim] ep  12 lr 1.00e-03 | train loss 1.436 acc 0.554 | val loss 1.496 UAR 0.480
+[m2_logmel_actor_f5_s0_prelim] ep  13 lr 1.00e-03 | train loss 1.385 acc 0.582 | val loss 1.426 UAR 0.488
+[m2_logmel_actor_f5_s0_prelim] ep  14 lr 1.00e-03 | train loss 1.392 acc 0.573 | val loss 1.420 UAR 0.531 *
+[m2_logmel_actor_f5_s0_prelim] ep  15 lr 1.00e-03 | train loss 1.389 acc 0.566 | val loss 1.460 UAR 0.488
+[m2_logmel_actor_f5_s0_prelim] ep  16 lr 1.00e-03 | train loss 1.338 acc 0.588 | val loss 1.379 UAR 0.531
+[m2_logmel_actor_f5_s0_prelim] ep  17 lr 1.00e-03 | train loss 1.286 acc 0.631 | val loss 1.375 UAR 0.566 *
+[m2_logmel_actor_f5_s0_prelim] ep  18 lr 1.00e-03 | train loss 1.274 acc 0.621 | val loss 1.574 UAR 0.492
+[m2_logmel_actor_f5_s0_prelim] ep  19 lr 1.00e-03 | train loss 1.292 acc 0.631 | val loss 1.388 UAR 0.559
+[m2_logmel_actor_f5_s0_prelim] ep  20 lr 1.00e-03 | train loss 1.251 acc 0.617 | val loss 1.378 UAR 0.598 *
+[m2_logmel_actor_f5_s0_prelim] ep  21 lr 1.00e-03 | train loss 1.233 acc 0.665 | val loss 1.336 UAR 0.566
+[m2_logmel_actor_f5_s0_prelim] ep  22 lr 1.00e-03 | train loss 1.214 acc 0.655 | val loss 1.299 UAR 0.605 *
+[m2_logmel_actor_f5_s0_prelim] ep  23 lr 1.00e-03 | train loss 1.212 acc 0.646 | val loss 1.357 UAR 0.559
+[m2_logmel_actor_f5_s0_prelim] ep  24 lr 1.00e-03 | train loss 1.200 acc 0.661 | val loss 1.353 UAR 0.527
+[m2_logmel_actor_f5_s0_prelim] ep  25 lr 1.00e-03 | train loss 1.153 acc 0.685 | val loss 1.265 UAR 0.633 *
+[m2_logmel_actor_f5_s0_prelim] ep  26 lr 1.00e-03 | train loss 1.136 acc 0.707 | val loss 1.399 UAR 0.531
+[m2_logmel_actor_f5_s0_prelim] ep  27 lr 1.00e-03 | train loss 1.115 acc 0.715 | val loss 1.293 UAR 0.598
+[m2_logmel_actor_f5_s0_prelim] ep  28 lr 1.00e-03 | train loss 1.150 acc 0.673 | val loss 1.302 UAR 0.582
+[m2_logmel_actor_f5_s0_prelim] ep  29 lr 1.00e-03 | train loss 1.089 acc 0.722 | val loss 1.275 UAR 0.586
+[m2_logmel_actor_f5_s0_prelim] ep  30 lr 1.00e-03 | train loss 1.105 acc 0.713 | val loss 1.320 UAR 0.586
+[m2_logmel_actor_f5_s0_prelim] ep  31 lr 1.00e-03 | train loss 1.077 acc 0.738 | val loss 1.275 UAR 0.574
+[m2_logmel_actor_f5_s0_prelim] ep  32 lr 5.00e-04 | train loss 1.028 acc 0.753 | val loss 1.264 UAR 0.609
+[m2_logmel_actor_f5_s0_prelim] ep  33 lr 5.00e-04 | train loss 0.975 acc 0.809 | val loss 1.248 UAR 0.637 *
+[m2_logmel_actor_f5_s0_prelim] ep  34 lr 5.00e-04 | train loss 0.980 acc 0.804 | val loss 1.277 UAR 0.574
+[m2_logmel_actor_f5_s0_prelim] ep  35 lr 5.00e-04 | train loss 0.987 acc 0.789 | val loss 1.250 UAR 0.672 *
+[m2_logmel_actor_f5_s0_prelim] ep  36 lr 5.00e-04 | train loss 0.966 acc 0.789 | val loss 1.266 UAR 0.617
+[m2_logmel_actor_f5_s0_prelim] ep  37 lr 5.00e-04 | train loss 0.954 acc 0.811 | val loss 1.229 UAR 0.660
+[m2_logmel_actor_f5_s0_prelim] ep  38 lr 5.00e-04 | train loss 0.959 acc 0.798 | val loss 1.239 UAR 0.648
+[m2_logmel_actor_f5_s0_prelim] ep  39 lr 5.00e-04 | train loss 0.932 acc 0.805 | val loss 1.268 UAR 0.641
+[m2_logmel_actor_f5_s0_prelim] ep  40 lr 5.00e-04 | train loss 0.924 acc 0.812 | val loss 1.257 UAR 0.637
+[m2_logmel_actor_f5_s0_prelim] ep  41 lr 5.00e-04 | train loss 0.948 acc 0.812 | val loss 1.249 UAR 0.641
+[m2_logmel_actor_f5_s0_prelim] ep  42 lr 2.50e-04 | train loss 0.920 acc 0.820 | val loss 1.303 UAR 0.621
+[m2_logmel_actor_f5_s0_prelim] ep  43 lr 2.50e-04 | train loss 0.885 acc 0.843 | val loss 1.275 UAR 0.609
+[m2_logmel_actor_f5_s0_prelim] ep  44 lr 2.50e-04 | train loss 0.871 acc 0.845 | val loss 1.251 UAR 0.629
+[m2_logmel_actor_f5_s0_prelim] ep  45 lr 2.50e-04 | train loss 0.888 acc 0.849 | val loss 1.294 UAR 0.617
+[m2_logmel_actor_f5_s0_prelim] ep  46 lr 2.50e-04 | train loss 0.885 acc 0.832 | val loss 1.282 UAR 0.617
+[m2_logmel_actor_f5_s0_prelim] ep  47 lr 2.50e-04 | train loss 0.876 acc 0.844 | val loss 1.249 UAR 0.605
+[m2_logmel_actor_f5_s0_prelim] ep  48 lr 1.25e-04 | train loss 0.863 acc 0.845 | val loss 1.233 UAR 0.652
+[m2_logmel_actor_f5_s0_prelim] ep  49 lr 1.25e-04 | train loss 0.857 acc 0.839 | val loss 1.253 UAR 0.645
+[m2_logmel_actor_f5_s0_prelim] ep  50 lr 1.25e-04 | train loss 0.851 acc 0.858 | val loss 1.255 UAR 0.621
+   best epoch 35 val UAR 0.6719 | TEST UAR 0.5391 acc 0.5500 F1 0.5427 | 49s
+
+fold  seed  best_epoch  val_uar  test_uar  test_acc  test_macro_f1  train_time_s
+   0     0          43 0.585938  0.628906  0.629167       0.625075          60.0
+   1     0          33 0.703125  0.617188  0.625000       0.615115          47.1
+   2     0          37 0.675781  0.617188  0.633333       0.613699          49.2
+   3     0          36 0.625000  0.605469  0.620833       0.615156          46.8
+   4     0          67 0.632812  0.660156  0.683333       0.656183          79.5
+   5     0          35 0.671875  0.539062  0.550000       0.542710          49.2
+test_uar: 0.6113 ± 0.0400 (n=6)
+test_acc: 0.6236 ± 0.0427 (n=6)
+test_macro_f1: 0.6113 ± 0.0373 (n=6)
+total time 333 s
+
+[exit 0] 335 s

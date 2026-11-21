@@ -1,0 +1,57 @@
+python -u -m src.prepare all
+Downloading https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1
+  -> <repo>\data\raw\Audio_Speech_Actors_01-24.zip
+  1 MB 1%
+  21 MB 10%
+  42 MB 20%
+  63 MB 30%
+  84 MB 40%
+  105 MB 50%
+  126 MB 60%
+  147 MB 70%
+  168 MB 80%
+  189 MB 91%
+Extracting Audio_Speech_Actors_01-24.zip ...
+zip md5 = bc696df654c87fed845eb13823edef8a, size = 208.5 MB
+metadata: 1440 files -> <repo>\data\metadata.csv
+emotion
+neutral       96
+calm         192
+happy        192
+sad          192
+angry        192
+fearful      192
+disgust      192
+surprised    192
+PASS data: exactly 1440 files | n=1440
+PASS data: neutral=96, other emotions=192 | {'neutral': 96, 'calm': 192, 'happy': 192, 'sad': 192, 'angry': 192, 'fearful': 192, 'disgust': 192, 'surprised': 192}
+PASS data: 60 files per actor (24 actors) | [60]
+PASS data: 12 F / 12 M actors | {'M': 12, 'F': 12}
+PASS data: label map fixed (index = code-1) and saved | {'neutral': 0, 'calm': 1, 'happy': 2, 'sad': 3, 'angry': 4, 'fearful': 5, 'disgust': 6, 'surprised': 7}
+
+fold | actors (F/M)
+  0  | 04F, 07M, 14F, 17M
+  1  | 11M, 15M, 18F, 20F
+  2  | 01M, 02F, 21M, 24F
+  3  | 06F, 08F, 09M, 19M
+  4  | 03M, 12F, 16F, 23M
+  5  | 05M, 10F, 13M, 22F
+PASS folds: 6 folds x 4 actors, every actor exactly once | [[4, 7, 14, 17], [11, 15, 18, 20], [1, 2, 21, 24], [6, 8, 9, 19], [3, 12, 16, 23], [5, 10, 13, 22]]
+PASS folds: each fold 2 F + 2 M | [['4F', '7M', '14F', '17M'], ['11M', '15M', '18F', '20F'], ['1M', '2F', '21M', '24F'], ['6F', '8F', '9M', '19M'], ['3M', '12F', '16F', '23M'], ['5M', '10F', '13M', '22F']]
+PASS folds: train/val/test actors pairwise disjoint in every round | 
+PASS folds: sizes 960/240/240 in every round | [[960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240], [960, 240, 240]]
+PASS folds: every actor in test exactly once across 6 rounds | 
+PASS random split: 960/240/240, utterances disjoint | 
+PASS random split: actors ARE shared (leakage present by design) | 24/24 test actors also in train
+PASS random split: stratified by emotion (counts per subset) | {'train': [64, 128, 128, 128, 128, 128, 128, 128], 'val': [16, 32, 32, 32, 32, 32, 32, 32], 'test': [16, 32, 32, 32, 32, 32, 32, 32]}
+[Parallel(n_jobs=-1)]: Using backend LokyBackend with 32 concurrent workers.
+[Parallel(n_jobs=-1)]: Done   8 tasks      | elapsed:   38.0s
+[Parallel(n_jobs=-1)]: Done  98 tasks      | elapsed:   38.8s
+[Parallel(n_jobs=-1)]: Done 224 tasks      | elapsed:   39.4s
+[Parallel(n_jobs=-1)]: Done 386 tasks      | elapsed:   40.0s
+[Parallel(n_jobs=-1)]: Done 752 tasks      | elapsed:   41.7s
+[Parallel(n_jobs=-1)]: Done 1220 tasks      | elapsed:   43.6s
+[Parallel(n_jobs=-1)]: Done 1440 out of 1440 | elapsed:   44.4s finished
+Feature banks written to <repo>\data\cache in 50.5 s (V=4)
+
+[exit 0] 193 s

@@ -1,0 +1,10 @@
+{
+  "max_abs_diff": {
+    "train_loss": 0.0,
+    "val_loss": 0.0,
+    "val_uar": 0.0
+  },
+  "test_uar_a": 0.3515625,
+  "test_uar_b": 0.3515625,
+  "passed": true
+}

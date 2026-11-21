@@ -1,0 +1,12 @@
+# M3 — Transformer encoder from scratch (deliberately small)
+model:
+  name: m3
+  conv_channels: 256      # 2 strided Conv1d (4x time reduction), then Linear -> d_model
+  d_model: 256
+  n_heads: 4
+  n_layers: 4
+  ffn: 512
+  dropout: 0.3
+train:
+  lr: 5.0e-4
+  warmup_epochs: 5        # linear warm-up, then ReduceLROnPlateau (D-07)

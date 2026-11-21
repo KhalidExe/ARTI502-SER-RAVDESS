@@ -1,0 +1,9 @@
+# M2 — 3 x (Conv -> BatchNorm -> ReLU -> MaxPool) -> 1 BiLSTM layer -> attention pooling
+model:
+  name: m2
+  conv_channels: [32, 64, 128]
+  kernel: 3
+  hidden: 128
+  dropout: 0.3
+train:
+  lr: 1.0e-3

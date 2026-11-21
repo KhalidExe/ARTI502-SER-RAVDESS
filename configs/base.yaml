@@ -1,0 +1,56 @@
+# Shared settings for every model. Model files (m1..m4.yaml) override these.
+# NOTE: write floats in scientific notation WITH a dot (1.0e-3, not 1e-3) — YAML 1.1 rule.
+seed_split: 2026          # seed of the actor->fold assignment and of the random split (fixed once)
+
+data:
+  raw_dir: data/raw
+  cache_dir: data/cache
+  zenodo_url: "https://zenodo.org/records/1188976/files/Audio_Speech_Actors_01-24.zip?download=1"
+
+audio:                    # proposal section 7.1
+  sr: 16000               # 48 kHz -> 16 kHz, mono
+  trim_top_db: 30         # leading/trailing silence trim threshold (DECISIONS D-03)
+  peak: 1.0               # peak normalisation target
+
+features:                 # 25 ms Hann window / 10 ms hop at 16 kHz
+  n_fft: 400
+  win_length: 400
+  hop_length: 160
+  n_mels: 64              # primary input of M1-M3
+  fmin: 0.0
+  fmax: 8000.0
+  top_db: 80.0            # dB floor below the max (power_to_db)
+  n_mfcc: 40              # ablation: 40 MFCC + delta + delta-delta = 120 dims
+  mfcc_n_mels: 64
+  delta_width: 9
+
+augment:                  # TRAINING SET ONLY (DECISIONS D-01)
+  enabled: true
+  n_variants: 4           # precomputed waveform-augmented copies per utterance
+  aug_seed: 1234
+  p_variant: 0.8          # per sample per epoch: use a random augmented copy with this probability
+  time_stretch: {p: 0.5, min_rate: 0.9, max_rate: 1.1}
+  pitch_shift: {p: 0.5, max_semitones: 2.0}
+  gain: {p: 0.5, max_db: 6.0}
+  noise: {p: 0.5, min_snr_db: 15.0, max_snr_db: 40.0}
+  specaug: {enabled: true, n_freq_masks: 2, freq_mask_frac: 0.125, n_time_masks: 2, time_mask_max: 20, time_mask_frac: 0.1}
+
+train:                    # proposal Table 4
+  weight_decay: 0.01      # AdamW
+  lr: 1.0e-3
+  head_lr: null
+  batch_size: 32
+  eval_batch_size: 64
+  grad_accum: 1
+  max_epochs: 100
+  patience: 15            # early stopping on validation UAR, best checkpoint restored
+  label_smoothing: 0.1
+  grad_clip: 5.0          # DECISIONS D-05
+  warmup_epochs: 0
+  plateau: {factor: 0.5, patience: 5, min_lr: 1.0e-6}   # ReduceLROnPlateau on val UAR (D-06)
+  amp: none               # none | bf16 | fp16
+  num_workers: 0          # features are in RAM; 0 is fastest and safe on Windows
+  deterministic: true
+  save_checkpoints: true
+  bucket_by_length: false
+  max_seconds: null
