@@ -1,7 +1,8 @@
 # Speech Emotion Recognition on RAVDESS — LSTM vs. Transformer (speaker-independent)
 
 ARTI 502 Deep Learning, Group 1 (IAU, Term 1 2026/27). Code for the group's approved project proposal.
-Repository: https://github.com/KhalidExe/ARTI502-SER-RAVDESS
+Repository: https://github.com/KhalidExe/ARTI502-SER-RAVDESS  
+Final results: commit [`f2d5a1e`](https://github.com/KhalidExe/ARTI502-SER-RAVDESS/tree/f2d5a1e1ef3591e79655a655a5df15065ea0036a) (24 Nov 2026).
 
 > **Status (24 Nov 2026):** final results are tag `main` in `results/runs.csv`: 4 models × 6 actor-wise folds ×
 > 3 seeds with validation-selected hyper-parameters (72 runs), MFCC ablation (18) and leakage diagnostic (9; one
