@@ -1,0 +1,91 @@
+{
+  "_runner": {
+    "pid": 48544,
+    "started": "2026-11-24 12:29:57",
+    "finished": "2026-11-24 17:47:25"
+  },
+  "hp_m1": {
+    "step": 1,
+    "state": "done",
+    "detail": "42/42 search runs, best.json=yes; [verified] 38/38 runs complete",
+    "minutes": 70.3,
+    "finished": "2026-11-24 13:40:15"
+  },
+  "hp_m4": {
+    "step": 2,
+    "state": "done",
+    "detail": "6/6 search runs, best.json=yes; [verified] 6/6 runs complete",
+    "minutes": 28.5,
+    "finished": "2026-11-24 14:08:42"
+  },
+  "checks_m4": {
+    "step": 3,
+    "state": "done",
+    "detail": "31/31 checks passed",
+    "minutes": 1.0,
+    "finished": "2026-11-24 14:09:39"
+  },
+  "main_m1": {
+    "step": 4,
+    "state": "done",
+    "detail": "[verified] 18/18 runs complete (expected 18)",
+    "minutes": 39.4,
+    "finished": "2026-11-24 14:49:04"
+  },
+  "main_m2": {
+    "step": 4,
+    "state": "done",
+    "detail": "[verified] 18/18 runs complete (expected 18)",
+    "minutes": 38.1,
+    "finished": "2026-11-24 15:27:08"
+  },
+  "main_m3": {
+    "step": 4,
+    "state": "done",
+    "detail": "[verified] 18/18 runs complete (expected 18)",
+    "minutes": 4.9,
+    "finished": "2026-11-24 15:32:00"
+  },
+  "main_m4": {
+    "step": 4,
+    "state": "done",
+    "detail": "[verified] 18/18 runs complete (expected 18)",
+    "minutes": 90.4,
+    "finished": "2026-11-24 17:02:22"
+  },
+  "abl_m1_mfcc": {
+    "step": 5,
+    "state": "done",
+    "detail": "[verified] 18/18 runs complete (expected 18)",
+    "minutes": 29.5,
+    "finished": "2026-11-24 17:31:55"
+  },
+  "leak_m1": {
+    "step": 5,
+    "state": "done",
+    "detail": "[verified] 3/3 runs complete (expected 3)",
+    "minutes": 10.2,
+    "finished": "2026-11-24 17:42:09"
+  },
+  "leak_m2": {
+    "step": 5,
+    "state": "done",
+    "detail": "[verified] 3/3 runs complete (expected 3)",
+    "minutes": 3.5,
+    "finished": "2026-11-24 17:45:42"
+  },
+  "leak_m3": {
+    "step": 5,
+    "state": "done",
+    "detail": "[verified] 3/3 runs complete (expected 3)",
+    "minutes": 1.4,
+    "finished": "2026-11-24 17:47:06"
+  },
+  "final_analysis": {
+    "step": 6,
+    "state": "done",
+    "detail": "analysis finished",
+    "minutes": 0.3,
+    "finished": "2026-11-24 17:47:25"
+  }
+}

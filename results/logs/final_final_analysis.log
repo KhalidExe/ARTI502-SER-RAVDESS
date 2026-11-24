@@ -1,0 +1,35 @@
+
+### 2026-11-24 17:47:06 python -u -m src.final_analysis --tag main
+model  features  protocol
+m1     logmel    actor       18
+                 random       3
+       mfcc      actor       18
+m2     logmel    actor       18
+                 random       3
+m3     logmel    actor       18
+                 random       3
+m4     wave      actor       18
+           model features protocol  tag  n_runs  folds  seeds      UAR (%) Accuracy (%) Macro-F1 (%)  val UAR (%)   params  trainable  mean train time (s)  mean best epoch
+   M1 BiLSTM+Att   logmel    actor main      18      6      3 56.10 ± 4.40 57.08 ± 4.97 55.60 ± 4.66 60.63 ± 4.46  2241032    2241032                130.6             42.1
+   M1 BiLSTM+Att   logmel   random main       3      1      3 76.69 ± 2.22 76.94 ± 2.29 76.27 ± 2.43 84.64 ± 1.85  2241032    2241032                201.3             71.0
+   M1 BiLSTM+Att     mfcc    actor main      18      6      3 56.79 ± 2.51 57.43 ± 3.17 55.89 ± 3.18 60.09 ± 3.10  2355720    2355720                 97.4             26.3
+   M2 CNN-BiLSTM   logmel    actor main      18      6      3 63.72 ± 4.94 64.38 ± 5.04 63.22 ± 4.99 66.78 ± 4.79  2723048    2723048                 54.9             40.7
+   M2 CNN-BiLSTM   logmel   random main       3      1      3 75.26 ± 3.41 75.56 ± 3.59 74.53 ± 3.65 81.77 ± 3.32  2723048    2723048                 70.0             54.7
+  M3 Transformer   logmel    actor main      18      6      3 53.73 ± 4.33 55.23 ± 4.27 52.89 ± 4.28 57.77 ± 4.51  1368840    1368840                 16.0             29.6
+  M3 Transformer   logmel   random main       3      1      3 70.83 ± 5.49 71.39 ± 5.28 70.13 ± 5.71 80.60 ± 2.60  1368840    1368840                 27.3             57.3
+M4 wav2vec2-base     wave    actor main      18      6      3 75.00 ± 4.81 75.60 ± 4.61 74.62 ± 4.87 79.08 ± 3.22 94377864   90177416                298.0             22.3
+           model features  n_runs  mean UAR (%)  std over all runs (pts)  std across folds, seed-averaged (pts)  mean std across seeds within a fold (pts)  min fold UAR (%)  max fold UAR (%)
+   M1 BiLSTM+Att   logmel      18         56.10                     4.40                                   3.79                                       2.75             50.39             60.03
+   M1 BiLSTM+Att     mfcc      18         56.79                     2.51                                   0.96                                       2.41             55.34             57.81
+   M2 CNN-BiLSTM   logmel      18         63.72                     4.94                                   4.75                                       2.35             55.99             68.75
+  M3 Transformer   logmel      18         53.73                     4.33                                   4.08                                       2.26             48.31             60.29
+M4 wav2vec2-base     wave      18         75.00                     4.81                                   4.58                                       2.23             70.83             83.46
+<venv>/site-packages\nbformat\validator.py:434: MissingIDFieldWarning: Cell is missing an id field, this will become a hard error in future nbformat versions. You may want to use `normalize()` on your notebooks before validations (available since nbformat 5.1.4). Previous versions of nbformat are fixing this issue transparently, and will stop doing so in the future.
+  _validate(nbdict, ref, version, version_minor, relax_add_props)
+<venv>/site-packages\zmq\_future.py:718: RuntimeWarning: Proactor event loop does not implement add_reader family of methods required for zmq. Registering an additional selector thread for add_reader support via tornado. Use `asyncio.set_event_loop_policy(WindowsSelectorEventLoopPolicy())` to avoid this warning.
+  self._get_loop()
+[IPKernelApp] WARNING | Kernel is running over TCP without encryption. All communication (including code and outputs) is sent in plain text and is susceptible to eavesdropping. Use IPC transport or launch with kernel manager-provisioned CurveZMQ keys to enable transport encryption.
+notebook 03 executed
+[done] exit code 0
+
+[exit 0] 19 s

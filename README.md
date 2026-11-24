@@ -3,10 +3,11 @@
 ARTI 502 Deep Learning, Group 1 (IAU, Term 1 2026/27). Code for the group's approved project proposal.
 Repository: https://github.com/KhalidExe/ARTI502-SER-RAVDESS
 
-> **Status (21 Nov 2026):** all results in `results/` are **preliminary**: 1 seed, default hyper-parameters
-> (not tuned), tag `prelim`. The leakage (random-split) numbers are a single run per model (diagnostic only).
-> `results/hparam_search/` is a **partial snapshot**: M3 and M2 complete, M1 in progress, M4 not started.
-> It will be updated, together with the 3-seed tuned protocol, before the final report.
+> **Status (24 Nov 2026):** final results are tag `main` in `results/runs.csv`: 4 models × 6 actor-wise folds ×
+> 3 seeds with validation-selected hyper-parameters (72 runs), MFCC ablation (18) and leakage diagnostic (9; one
+> random split × 3 seeds, diagnostic only). Tables: `results/tables/*_main.*`; figures: `results/figures/`.
+> Tag `prelim` (1 seed, default hyper-parameters, 21 Nov) is kept only for the progress report.
+> Hyper-parameter search is complete: M1–M3 on 6 rounds, M4 on rounds 0 and 3 (`results/hparam_search/`).
 
 Models (all share the same folds, preprocessing and evaluation code):
 
@@ -123,7 +124,7 @@ Add `--skip-existing` to resume an interrupted batch. Overrides: `--override tra
 ├── scripts/            run_progress_tonight.ps1 (Windows batch), scrub_paths.py (pre-push path scrubbing)
 ├── splits/             folds.json, random_split.json, label_map.json (fixed once, committed)
 ├── results/            runs.csv, predictions/, curves/, runs/, tables/, figures/, checks/, env/, logs/,
-│                       hparam_search/ (PARTIAL snapshot: M3 and M2 done, M1 in progress; to be updated)
+│                       hparam_search/ (complete; final.json = config used, D-20)
 ├── data/, checkpoints/ (git-ignored)
 └── DECISIONS.md
 ```

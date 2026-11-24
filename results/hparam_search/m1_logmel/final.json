@@ -1,0 +1,42 @@
+{
+  "model": "m1",
+  "features": "logmel",
+  "rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    0
+  ],
+  "combined_overrides": {
+    "train.lr": 0.002,
+    "model.dropout": 0.3,
+    "model.hidden": 256
+  },
+  "combined_val_uar": 0.6028645833333334,
+  "combined_per_round": [
+    0.5703125,
+    0.640625,
+    0.6484375,
+    0.62890625,
+    0.546875,
+    0.58203125
+  ],
+  "default_val_uar": 0.583984375,
+  "best_single_factor": {
+    "model.hidden": 256
+  },
+  "best_single_factor_val_uar": 0.619140625,
+  "choice": "combined",
+  "overrides": {
+    "train.lr": 0.002,
+    "model.dropout": 0.3,
+    "model.hidden": 256
+  },
+  "rule": "combined >= default -> combined; else best single-factor setting (validation UAR only)",
+  "created": "2026-11-24 15:02:53"
+}

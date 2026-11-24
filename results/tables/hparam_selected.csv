@@ -1,0 +1,12 @@
+model,hyper-parameter,values searched,default,selected (val UAR),val UAR default (%),val UAR selected (%),rounds x seeds
+m1_logmel,train.lr,"0.0005, 0.001, 0.002",0.001,0.002,58.4,58.98,6 x 1
+m1_logmel,model.dropout,"0.2, 0.3, 0.5",0.3,0.3,58.4,58.4,6 x 1
+m1_logmel,model.hidden,"64, 128, 256",128,256,58.4,61.91,6 x 1
+m2_logmel,train.lr,"0.0005, 0.001, 0.002",0.001,0.001,64.91,64.91,6 x 1
+m2_logmel,model.dropout,"0.2, 0.3, 0.5",0.3,0.2,64.91,64.97,6 x 1
+m2_logmel,model.hidden,"64, 128, 256",128,256,64.91,65.69,6 x 1
+m3_logmel,train.lr,"0.00025, 0.0005, 0.001",0.0005,0.001,57.1,57.62,6 x 1
+m3_logmel,model.dropout,"0.1, 0.2, 0.3",0.3,0.2,57.1,57.16,6 x 1
+m3_logmel,model.n_layers,"2, 4, 6",4,2,57.1,57.94,6 x 1
+m3_logmel,model.n_heads,"2, 4, 8",4,8,57.1,57.68,6 x 1
+m4_wave,train.lr,"1e-05, 3e-05, 5e-05",3e-05,5e-05,80.86,83.79,2 x 1

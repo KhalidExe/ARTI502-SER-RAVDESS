@@ -90,7 +90,7 @@ def plot_confusion(cm: np.ndarray, title: str, fname: str):
     return fig
 
 
-def confusion_figures(runs: pd.DataFrame, results_dir=RES) -> dict:
+def confusion_figures(runs: pd.DataFrame, results_dir=RES, name="top_confusions") -> dict:
     """Pooled (all folds x seeds) row-normalised confusion matrix per group + top confusions."""
     out = {}
     for (m, f, p, t), g in runs.groupby(["model", "features", "protocol", "tag"]):
@@ -104,7 +104,7 @@ def confusion_figures(runs: pd.DataFrame, results_dir=RES) -> dict:
                        f"cm_{key}.png")
         out[key] = {"cm": cm, "top": evaluate.top_confusions(cm)}
     tops = [{"group": k, **r} for k, v in out.items() for r in v["top"]]
-    pd.DataFrame(tops).to_csv(utils.ensure_dir(TAB) / "top_confusions.csv", index=False)
+    pd.DataFrame(tops).to_csv(utils.ensure_dir(TAB) / f"{name}.csv", index=False)
     return out
 
 
@@ -151,6 +151,15 @@ def stats_tests(runs: pd.DataFrame, tag="main") -> pd.DataFrame:
             res = evaluate.compare_runs(r, {"model": ma, "features": fa}, {"model": mb, "features": fb}, level=level)
             rows.append({"A": f"{ma}/{fa}", "B": f"{mb}/{fb}", **res})
     df = pd.DataFrame(rows)
+    if len(df):  # Holm-Bonferroni adjustment over the pairwise comparisons, separately per level and test
+        for col in ("t_p", "wilcoxon_p"):
+            df[col + "_holm"] = np.nan
+            for lvl, g in df.groupby("level"):
+                order = g[col].sort_values().index
+                m, running = len(order), 0.0
+                for i, ix in enumerate(order):
+                    running = max(running, min(1.0, (m - i) * df.at[ix, col]))
+                    df.at[ix, col + "_holm"] = running
     df.to_csv(utils.ensure_dir(TAB) / f"stats_tests_{tag}.csv", index=False)
     return df
 
@@ -204,20 +213,26 @@ def hparam_plots() -> pd.DataFrame:
             g = s[s.factor == fac].copy()
             g["v"] = pd.to_numeric(g["value"], errors="coerce")
             g = g.sort_values("v").reset_index(drop=True)
-            labels = [str(v) for v in g["value"]]
+            labels = [_label(v) for v in g["value"]]
             fig, ax = plt.subplots(figsize=(4.2, 3.2))
-            if raw is not None:  # per-round lines
-                default_val = g.loc[g.is_default, "value"]
-                for r, gr in raw.groupby("round"):
+            if raw is not None:  # per-round lines (values matched numerically: "256" == "256.0")
+                rf = raw[raw.factor == fac].copy()
+                rf["v"] = pd.to_numeric(rf["value"].map(lambda x: json.loads(x) if x not in ("", "null") else None),
+                                        errors="coerce")
+                for k, (r, gr) in enumerate(raw.groupby("round")):
                     ys = []
-                    for v, isd in zip(g["value"], g["is_default"]):
-                        sel = gr[gr.factor == "default"] if isd else gr[(gr.factor == fac) & (gr.value == json.dumps(_num(v)))]
+                    for v, isd in zip(g["v"], g["is_default"]):
+                        if str(isd) == "True":
+                            sel = gr[gr.factor == "default"]
+                        else:
+                            sel = rf[(rf["round"] == r) & np.isclose(rf["v"], v)]
                         ys.append(100 * sel["val_uar"].mean() if len(sel) else np.nan)
-                    ax.plot(range(len(g)), ys, color="grey", alpha=0.35, lw=0.8)
+                    ax.plot(range(len(g)), ys, color="grey", alpha=0.35, lw=0.8,
+                            label="individual rounds" if k == 0 else None)
             ax.errorbar(range(len(g)), 100 * g["val_uar_mean"], yerr=100 * g["val_uar_std"].fillna(0),
                         marker="o", capsize=3, lw=2, color="#2E74B5", label="mean ± std over rounds")
             for i, isd in enumerate(g["is_default"]):
-                if isd:
+                if str(isd) == "True":
                     ax.axvline(i, ls=":", color="black", lw=0.8)
             ax.set_xticks(range(len(g)), labels)
             ax.set_xlabel(f"{fac}  (dotted = default)")
@@ -234,6 +249,15 @@ def hparam_plots() -> pd.DataFrame:
     df = pd.DataFrame(best_rows)
     df.to_csv(utils.ensure_dir(TAB) / "hparam_best.csv", index=False)
     return df
+
+
+def _label(v):
+    """Tick label: '64.0' -> '64', '0.001' -> '0.001', '5e-05' -> '5e-05'."""
+    try:
+        f = float(v)
+    except (TypeError, ValueError):
+        return str(v)
+    return str(int(f)) if f.is_integer() and abs(f) >= 1 else f"{f:g}"
 
 
 def _num(v):

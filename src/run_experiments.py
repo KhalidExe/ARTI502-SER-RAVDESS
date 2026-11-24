@@ -16,7 +16,9 @@ Examples
 from __future__ import annotations
 
 import argparse
+import os
 import time
+from pathlib import Path
 
 import pandas as pd
 
@@ -38,6 +40,20 @@ def main():
     ap.add_argument("--skip-existing", action="store_true")
     ap.add_argument("--no-checkpoint", action="store_true")
     a = ap.parse_args()
+
+    # Pause switch (results/logs/PAUSE containing "pause"): wait here, before any GPU work, until it says "resume".
+    pause = utils.RESULTS_DIR / "logs" / "PAUSE"
+    if os.environ.get("IGNORE_PAUSE") != "1" and pause.exists() and pause.read_text(encoding="utf-8").strip() == "pause":
+        print(f"{time.strftime('%H:%M:%S')} paused (results/logs/PAUSE); waiting for 'resume' ...", flush=True)
+        while pause.exists() and pause.read_text(encoding="utf-8").strip() == "pause":
+            time.sleep(30)
+        print(f"{time.strftime('%H:%M:%S')} resumed", flush=True)
+    # D-20: if the combined-config validation check wrote final.json next to best.json, use it.
+    if a.hparams and Path(a.hparams).name == "best.json":
+        final = utils.resolve(a.hparams).with_name("final.json")
+        if final.exists():
+            print(f"using {final.relative_to(utils.ROOT).as_posix()} (D-20 combined-config check) instead of best.json")
+            a.hparams = str(final)
 
     features = a.features or utils.MODEL_FEATURES[a.model][0]
     if features not in utils.MODEL_FEATURES[a.model]:

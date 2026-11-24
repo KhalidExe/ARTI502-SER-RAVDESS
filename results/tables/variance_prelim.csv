@@ -1,0 +1,6 @@
+model,features,n_runs,mean UAR (%),std over all runs (pts),"std across folds, seed-averaged (pts)",mean std across seeds within a fold (pts),min fold UAR (%),max fold UAR (%)
+M1 BiLSTM+Att,logmel,6,54.69,4.83,4.83,,50.0,63.28
+M1 BiLSTM+Att,mfcc,6,51.69,1.69,1.69,,49.61,54.3
+M2 CNN-BiLSTM,logmel,6,61.13,4.0,4.0,,53.91,66.02
+M3 Transformer,logmel,6,53.65,6.14,6.14,,46.48,63.67
+M4 wav2vec2-base,wave,6,74.09,4.38,4.38,,68.75,81.25

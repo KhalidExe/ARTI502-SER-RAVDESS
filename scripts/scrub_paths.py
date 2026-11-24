@@ -77,10 +77,8 @@ def main():
     pats = build_patterns(repo_root)
     changed, left = 0, {}
     for f in iter_files(root):
-        try:
-            s = f.read_text(encoding="utf-8")
-        except UnicodeDecodeError:
-            continue
+        # surrogateescape: logs written by Windows Python may be cp1252, not UTF-8 -> never skip a file
+        s = f.read_bytes().decode("utf-8", errors="surrogateescape")
         new = s
         for pat, rep in pats:
             new = pat.sub(rep, new)
@@ -88,7 +86,7 @@ def main():
             if a.check:
                 left[str(f.relative_to(root))] = sum(len(p.findall(s)) for p, _ in pats)
             else:
-                f.write_text(new, encoding="utf-8")
+                f.write_bytes(new.encode("utf-8", errors="surrogateescape"))
                 changed += 1
     if a.check:
         for k, v in left.items():

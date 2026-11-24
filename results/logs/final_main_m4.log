@@ -1,0 +1,868 @@
+
+### 2026-11-24 15:32:00 python -u -m src.run_experiments --model m4 --seeds 0,1,2 --tag main --skip-existing --hparams results/hparam_search/m4_wave/best.json --folds 0-5
+W1124 15:32:05.487000 48232 Lib\site-packages\torch\distributed\elastic\multiprocessing\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 35167.82it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f0_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f0_s0_main] ep   1 lr 5.00e-05 | train loss 2.054 acc 0.177 | val loss 1.962 UAR 0.199 *
+[m4_wave_actor_f0_s0_main] ep   2 lr 5.00e-05 | train loss 1.745 acc 0.389 | val loss 1.497 UAR 0.488 *
+[m4_wave_actor_f0_s0_main] ep   3 lr 5.00e-05 | train loss 1.337 acc 0.586 | val loss 1.255 UAR 0.582 *
+[m4_wave_actor_f0_s0_main] ep   4 lr 5.00e-05 | train loss 1.139 acc 0.682 | val loss 1.176 UAR 0.605 *
+[m4_wave_actor_f0_s0_main] ep   5 lr 5.00e-05 | train loss 0.999 acc 0.749 | val loss 1.154 UAR 0.637 *
+[m4_wave_actor_f0_s0_main] ep   6 lr 5.00e-05 | train loss 0.956 acc 0.778 | val loss 1.141 UAR 0.660 *
+[m4_wave_actor_f0_s0_main] ep   7 lr 5.00e-05 | train loss 0.797 acc 0.856 | val loss 1.144 UAR 0.715 *
+[m4_wave_actor_f0_s0_main] ep   8 lr 5.00e-05 | train loss 0.748 acc 0.874 | val loss 1.123 UAR 0.703
+[m4_wave_actor_f0_s0_main] ep   9 lr 5.00e-05 | train loss 0.722 acc 0.887 | val loss 1.236 UAR 0.684
+[m4_wave_actor_f0_s0_main] ep  10 lr 5.00e-05 | train loss 0.725 acc 0.895 | val loss 1.215 UAR 0.723 *
+[m4_wave_actor_f0_s0_main] ep  11 lr 5.00e-05 | train loss 0.682 acc 0.906 | val loss 1.149 UAR 0.723
+[m4_wave_actor_f0_s0_main] ep  12 lr 5.00e-05 | train loss 0.675 acc 0.910 | val loss 1.143 UAR 0.711
+[m4_wave_actor_f0_s0_main] ep  13 lr 5.00e-05 | train loss 0.655 acc 0.915 | val loss 1.280 UAR 0.668
+[m4_wave_actor_f0_s0_main] ep  14 lr 5.00e-05 | train loss 0.639 acc 0.930 | val loss 1.236 UAR 0.715
+[m4_wave_actor_f0_s0_main] ep  15 lr 5.00e-05 | train loss 0.596 acc 0.944 | val loss 1.400 UAR 0.672
+[m4_wave_actor_f0_s0_main] ep  16 lr 5.00e-05 | train loss 0.688 acc 0.905 | val loss 1.236 UAR 0.680
+[m4_wave_actor_f0_s0_main] ep  17 lr 2.50e-05 | train loss 0.575 acc 0.956 | val loss 1.207 UAR 0.715
+[m4_wave_actor_f0_s0_main] ep  18 lr 2.50e-05 | train loss 0.542 acc 0.968 | val loss 1.161 UAR 0.754 *
+[m4_wave_actor_f0_s0_main] ep  19 lr 2.50e-05 | train loss 0.540 acc 0.970 | val loss 1.154 UAR 0.758 *
+[m4_wave_actor_f0_s0_main] ep  20 lr 2.50e-05 | train loss 0.524 acc 0.977 | val loss 1.127 UAR 0.781 *
+[m4_wave_actor_f0_s0_main] ep  21 lr 2.50e-05 | train loss 0.526 acc 0.972 | val loss 1.161 UAR 0.750
+[m4_wave_actor_f0_s0_main] ep  22 lr 2.50e-05 | train loss 0.518 acc 0.978 | val loss 1.187 UAR 0.727
+[m4_wave_actor_f0_s0_main] ep  23 lr 2.50e-05 | train loss 0.509 acc 0.985 | val loss 1.110 UAR 0.766
+[m4_wave_actor_f0_s0_main] ep  24 lr 2.50e-05 | train loss 0.500 acc 0.988 | val loss 1.161 UAR 0.734
+[m4_wave_actor_f0_s0_main] ep  25 lr 2.50e-05 | train loss 0.511 acc 0.981 | val loss 1.163 UAR 0.758
+[m4_wave_actor_f0_s0_main] ep  26 lr 2.50e-05 | train loss 0.512 acc 0.981 | val loss 1.228 UAR 0.742
+[m4_wave_actor_f0_s0_main] ep  27 lr 1.25e-05 | train loss 0.499 acc 0.989 | val loss 1.240 UAR 0.723
+[m4_wave_actor_f0_s0_main] ep  28 lr 1.25e-05 | train loss 0.493 acc 0.991 | val loss 1.201 UAR 0.746
+[m4_wave_actor_f0_s0_main] ep  29 lr 1.25e-05 | train loss 0.482 acc 0.996 | val loss 1.244 UAR 0.734
+[m4_wave_actor_f0_s0_main] ep  30 lr 1.25e-05 | train loss 0.490 acc 0.991 | val loss 1.205 UAR 0.750
+   best epoch 20 val UAR 0.7812 | TEST UAR 0.7500 acc 0.7667 F1 0.7469 | 316s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 26373.77it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f0_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f0_s1_main] ep   1 lr 5.00e-05 | train loss 2.032 acc 0.197 | val loss 2.048 UAR 0.168 *
+[m4_wave_actor_f0_s1_main] ep   2 lr 5.00e-05 | train loss 1.797 acc 0.353 | val loss 1.705 UAR 0.332 *
+[m4_wave_actor_f0_s1_main] ep   3 lr 5.00e-05 | train loss 1.482 acc 0.525 | val loss 1.497 UAR 0.449 *
+[m4_wave_actor_f0_s1_main] ep   4 lr 5.00e-05 | train loss 1.214 acc 0.660 | val loss 1.333 UAR 0.559 *
+[m4_wave_actor_f0_s1_main] ep   5 lr 5.00e-05 | train loss 1.014 acc 0.742 | val loss 1.281 UAR 0.625 *
+[m4_wave_actor_f0_s1_main] ep   6 lr 5.00e-05 | train loss 0.943 acc 0.786 | val loss 1.249 UAR 0.633 *
+[m4_wave_actor_f0_s1_main] ep   7 lr 5.00e-05 | train loss 0.861 acc 0.815 | val loss 1.156 UAR 0.688 *
+[m4_wave_actor_f0_s1_main] ep   8 lr 5.00e-05 | train loss 0.810 acc 0.840 | val loss 1.298 UAR 0.645
+[m4_wave_actor_f0_s1_main] ep   9 lr 5.00e-05 | train loss 0.774 acc 0.870 | val loss 1.248 UAR 0.676
+[m4_wave_actor_f0_s1_main] ep  10 lr 5.00e-05 | train loss 0.721 acc 0.885 | val loss 1.065 UAR 0.738 *
+[m4_wave_actor_f0_s1_main] ep  11 lr 5.00e-05 | train loss 0.669 acc 0.912 | val loss 1.366 UAR 0.695
+[m4_wave_actor_f0_s1_main] ep  12 lr 5.00e-05 | train loss 0.656 acc 0.916 | val loss 1.080 UAR 0.754 *
+[m4_wave_actor_f0_s1_main] ep  13 lr 5.00e-05 | train loss 0.603 acc 0.942 | val loss 1.313 UAR 0.684
+[m4_wave_actor_f0_s1_main] ep  14 lr 5.00e-05 | train loss 0.635 acc 0.934 | val loss 1.176 UAR 0.699
+[m4_wave_actor_f0_s1_main] ep  15 lr 5.00e-05 | train loss 0.628 acc 0.924 | val loss 1.174 UAR 0.730
+[m4_wave_actor_f0_s1_main] ep  16 lr 5.00e-05 | train loss 0.668 acc 0.915 | val loss 1.277 UAR 0.684
+[m4_wave_actor_f0_s1_main] ep  17 lr 5.00e-05 | train loss 0.593 acc 0.948 | val loss 1.390 UAR 0.684
+[m4_wave_actor_f0_s1_main] ep  18 lr 5.00e-05 | train loss 0.648 acc 0.925 | val loss 1.193 UAR 0.730
+[m4_wave_actor_f0_s1_main] ep  19 lr 2.50e-05 | train loss 0.581 acc 0.960 | val loss 1.098 UAR 0.766 *
+[m4_wave_actor_f0_s1_main] ep  20 lr 2.50e-05 | train loss 0.534 acc 0.973 | val loss 1.179 UAR 0.715
+[m4_wave_actor_f0_s1_main] ep  21 lr 2.50e-05 | train loss 0.521 acc 0.976 | val loss 1.175 UAR 0.738
+[m4_wave_actor_f0_s1_main] ep  22 lr 2.50e-05 | train loss 0.534 acc 0.974 | val loss 1.438 UAR 0.648
+[m4_wave_actor_f0_s1_main] ep  23 lr 2.50e-05 | train loss 0.524 acc 0.973 | val loss 1.356 UAR 0.684
+[m4_wave_actor_f0_s1_main] ep  24 lr 2.50e-05 | train loss 0.496 acc 0.992 | val loss 1.149 UAR 0.754
+[m4_wave_actor_f0_s1_main] ep  25 lr 2.50e-05 | train loss 0.527 acc 0.977 | val loss 1.259 UAR 0.711
+[m4_wave_actor_f0_s1_main] ep  26 lr 1.25e-05 | train loss 0.498 acc 0.991 | val loss 1.163 UAR 0.766
+[m4_wave_actor_f0_s1_main] ep  27 lr 1.25e-05 | train loss 0.491 acc 0.992 | val loss 1.217 UAR 0.730
+[m4_wave_actor_f0_s1_main] ep  28 lr 1.25e-05 | train loss 0.480 acc 0.996 | val loss 1.179 UAR 0.750
+[m4_wave_actor_f0_s1_main] ep  29 lr 1.25e-05 | train loss 0.488 acc 0.992 | val loss 1.255 UAR 0.715
+[m4_wave_actor_f0_s1_main] ep  30 lr 1.25e-05 | train loss 0.488 acc 0.992 | val loss 1.201 UAR 0.742
+   best epoch 19 val UAR 0.7656 | TEST UAR 0.7109 acc 0.7167 F1 0.6954 | 309s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 29714.88it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f0_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f0_s2_main] ep   1 lr 5.00e-05 | train loss 2.038 acc 0.189 | val loss 1.970 UAR 0.215 *
+[m4_wave_actor_f0_s2_main] ep   2 lr 5.00e-05 | train loss 1.801 acc 0.342 | val loss 1.748 UAR 0.402 *
+[m4_wave_actor_f0_s2_main] ep   3 lr 5.00e-05 | train loss 1.447 acc 0.555 | val loss 1.343 UAR 0.551 *
+[m4_wave_actor_f0_s2_main] ep   4 lr 5.00e-05 | train loss 1.203 acc 0.662 | val loss 1.251 UAR 0.602 *
+[m4_wave_actor_f0_s2_main] ep   5 lr 5.00e-05 | train loss 1.067 acc 0.722 | val loss 1.127 UAR 0.676 *
+[m4_wave_actor_f0_s2_main] ep   6 lr 5.00e-05 | train loss 0.972 acc 0.765 | val loss 1.205 UAR 0.652
+[m4_wave_actor_f0_s2_main] ep   7 lr 5.00e-05 | train loss 0.896 acc 0.796 | val loss 1.130 UAR 0.711 *
+[m4_wave_actor_f0_s2_main] ep   8 lr 5.00e-05 | train loss 0.763 acc 0.878 | val loss 1.273 UAR 0.645
+[m4_wave_actor_f0_s2_main] ep   9 lr 5.00e-05 | train loss 0.716 acc 0.891 | val loss 1.143 UAR 0.707
+[m4_wave_actor_f0_s2_main] ep  10 lr 5.00e-05 | train loss 0.708 acc 0.891 | val loss 1.230 UAR 0.688
+[m4_wave_actor_f0_s2_main] ep  11 lr 5.00e-05 | train loss 0.670 acc 0.909 | val loss 1.221 UAR 0.676
+[m4_wave_actor_f0_s2_main] ep  12 lr 5.00e-05 | train loss 0.632 acc 0.929 | val loss 1.287 UAR 0.664
+[m4_wave_actor_f0_s2_main] ep  13 lr 5.00e-05 | train loss 0.636 acc 0.921 | val loss 1.181 UAR 0.707
+[m4_wave_actor_f0_s2_main] ep  14 lr 2.50e-05 | train loss 0.565 acc 0.961 | val loss 1.115 UAR 0.734 *
+[m4_wave_actor_f0_s2_main] ep  15 lr 2.50e-05 | train loss 0.563 acc 0.961 | val loss 1.120 UAR 0.746 *
+[m4_wave_actor_f0_s2_main] ep  16 lr 2.50e-05 | train loss 0.545 acc 0.968 | val loss 1.346 UAR 0.676
+[m4_wave_actor_f0_s2_main] ep  17 lr 2.50e-05 | train loss 0.546 acc 0.972 | val loss 1.322 UAR 0.684
+[m4_wave_actor_f0_s2_main] ep  18 lr 2.50e-05 | train loss 0.547 acc 0.967 | val loss 1.161 UAR 0.727
+[m4_wave_actor_f0_s2_main] ep  19 lr 2.50e-05 | train loss 0.541 acc 0.965 | val loss 1.193 UAR 0.695
+[m4_wave_actor_f0_s2_main] ep  20 lr 2.50e-05 | train loss 0.525 acc 0.973 | val loss 1.318 UAR 0.680
+[m4_wave_actor_f0_s2_main] ep  21 lr 2.50e-05 | train loss 0.526 acc 0.979 | val loss 1.353 UAR 0.656
+[m4_wave_actor_f0_s2_main] ep  22 lr 1.25e-05 | train loss 0.504 acc 0.989 | val loss 1.154 UAR 0.727
+[m4_wave_actor_f0_s2_main] ep  23 lr 1.25e-05 | train loss 0.494 acc 0.992 | val loss 1.174 UAR 0.734
+[m4_wave_actor_f0_s2_main] ep  24 lr 1.25e-05 | train loss 0.506 acc 0.986 | val loss 1.221 UAR 0.707
+[m4_wave_actor_f0_s2_main] ep  25 lr 1.25e-05 | train loss 0.503 acc 0.984 | val loss 1.163 UAR 0.742
+[m4_wave_actor_f0_s2_main] ep  26 lr 1.25e-05 | train loss 0.505 acc 0.981 | val loss 1.142 UAR 0.750 *
+[m4_wave_actor_f0_s2_main] ep  27 lr 1.25e-05 | train loss 0.505 acc 0.983 | val loss 1.225 UAR 0.727
+[m4_wave_actor_f0_s2_main] ep  28 lr 1.25e-05 | train loss 0.492 acc 0.993 | val loss 1.189 UAR 0.742
+[m4_wave_actor_f0_s2_main] ep  29 lr 1.25e-05 | train loss 0.490 acc 0.991 | val loss 1.210 UAR 0.723
+[m4_wave_actor_f0_s2_main] ep  30 lr 1.25e-05 | train loss 0.487 acc 0.992 | val loss 1.113 UAR 0.762 *
+   best epoch 30 val UAR 0.7617 | TEST UAR 0.7617 acc 0.7750 F1 0.7598 | 302s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 21044.33it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f1_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f1_s0_main] ep   1 lr 5.00e-05 | train loss 2.048 acc 0.160 | val loss 1.932 UAR 0.316 *
+[m4_wave_actor_f1_s0_main] ep   2 lr 5.00e-05 | train loss 1.727 acc 0.408 | val loss 1.451 UAR 0.535 *
+[m4_wave_actor_f1_s0_main] ep   3 lr 5.00e-05 | train loss 1.340 acc 0.571 | val loss 1.450 UAR 0.484
+[m4_wave_actor_f1_s0_main] ep   4 lr 5.00e-05 | train loss 1.167 acc 0.668 | val loss 1.287 UAR 0.590 *
+[m4_wave_actor_f1_s0_main] ep   5 lr 5.00e-05 | train loss 1.002 acc 0.740 | val loss 1.449 UAR 0.586
+[m4_wave_actor_f1_s0_main] ep   6 lr 5.00e-05 | train loss 0.914 acc 0.800 | val loss 1.391 UAR 0.629 *
+[m4_wave_actor_f1_s0_main] ep   7 lr 5.00e-05 | train loss 0.919 acc 0.778 | val loss 1.103 UAR 0.691 *
+[m4_wave_actor_f1_s0_main] ep   8 lr 5.00e-05 | train loss 0.789 acc 0.857 | val loss 1.403 UAR 0.625
+[m4_wave_actor_f1_s0_main] ep   9 lr 5.00e-05 | train loss 0.751 acc 0.869 | val loss 1.457 UAR 0.629
+[m4_wave_actor_f1_s0_main] ep  10 lr 5.00e-05 | train loss 0.713 acc 0.894 | val loss 1.228 UAR 0.707 *
+[m4_wave_actor_f1_s0_main] ep  11 lr 5.00e-05 | train loss 0.734 acc 0.881 | val loss 1.488 UAR 0.633
+[m4_wave_actor_f1_s0_main] ep  12 lr 5.00e-05 | train loss 0.669 acc 0.919 | val loss 1.470 UAR 0.648
+[m4_wave_actor_f1_s0_main] ep  13 lr 5.00e-05 | train loss 0.666 acc 0.915 | val loss 1.688 UAR 0.629
+[m4_wave_actor_f1_s0_main] ep  14 lr 5.00e-05 | train loss 0.653 acc 0.922 | val loss 1.362 UAR 0.727 *
+[m4_wave_actor_f1_s0_main] ep  15 lr 5.00e-05 | train loss 0.651 acc 0.925 | val loss 1.417 UAR 0.727
+[m4_wave_actor_f1_s0_main] ep  16 lr 5.00e-05 | train loss 0.637 acc 0.920 | val loss 1.438 UAR 0.699
+[m4_wave_actor_f1_s0_main] ep  17 lr 5.00e-05 | train loss 0.627 acc 0.928 | val loss 1.354 UAR 0.699
+[m4_wave_actor_f1_s0_main] ep  18 lr 5.00e-05 | train loss 0.627 acc 0.933 | val loss 1.730 UAR 0.594
+[m4_wave_actor_f1_s0_main] ep  19 lr 5.00e-05 | train loss 0.603 acc 0.948 | val loss 1.234 UAR 0.719
+[m4_wave_actor_f1_s0_main] ep  20 lr 5.00e-05 | train loss 0.620 acc 0.932 | val loss 1.223 UAR 0.770 *
+[m4_wave_actor_f1_s0_main] ep  21 lr 5.00e-05 | train loss 0.615 acc 0.939 | val loss 1.364 UAR 0.711
+[m4_wave_actor_f1_s0_main] ep  22 lr 5.00e-05 | train loss 0.590 acc 0.941 | val loss 1.332 UAR 0.730
+[m4_wave_actor_f1_s0_main] ep  23 lr 5.00e-05 | train loss 0.543 acc 0.970 | val loss 1.393 UAR 0.695
+[m4_wave_actor_f1_s0_main] ep  24 lr 5.00e-05 | train loss 0.563 acc 0.961 | val loss 1.221 UAR 0.750
+[m4_wave_actor_f1_s0_main] ep  25 lr 5.00e-05 | train loss 0.544 acc 0.968 | val loss 1.269 UAR 0.730
+[m4_wave_actor_f1_s0_main] ep  26 lr 5.00e-05 | train loss 0.552 acc 0.961 | val loss 1.206 UAR 0.738
+[m4_wave_actor_f1_s0_main] ep  27 lr 2.50e-05 | train loss 0.542 acc 0.968 | val loss 1.284 UAR 0.715
+[m4_wave_actor_f1_s0_main] ep  28 lr 2.50e-05 | train loss 0.498 acc 0.983 | val loss 1.392 UAR 0.688
+[m4_wave_actor_f1_s0_main] ep  29 lr 2.50e-05 | train loss 0.524 acc 0.976 | val loss 1.385 UAR 0.746
+[m4_wave_actor_f1_s0_main] ep  30 lr 2.50e-05 | train loss 0.498 acc 0.984 | val loss 1.287 UAR 0.730
+   best epoch 20 val UAR 0.7695 | TEST UAR 0.7266 acc 0.7292 F1 0.7206 | 303s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 26351.78it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f1_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f1_s1_main] ep   1 lr 5.00e-05 | train loss 2.042 acc 0.173 | val loss 1.987 UAR 0.199 *
+[m4_wave_actor_f1_s1_main] ep   2 lr 5.00e-05 | train loss 1.808 acc 0.344 | val loss 1.684 UAR 0.375 *
+[m4_wave_actor_f1_s1_main] ep   3 lr 5.00e-05 | train loss 1.462 acc 0.529 | val loss 1.350 UAR 0.566 *
+[m4_wave_actor_f1_s1_main] ep   4 lr 5.00e-05 | train loss 1.181 acc 0.665 | val loss 1.355 UAR 0.562
+[m4_wave_actor_f1_s1_main] ep   5 lr 5.00e-05 | train loss 1.035 acc 0.739 | val loss 1.214 UAR 0.656 *
+[m4_wave_actor_f1_s1_main] ep   6 lr 5.00e-05 | train loss 0.932 acc 0.789 | val loss 1.148 UAR 0.766 *
+[m4_wave_actor_f1_s1_main] ep   7 lr 5.00e-05 | train loss 0.837 acc 0.821 | val loss 1.013 UAR 0.762
+[m4_wave_actor_f1_s1_main] ep   8 lr 5.00e-05 | train loss 0.828 acc 0.841 | val loss 1.180 UAR 0.707
+[m4_wave_actor_f1_s1_main] ep   9 lr 5.00e-05 | train loss 0.735 acc 0.879 | val loss 1.504 UAR 0.625
+[m4_wave_actor_f1_s1_main] ep  10 lr 5.00e-05 | train loss 0.689 acc 0.903 | val loss 1.858 UAR 0.559
+[m4_wave_actor_f1_s1_main] ep  11 lr 5.00e-05 | train loss 0.678 acc 0.918 | val loss 1.483 UAR 0.625
+[m4_wave_actor_f1_s1_main] ep  12 lr 5.00e-05 | train loss 0.650 acc 0.912 | val loss 1.244 UAR 0.676
+[m4_wave_actor_f1_s1_main] ep  13 lr 2.50e-05 | train loss 0.631 acc 0.923 | val loss 1.181 UAR 0.754
+[m4_wave_actor_f1_s1_main] ep  14 lr 2.50e-05 | train loss 0.593 acc 0.953 | val loss 1.130 UAR 0.754
+[m4_wave_actor_f1_s1_main] ep  15 lr 2.50e-05 | train loss 0.581 acc 0.957 | val loss 1.438 UAR 0.641
+[m4_wave_actor_f1_s1_main] ep  16 lr 2.50e-05 | train loss 0.561 acc 0.967 | val loss 1.286 UAR 0.711
+[m4_wave_actor_f1_s1_main] ep  17 lr 2.50e-05 | train loss 0.533 acc 0.973 | val loss 1.522 UAR 0.660
+[m4_wave_actor_f1_s1_main] ep  18 lr 2.50e-05 | train loss 0.552 acc 0.970 | val loss 1.173 UAR 0.750
+[m4_wave_actor_f1_s1_main] ep  19 lr 1.25e-05 | train loss 0.535 acc 0.973 | val loss 1.234 UAR 0.746
+[m4_wave_actor_f1_s1_main] ep  20 lr 1.25e-05 | train loss 0.535 acc 0.977 | val loss 1.294 UAR 0.730
+[m4_wave_actor_f1_s1_main] ep  21 lr 1.25e-05 | train loss 0.511 acc 0.985 | val loss 1.362 UAR 0.695
+   best epoch 6 val UAR 0.7656 | TEST UAR 0.7148 acc 0.7292 F1 0.7194 | 211s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 35169.22it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f1_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f1_s2_main] ep   1 lr 5.00e-05 | train loss 2.041 acc 0.179 | val loss 1.918 UAR 0.250 *
+[m4_wave_actor_f1_s2_main] ep   2 lr 5.00e-05 | train loss 1.748 acc 0.373 | val loss 1.571 UAR 0.457 *
+[m4_wave_actor_f1_s2_main] ep   3 lr 5.00e-05 | train loss 1.385 acc 0.556 | val loss 1.311 UAR 0.574 *
+[m4_wave_actor_f1_s2_main] ep   4 lr 5.00e-05 | train loss 1.203 acc 0.643 | val loss 1.316 UAR 0.539
+[m4_wave_actor_f1_s2_main] ep   5 lr 5.00e-05 | train loss 1.015 acc 0.746 | val loss 1.267 UAR 0.625 *
+[m4_wave_actor_f1_s2_main] ep   6 lr 5.00e-05 | train loss 0.977 acc 0.770 | val loss 1.584 UAR 0.520
+[m4_wave_actor_f1_s2_main] ep   7 lr 5.00e-05 | train loss 0.886 acc 0.818 | val loss 1.265 UAR 0.633 *
+[m4_wave_actor_f1_s2_main] ep   8 lr 5.00e-05 | train loss 0.800 acc 0.843 | val loss 1.605 UAR 0.539
+[m4_wave_actor_f1_s2_main] ep   9 lr 5.00e-05 | train loss 0.801 acc 0.848 | val loss 1.136 UAR 0.707 *
+[m4_wave_actor_f1_s2_main] ep  10 lr 5.00e-05 | train loss 0.750 acc 0.871 | val loss 1.283 UAR 0.699
+[m4_wave_actor_f1_s2_main] ep  11 lr 5.00e-05 | train loss 0.690 acc 0.904 | val loss 1.395 UAR 0.707
+[m4_wave_actor_f1_s2_main] ep  12 lr 5.00e-05 | train loss 0.675 acc 0.904 | val loss 1.349 UAR 0.691
+[m4_wave_actor_f1_s2_main] ep  13 lr 5.00e-05 | train loss 0.622 acc 0.935 | val loss 1.242 UAR 0.684
+[m4_wave_actor_f1_s2_main] ep  14 lr 5.00e-05 | train loss 0.650 acc 0.924 | val loss 1.360 UAR 0.715 *
+[m4_wave_actor_f1_s2_main] ep  15 lr 5.00e-05 | train loss 0.627 acc 0.931 | val loss 1.276 UAR 0.688
+[m4_wave_actor_f1_s2_main] ep  16 lr 5.00e-05 | train loss 0.595 acc 0.944 | val loss 1.233 UAR 0.723 *
+[m4_wave_actor_f1_s2_main] ep  17 lr 5.00e-05 | train loss 0.636 acc 0.926 | val loss 1.167 UAR 0.734 *
+[m4_wave_actor_f1_s2_main] ep  18 lr 5.00e-05 | train loss 0.623 acc 0.935 | val loss 1.301 UAR 0.734
+[m4_wave_actor_f1_s2_main] ep  19 lr 5.00e-05 | train loss 0.596 acc 0.947 | val loss 1.230 UAR 0.715
+[m4_wave_actor_f1_s2_main] ep  20 lr 5.00e-05 | train loss 0.574 acc 0.957 | val loss 1.380 UAR 0.668
+[m4_wave_actor_f1_s2_main] ep  21 lr 5.00e-05 | train loss 0.569 acc 0.963 | val loss 1.379 UAR 0.711
+[m4_wave_actor_f1_s2_main] ep  22 lr 5.00e-05 | train loss 0.568 acc 0.959 | val loss 1.209 UAR 0.758 *
+[m4_wave_actor_f1_s2_main] ep  23 lr 5.00e-05 | train loss 0.580 acc 0.958 | val loss 1.484 UAR 0.695
+[m4_wave_actor_f1_s2_main] ep  24 lr 5.00e-05 | train loss 0.556 acc 0.961 | val loss 1.240 UAR 0.746
+[m4_wave_actor_f1_s2_main] ep  25 lr 5.00e-05 | train loss 0.555 acc 0.964 | val loss 1.349 UAR 0.727
+[m4_wave_actor_f1_s2_main] ep  26 lr 5.00e-05 | train loss 0.539 acc 0.968 | val loss 1.343 UAR 0.738
+[m4_wave_actor_f1_s2_main] ep  27 lr 5.00e-05 | train loss 0.542 acc 0.967 | val loss 1.373 UAR 0.746
+[m4_wave_actor_f1_s2_main] ep  28 lr 5.00e-05 | train loss 0.531 acc 0.972 | val loss 1.650 UAR 0.637
+[m4_wave_actor_f1_s2_main] ep  29 lr 2.50e-05 | train loss 0.561 acc 0.965 | val loss 1.371 UAR 0.727
+[m4_wave_actor_f1_s2_main] ep  30 lr 2.50e-05 | train loss 0.519 acc 0.978 | val loss 1.224 UAR 0.766 *
+   best epoch 30 val UAR 0.7656 | TEST UAR 0.7109 acc 0.7292 F1 0.7205 | 301s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 22195.98it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f2_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f2_s0_main] ep   1 lr 5.00e-05 | train loss 2.042 acc 0.191 | val loss 1.969 UAR 0.227 *
+[m4_wave_actor_f2_s0_main] ep   2 lr 5.00e-05 | train loss 1.743 acc 0.382 | val loss 1.773 UAR 0.367 *
+[m4_wave_actor_f2_s0_main] ep   3 lr 5.00e-05 | train loss 1.402 acc 0.554 | val loss 1.597 UAR 0.457 *
+[m4_wave_actor_f2_s0_main] ep   4 lr 5.00e-05 | train loss 1.230 acc 0.648 | val loss 1.496 UAR 0.523 *
+[m4_wave_actor_f2_s0_main] ep   5 lr 5.00e-05 | train loss 1.064 acc 0.714 | val loss 1.130 UAR 0.699 *
+[m4_wave_actor_f2_s0_main] ep   6 lr 5.00e-05 | train loss 0.945 acc 0.778 | val loss 1.359 UAR 0.629
+[m4_wave_actor_f2_s0_main] ep   7 lr 5.00e-05 | train loss 0.873 acc 0.822 | val loss 1.357 UAR 0.617
+[m4_wave_actor_f2_s0_main] ep   8 lr 5.00e-05 | train loss 0.822 acc 0.835 | val loss 1.328 UAR 0.617
+[m4_wave_actor_f2_s0_main] ep   9 lr 5.00e-05 | train loss 0.775 acc 0.869 | val loss 1.425 UAR 0.617
+[m4_wave_actor_f2_s0_main] ep  10 lr 5.00e-05 | train loss 0.731 acc 0.882 | val loss 1.125 UAR 0.707 *
+[m4_wave_actor_f2_s0_main] ep  11 lr 5.00e-05 | train loss 0.717 acc 0.889 | val loss 1.014 UAR 0.766 *
+[m4_wave_actor_f2_s0_main] ep  12 lr 5.00e-05 | train loss 0.695 acc 0.900 | val loss 1.148 UAR 0.734
+[m4_wave_actor_f2_s0_main] ep  13 lr 5.00e-05 | train loss 0.639 acc 0.929 | val loss 0.993 UAR 0.785 *
+[m4_wave_actor_f2_s0_main] ep  14 lr 5.00e-05 | train loss 0.654 acc 0.917 | val loss 1.170 UAR 0.738
+[m4_wave_actor_f2_s0_main] ep  15 lr 5.00e-05 | train loss 0.642 acc 0.929 | val loss 1.339 UAR 0.672
+[m4_wave_actor_f2_s0_main] ep  16 lr 5.00e-05 | train loss 0.637 acc 0.922 | val loss 0.945 UAR 0.809 *
+[m4_wave_actor_f2_s0_main] ep  17 lr 5.00e-05 | train loss 0.637 acc 0.923 | val loss 1.063 UAR 0.762
+[m4_wave_actor_f2_s0_main] ep  18 lr 5.00e-05 | train loss 0.640 acc 0.929 | val loss 1.215 UAR 0.727
+[m4_wave_actor_f2_s0_main] ep  19 lr 5.00e-05 | train loss 0.597 acc 0.940 | val loss 1.045 UAR 0.754
+[m4_wave_actor_f2_s0_main] ep  20 lr 5.00e-05 | train loss 0.590 acc 0.947 | val loss 1.534 UAR 0.633
+[m4_wave_actor_f2_s0_main] ep  21 lr 5.00e-05 | train loss 0.601 acc 0.939 | val loss 1.293 UAR 0.672
+[m4_wave_actor_f2_s0_main] ep  22 lr 5.00e-05 | train loss 0.587 acc 0.952 | val loss 1.184 UAR 0.703
+[m4_wave_actor_f2_s0_main] ep  23 lr 2.50e-05 | train loss 0.538 acc 0.970 | val loss 1.016 UAR 0.816 *
+[m4_wave_actor_f2_s0_main] ep  24 lr 2.50e-05 | train loss 0.527 acc 0.976 | val loss 1.137 UAR 0.754
+[m4_wave_actor_f2_s0_main] ep  25 lr 2.50e-05 | train loss 0.517 acc 0.983 | val loss 1.187 UAR 0.734
+[m4_wave_actor_f2_s0_main] ep  26 lr 2.50e-05 | train loss 0.503 acc 0.989 | val loss 1.095 UAR 0.762
+[m4_wave_actor_f2_s0_main] ep  27 lr 2.50e-05 | train loss 0.521 acc 0.976 | val loss 1.176 UAR 0.742
+[m4_wave_actor_f2_s0_main] ep  28 lr 2.50e-05 | train loss 0.510 acc 0.984 | val loss 1.133 UAR 0.766
+[m4_wave_actor_f2_s0_main] ep  29 lr 2.50e-05 | train loss 0.518 acc 0.982 | val loss 1.399 UAR 0.703
+[m4_wave_actor_f2_s0_main] ep  30 lr 1.25e-05 | train loss 0.509 acc 0.984 | val loss 1.134 UAR 0.738
+   best epoch 23 val UAR 0.8164 | TEST UAR 0.7383 acc 0.7333 F1 0.7177 | 303s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 52753.82it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f2_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f2_s1_main] ep   1 lr 5.00e-05 | train loss 2.031 acc 0.184 | val loss 2.042 UAR 0.258 *
+[m4_wave_actor_f2_s1_main] ep   2 lr 5.00e-05 | train loss 1.769 acc 0.356 | val loss 1.798 UAR 0.387 *
+[m4_wave_actor_f2_s1_main] ep   3 lr 5.00e-05 | train loss 1.516 acc 0.485 | val loss 1.588 UAR 0.492 *
+[m4_wave_actor_f2_s1_main] ep   4 lr 5.00e-05 | train loss 1.198 acc 0.665 | val loss 1.438 UAR 0.578 *
+[m4_wave_actor_f2_s1_main] ep   5 lr 5.00e-05 | train loss 1.124 acc 0.704 | val loss 1.371 UAR 0.609 *
+[m4_wave_actor_f2_s1_main] ep   6 lr 5.00e-05 | train loss 1.063 acc 0.721 | val loss 1.353 UAR 0.609
+[m4_wave_actor_f2_s1_main] ep   7 lr 5.00e-05 | train loss 0.906 acc 0.808 | val loss 1.363 UAR 0.629 *
+[m4_wave_actor_f2_s1_main] ep   8 lr 5.00e-05 | train loss 0.851 acc 0.828 | val loss 1.212 UAR 0.637 *
+[m4_wave_actor_f2_s1_main] ep   9 lr 5.00e-05 | train loss 0.837 acc 0.842 | val loss 1.281 UAR 0.684 *
+[m4_wave_actor_f2_s1_main] ep  10 lr 5.00e-05 | train loss 0.751 acc 0.869 | val loss 0.962 UAR 0.777 *
+[m4_wave_actor_f2_s1_main] ep  11 lr 5.00e-05 | train loss 0.713 acc 0.890 | val loss 1.541 UAR 0.590
+[m4_wave_actor_f2_s1_main] ep  12 lr 5.00e-05 | train loss 0.757 acc 0.877 | val loss 1.143 UAR 0.734
+[m4_wave_actor_f2_s1_main] ep  13 lr 5.00e-05 | train loss 0.742 acc 0.882 | val loss 1.292 UAR 0.668
+[m4_wave_actor_f2_s1_main] ep  14 lr 5.00e-05 | train loss 0.669 acc 0.912 | val loss 1.042 UAR 0.746
+[m4_wave_actor_f2_s1_main] ep  15 lr 5.00e-05 | train loss 0.636 acc 0.924 | val loss 1.065 UAR 0.750
+[m4_wave_actor_f2_s1_main] ep  16 lr 5.00e-05 | train loss 0.662 acc 0.911 | val loss 0.978 UAR 0.797 *
+[m4_wave_actor_f2_s1_main] ep  17 lr 5.00e-05 | train loss 0.611 acc 0.934 | val loss 1.074 UAR 0.758
+[m4_wave_actor_f2_s1_main] ep  18 lr 5.00e-05 | train loss 0.646 acc 0.925 | val loss 1.244 UAR 0.703
+[m4_wave_actor_f2_s1_main] ep  19 lr 5.00e-05 | train loss 0.628 acc 0.939 | val loss 0.975 UAR 0.789
+[m4_wave_actor_f2_s1_main] ep  20 lr 5.00e-05 | train loss 0.579 acc 0.952 | val loss 1.142 UAR 0.754
+[m4_wave_actor_f2_s1_main] ep  21 lr 5.00e-05 | train loss 0.629 acc 0.932 | val loss 1.297 UAR 0.738
+[m4_wave_actor_f2_s1_main] ep  22 lr 5.00e-05 | train loss 0.599 acc 0.947 | val loss 1.523 UAR 0.613
+[m4_wave_actor_f2_s1_main] ep  23 lr 2.50e-05 | train loss 0.572 acc 0.955 | val loss 1.250 UAR 0.711
+[m4_wave_actor_f2_s1_main] ep  24 lr 2.50e-05 | train loss 0.548 acc 0.961 | val loss 1.201 UAR 0.727
+[m4_wave_actor_f2_s1_main] ep  25 lr 2.50e-05 | train loss 0.526 acc 0.971 | val loss 1.311 UAR 0.684
+[m4_wave_actor_f2_s1_main] ep  26 lr 2.50e-05 | train loss 0.513 acc 0.978 | val loss 1.423 UAR 0.672
+[m4_wave_actor_f2_s1_main] ep  27 lr 2.50e-05 | train loss 0.538 acc 0.969 | val loss 0.998 UAR 0.789
+[m4_wave_actor_f2_s1_main] ep  28 lr 2.50e-05 | train loss 0.497 acc 0.985 | val loss 1.096 UAR 0.762
+[m4_wave_actor_f2_s1_main] ep  29 lr 1.25e-05 | train loss 0.496 acc 0.990 | val loss 1.187 UAR 0.734
+[m4_wave_actor_f2_s1_main] ep  30 lr 1.25e-05 | train loss 0.492 acc 0.989 | val loss 1.108 UAR 0.754
+   best epoch 16 val UAR 0.7969 | TEST UAR 0.7305 acc 0.7292 F1 0.7188 | 301s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 24785.70it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f2_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f2_s2_main] ep   1 lr 5.00e-05 | train loss 2.047 acc 0.174 | val loss 1.969 UAR 0.219 *
+[m4_wave_actor_f2_s2_main] ep   2 lr 5.00e-05 | train loss 1.796 acc 0.333 | val loss 1.865 UAR 0.293 *
+[m4_wave_actor_f2_s2_main] ep   3 lr 5.00e-05 | train loss 1.506 acc 0.496 | val loss 1.633 UAR 0.441 *
+[m4_wave_actor_f2_s2_main] ep   4 lr 5.00e-05 | train loss 1.215 acc 0.624 | val loss 1.533 UAR 0.516 *
+[m4_wave_actor_f2_s2_main] ep   5 lr 5.00e-05 | train loss 1.059 acc 0.728 | val loss 1.358 UAR 0.582 *
+[m4_wave_actor_f2_s2_main] ep   6 lr 5.00e-05 | train loss 0.973 acc 0.778 | val loss 1.166 UAR 0.672 *
+[m4_wave_actor_f2_s2_main] ep   7 lr 5.00e-05 | train loss 0.933 acc 0.790 | val loss 1.236 UAR 0.621
+[m4_wave_actor_f2_s2_main] ep   8 lr 5.00e-05 | train loss 0.828 acc 0.832 | val loss 1.184 UAR 0.672
+[m4_wave_actor_f2_s2_main] ep   9 lr 5.00e-05 | train loss 0.758 acc 0.867 | val loss 1.408 UAR 0.621
+[m4_wave_actor_f2_s2_main] ep  10 lr 5.00e-05 | train loss 0.760 acc 0.856 | val loss 1.214 UAR 0.703 *
+[m4_wave_actor_f2_s2_main] ep  11 lr 5.00e-05 | train loss 0.734 acc 0.882 | val loss 1.451 UAR 0.613
+[m4_wave_actor_f2_s2_main] ep  12 lr 5.00e-05 | train loss 0.730 acc 0.890 | val loss 1.244 UAR 0.699
+[m4_wave_actor_f2_s2_main] ep  13 lr 5.00e-05 | train loss 0.684 acc 0.905 | val loss 1.400 UAR 0.629
+[m4_wave_actor_f2_s2_main] ep  14 lr 5.00e-05 | train loss 0.661 acc 0.914 | val loss 1.401 UAR 0.660
+[m4_wave_actor_f2_s2_main] ep  15 lr 5.00e-05 | train loss 0.679 acc 0.902 | val loss 1.186 UAR 0.695
+[m4_wave_actor_f2_s2_main] ep  16 lr 5.00e-05 | train loss 0.650 acc 0.925 | val loss 1.107 UAR 0.746 *
+[m4_wave_actor_f2_s2_main] ep  17 lr 5.00e-05 | train loss 0.625 acc 0.932 | val loss 1.190 UAR 0.730
+[m4_wave_actor_f2_s2_main] ep  18 lr 5.00e-05 | train loss 0.603 acc 0.944 | val loss 1.013 UAR 0.785 *
+[m4_wave_actor_f2_s2_main] ep  19 lr 5.00e-05 | train loss 0.593 acc 0.944 | val loss 1.175 UAR 0.723
+[m4_wave_actor_f2_s2_main] ep  20 lr 5.00e-05 | train loss 0.596 acc 0.942 | val loss 1.418 UAR 0.656
+[m4_wave_actor_f2_s2_main] ep  21 lr 5.00e-05 | train loss 0.580 acc 0.952 | val loss 1.179 UAR 0.719
+[m4_wave_actor_f2_s2_main] ep  22 lr 5.00e-05 | train loss 0.597 acc 0.944 | val loss 1.151 UAR 0.746
+[m4_wave_actor_f2_s2_main] ep  23 lr 5.00e-05 | train loss 0.563 acc 0.959 | val loss 1.403 UAR 0.660
+[m4_wave_actor_f2_s2_main] ep  24 lr 5.00e-05 | train loss 0.592 acc 0.953 | val loss 1.415 UAR 0.656
+[m4_wave_actor_f2_s2_main] ep  25 lr 2.50e-05 | train loss 0.550 acc 0.961 | val loss 1.094 UAR 0.746
+[m4_wave_actor_f2_s2_main] ep  26 lr 2.50e-05 | train loss 0.510 acc 0.980 | val loss 1.125 UAR 0.773
+[m4_wave_actor_f2_s2_main] ep  27 lr 2.50e-05 | train loss 0.503 acc 0.986 | val loss 1.178 UAR 0.746
+[m4_wave_actor_f2_s2_main] ep  28 lr 2.50e-05 | train loss 0.506 acc 0.983 | val loss 1.284 UAR 0.707
+[m4_wave_actor_f2_s2_main] ep  29 lr 2.50e-05 | train loss 0.503 acc 0.985 | val loss 1.121 UAR 0.762
+[m4_wave_actor_f2_s2_main] ep  30 lr 2.50e-05 | train loss 0.516 acc 0.977 | val loss 0.925 UAR 0.824 *
+   best epoch 30 val UAR 0.8242 | TEST UAR 0.7344 acc 0.7333 F1 0.7293 | 301s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 28101.42it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f3_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f3_s0_main] ep   1 lr 5.00e-05 | train loss 2.056 acc 0.175 | val loss 1.995 UAR 0.199 *
+[m4_wave_actor_f3_s0_main] ep   2 lr 5.00e-05 | train loss 1.751 acc 0.393 | val loss 1.532 UAR 0.453 *
+[m4_wave_actor_f3_s0_main] ep   3 lr 5.00e-05 | train loss 1.352 acc 0.586 | val loss 1.511 UAR 0.461 *
+[m4_wave_actor_f3_s0_main] ep   4 lr 5.00e-05 | train loss 1.232 acc 0.635 | val loss 1.244 UAR 0.559 *
+[m4_wave_actor_f3_s0_main] ep   5 lr 5.00e-05 | train loss 1.070 acc 0.728 | val loss 1.136 UAR 0.609 *
+[m4_wave_actor_f3_s0_main] ep   6 lr 5.00e-05 | train loss 0.936 acc 0.790 | val loss 0.972 UAR 0.711 *
+[m4_wave_actor_f3_s0_main] ep   7 lr 5.00e-05 | train loss 0.903 acc 0.794 | val loss 1.028 UAR 0.695
+[m4_wave_actor_f3_s0_main] ep   8 lr 5.00e-05 | train loss 0.870 acc 0.809 | val loss 0.941 UAR 0.781 *
+[m4_wave_actor_f3_s0_main] ep   9 lr 5.00e-05 | train loss 0.740 acc 0.875 | val loss 1.080 UAR 0.719
+[m4_wave_actor_f3_s0_main] ep  10 lr 5.00e-05 | train loss 0.742 acc 0.870 | val loss 0.833 UAR 0.852 *
+[m4_wave_actor_f3_s0_main] ep  11 lr 5.00e-05 | train loss 0.771 acc 0.859 | val loss 0.962 UAR 0.797
+[m4_wave_actor_f3_s0_main] ep  12 lr 5.00e-05 | train loss 0.702 acc 0.904 | val loss 0.898 UAR 0.812
+[m4_wave_actor_f3_s0_main] ep  13 lr 5.00e-05 | train loss 0.706 acc 0.885 | val loss 0.958 UAR 0.758
+[m4_wave_actor_f3_s0_main] ep  14 lr 5.00e-05 | train loss 0.682 acc 0.899 | val loss 1.331 UAR 0.613
+[m4_wave_actor_f3_s0_main] ep  15 lr 5.00e-05 | train loss 0.651 acc 0.914 | val loss 0.977 UAR 0.809
+[m4_wave_actor_f3_s0_main] ep  16 lr 5.00e-05 | train loss 0.624 acc 0.928 | val loss 0.955 UAR 0.832
+[m4_wave_actor_f3_s0_main] ep  17 lr 2.50e-05 | train loss 0.565 acc 0.952 | val loss 0.927 UAR 0.820
+[m4_wave_actor_f3_s0_main] ep  18 lr 2.50e-05 | train loss 0.563 acc 0.961 | val loss 0.996 UAR 0.801
+[m4_wave_actor_f3_s0_main] ep  19 lr 2.50e-05 | train loss 0.563 acc 0.961 | val loss 0.875 UAR 0.844
+[m4_wave_actor_f3_s0_main] ep  20 lr 2.50e-05 | train loss 0.547 acc 0.969 | val loss 0.942 UAR 0.832
+[m4_wave_actor_f3_s0_main] ep  21 lr 2.50e-05 | train loss 0.539 acc 0.973 | val loss 0.824 UAR 0.855 *
+[m4_wave_actor_f3_s0_main] ep  22 lr 2.50e-05 | train loss 0.534 acc 0.973 | val loss 0.907 UAR 0.852
+[m4_wave_actor_f3_s0_main] ep  23 lr 2.50e-05 | train loss 0.532 acc 0.973 | val loss 1.046 UAR 0.809
+[m4_wave_actor_f3_s0_main] ep  24 lr 2.50e-05 | train loss 0.521 acc 0.980 | val loss 0.897 UAR 0.844
+[m4_wave_actor_f3_s0_main] ep  25 lr 2.50e-05 | train loss 0.516 acc 0.981 | val loss 0.873 UAR 0.852
+[m4_wave_actor_f3_s0_main] ep  26 lr 2.50e-05 | train loss 0.522 acc 0.975 | val loss 0.993 UAR 0.828
+[m4_wave_actor_f3_s0_main] ep  27 lr 2.50e-05 | train loss 0.534 acc 0.972 | val loss 0.957 UAR 0.801
+[m4_wave_actor_f3_s0_main] ep  28 lr 1.25e-05 | train loss 0.507 acc 0.979 | val loss 0.900 UAR 0.844
+[m4_wave_actor_f3_s0_main] ep  29 lr 1.25e-05 | train loss 0.496 acc 0.990 | val loss 0.908 UAR 0.852
+[m4_wave_actor_f3_s0_main] ep  30 lr 1.25e-05 | train loss 0.504 acc 0.984 | val loss 0.919 UAR 0.848
+   best epoch 21 val UAR 0.8555 | TEST UAR 0.7617 acc 0.7792 F1 0.7703 | 300s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 30149.15it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f3_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f3_s1_main] ep   1 lr 5.00e-05 | train loss 2.041 acc 0.173 | val loss 2.069 UAR 0.152 *
+[m4_wave_actor_f3_s1_main] ep   2 lr 5.00e-05 | train loss 1.797 acc 0.352 | val loss 1.591 UAR 0.414 *
+[m4_wave_actor_f3_s1_main] ep   3 lr 5.00e-05 | train loss 1.491 acc 0.510 | val loss 1.462 UAR 0.562 *
+[m4_wave_actor_f3_s1_main] ep   4 lr 5.00e-05 | train loss 1.312 acc 0.590 | val loss 1.135 UAR 0.648 *
+[m4_wave_actor_f3_s1_main] ep   5 lr 5.00e-05 | train loss 1.146 acc 0.666 | val loss 1.001 UAR 0.777 *
+[m4_wave_actor_f3_s1_main] ep   6 lr 5.00e-05 | train loss 1.023 acc 0.754 | val loss 1.010 UAR 0.691
+[m4_wave_actor_f3_s1_main] ep   7 lr 5.00e-05 | train loss 0.942 acc 0.781 | val loss 1.166 UAR 0.617
+[m4_wave_actor_f3_s1_main] ep   8 lr 5.00e-05 | train loss 0.912 acc 0.803 | val loss 0.981 UAR 0.770
+[m4_wave_actor_f3_s1_main] ep   9 lr 5.00e-05 | train loss 0.808 acc 0.841 | val loss 1.078 UAR 0.742
+[m4_wave_actor_f3_s1_main] ep  10 lr 5.00e-05 | train loss 0.831 acc 0.842 | val loss 1.058 UAR 0.742
+[m4_wave_actor_f3_s1_main] ep  11 lr 5.00e-05 | train loss 0.801 acc 0.848 | val loss 1.015 UAR 0.750
+[m4_wave_actor_f3_s1_main] ep  12 lr 2.50e-05 | train loss 0.695 acc 0.909 | val loss 0.980 UAR 0.781 *
+[m4_wave_actor_f3_s1_main] ep  13 lr 2.50e-05 | train loss 0.637 acc 0.925 | val loss 0.904 UAR 0.797 *
+[m4_wave_actor_f3_s1_main] ep  14 lr 2.50e-05 | train loss 0.643 acc 0.928 | val loss 0.993 UAR 0.770
+[m4_wave_actor_f3_s1_main] ep  15 lr 2.50e-05 | train loss 0.607 acc 0.936 | val loss 0.961 UAR 0.742
+[m4_wave_actor_f3_s1_main] ep  16 lr 2.50e-05 | train loss 0.603 acc 0.946 | val loss 0.918 UAR 0.781
+[m4_wave_actor_f3_s1_main] ep  17 lr 2.50e-05 | train loss 0.575 acc 0.955 | val loss 1.003 UAR 0.762
+[m4_wave_actor_f3_s1_main] ep  18 lr 2.50e-05 | train loss 0.577 acc 0.951 | val loss 0.881 UAR 0.832 *
+[m4_wave_actor_f3_s1_main] ep  19 lr 2.50e-05 | train loss 0.553 acc 0.966 | val loss 1.001 UAR 0.812
+[m4_wave_actor_f3_s1_main] ep  20 lr 2.50e-05 | train loss 0.585 acc 0.949 | val loss 0.977 UAR 0.777
+[m4_wave_actor_f3_s1_main] ep  21 lr 2.50e-05 | train loss 0.556 acc 0.967 | val loss 1.216 UAR 0.730
+[m4_wave_actor_f3_s1_main] ep  22 lr 2.50e-05 | train loss 0.573 acc 0.948 | val loss 1.008 UAR 0.777
+[m4_wave_actor_f3_s1_main] ep  23 lr 2.50e-05 | train loss 0.570 acc 0.946 | val loss 0.962 UAR 0.812
+[m4_wave_actor_f3_s1_main] ep  24 lr 2.50e-05 | train loss 0.530 acc 0.979 | val loss 1.195 UAR 0.746
+[m4_wave_actor_f3_s1_main] ep  25 lr 1.25e-05 | train loss 0.506 acc 0.989 | val loss 1.070 UAR 0.789
+[m4_wave_actor_f3_s1_main] ep  26 lr 1.25e-05 | train loss 0.512 acc 0.979 | val loss 1.021 UAR 0.789
+[m4_wave_actor_f3_s1_main] ep  27 lr 1.25e-05 | train loss 0.516 acc 0.981 | val loss 1.070 UAR 0.805
+[m4_wave_actor_f3_s1_main] ep  28 lr 1.25e-05 | train loss 0.518 acc 0.981 | val loss 0.983 UAR 0.812
+[m4_wave_actor_f3_s1_main] ep  29 lr 1.25e-05 | train loss 0.500 acc 0.988 | val loss 1.066 UAR 0.805
+[m4_wave_actor_f3_s1_main] ep  30 lr 1.25e-05 | train loss 0.522 acc 0.976 | val loss 0.995 UAR 0.773
+   best epoch 18 val UAR 0.8320 | TEST UAR 0.7969 acc 0.8042 F1 0.8076 | 301s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 26360.41it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f3_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f3_s2_main] ep   1 lr 5.00e-05 | train loss 2.052 acc 0.175 | val loss 1.998 UAR 0.211 *
+[m4_wave_actor_f3_s2_main] ep   2 lr 5.00e-05 | train loss 1.785 acc 0.340 | val loss 1.614 UAR 0.430 *
+[m4_wave_actor_f3_s2_main] ep   3 lr 5.00e-05 | train loss 1.501 acc 0.498 | val loss 1.428 UAR 0.504 *
+[m4_wave_actor_f3_s2_main] ep   4 lr 5.00e-05 | train loss 1.294 acc 0.604 | val loss 1.255 UAR 0.566 *
+[m4_wave_actor_f3_s2_main] ep   5 lr 5.00e-05 | train loss 1.110 acc 0.694 | val loss 0.995 UAR 0.719 *
+[m4_wave_actor_f3_s2_main] ep   6 lr 5.00e-05 | train loss 1.010 acc 0.756 | val loss 1.179 UAR 0.621
+[m4_wave_actor_f3_s2_main] ep   7 lr 5.00e-05 | train loss 0.934 acc 0.777 | val loss 1.026 UAR 0.727 *
+[m4_wave_actor_f3_s2_main] ep   8 lr 5.00e-05 | train loss 0.865 acc 0.810 | val loss 1.054 UAR 0.711
+[m4_wave_actor_f3_s2_main] ep   9 lr 5.00e-05 | train loss 0.819 acc 0.839 | val loss 0.903 UAR 0.785 *
+[m4_wave_actor_f3_s2_main] ep  10 lr 5.00e-05 | train loss 0.732 acc 0.889 | val loss 1.107 UAR 0.699
+[m4_wave_actor_f3_s2_main] ep  11 lr 5.00e-05 | train loss 0.718 acc 0.892 | val loss 0.994 UAR 0.746
+[m4_wave_actor_f3_s2_main] ep  12 lr 5.00e-05 | train loss 0.715 acc 0.894 | val loss 0.957 UAR 0.777
+[m4_wave_actor_f3_s2_main] ep  13 lr 5.00e-05 | train loss 0.657 acc 0.917 | val loss 0.899 UAR 0.816 *
+[m4_wave_actor_f3_s2_main] ep  14 lr 5.00e-05 | train loss 0.691 acc 0.903 | val loss 1.159 UAR 0.723
+[m4_wave_actor_f3_s2_main] ep  15 lr 5.00e-05 | train loss 0.682 acc 0.910 | val loss 0.923 UAR 0.777
+[m4_wave_actor_f3_s2_main] ep  16 lr 5.00e-05 | train loss 0.614 acc 0.938 | val loss 0.988 UAR 0.789
+[m4_wave_actor_f3_s2_main] ep  17 lr 5.00e-05 | train loss 0.582 acc 0.955 | val loss 0.867 UAR 0.852 *
+[m4_wave_actor_f3_s2_main] ep  18 lr 5.00e-05 | train loss 0.598 acc 0.946 | val loss 1.048 UAR 0.762
+[m4_wave_actor_f3_s2_main] ep  19 lr 5.00e-05 | train loss 0.609 acc 0.942 | val loss 1.195 UAR 0.695
+[m4_wave_actor_f3_s2_main] ep  20 lr 5.00e-05 | train loss 0.615 acc 0.935 | val loss 0.932 UAR 0.840
+[m4_wave_actor_f3_s2_main] ep  21 lr 5.00e-05 | train loss 0.555 acc 0.969 | val loss 1.098 UAR 0.742
+[m4_wave_actor_f3_s2_main] ep  22 lr 5.00e-05 | train loss 0.592 acc 0.945 | val loss 0.999 UAR 0.793
+[m4_wave_actor_f3_s2_main] ep  23 lr 5.00e-05 | train loss 0.555 acc 0.966 | val loss 1.073 UAR 0.801
+[m4_wave_actor_f3_s2_main] ep  24 lr 2.50e-05 | train loss 0.577 acc 0.956 | val loss 1.154 UAR 0.746
+[m4_wave_actor_f3_s2_main] ep  25 lr 2.50e-05 | train loss 0.513 acc 0.986 | val loss 0.972 UAR 0.812
+[m4_wave_actor_f3_s2_main] ep  26 lr 2.50e-05 | train loss 0.534 acc 0.974 | val loss 0.991 UAR 0.809
+[m4_wave_actor_f3_s2_main] ep  27 lr 2.50e-05 | train loss 0.518 acc 0.976 | val loss 1.010 UAR 0.820
+[m4_wave_actor_f3_s2_main] ep  28 lr 2.50e-05 | train loss 0.520 acc 0.981 | val loss 0.951 UAR 0.824
+[m4_wave_actor_f3_s2_main] ep  29 lr 2.50e-05 | train loss 0.506 acc 0.983 | val loss 1.018 UAR 0.773
+[m4_wave_actor_f3_s2_main] ep  30 lr 1.25e-05 | train loss 0.496 acc 0.991 | val loss 0.936 UAR 0.828
+   best epoch 17 val UAR 0.8516 | TEST UAR 0.7344 acc 0.7542 F1 0.7394 | 302s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 35170.61it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f4_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f4_s0_main] ep   1 lr 5.00e-05 | train loss 2.049 acc 0.176 | val loss 1.954 UAR 0.305 *
+[m4_wave_actor_f4_s0_main] ep   2 lr 5.00e-05 | train loss 1.745 acc 0.395 | val loss 1.533 UAR 0.488 *
+[m4_wave_actor_f4_s0_main] ep   3 lr 5.00e-05 | train loss 1.357 acc 0.588 | val loss 1.364 UAR 0.547 *
+[m4_wave_actor_f4_s0_main] ep   4 lr 5.00e-05 | train loss 1.118 acc 0.685 | val loss 1.555 UAR 0.488
+[m4_wave_actor_f4_s0_main] ep   5 lr 5.00e-05 | train loss 1.081 acc 0.708 | val loss 1.347 UAR 0.570 *
+[m4_wave_actor_f4_s0_main] ep   6 lr 5.00e-05 | train loss 0.880 acc 0.825 | val loss 1.288 UAR 0.652 *
+[m4_wave_actor_f4_s0_main] ep   7 lr 5.00e-05 | train loss 0.826 acc 0.850 | val loss 1.261 UAR 0.664 *
+[m4_wave_actor_f4_s0_main] ep   8 lr 5.00e-05 | train loss 0.788 acc 0.861 | val loss 1.355 UAR 0.637
+[m4_wave_actor_f4_s0_main] ep   9 lr 5.00e-05 | train loss 0.775 acc 0.863 | val loss 1.343 UAR 0.648
+[m4_wave_actor_f4_s0_main] ep  10 lr 5.00e-05 | train loss 0.750 acc 0.865 | val loss 1.442 UAR 0.621
+[m4_wave_actor_f4_s0_main] ep  11 lr 5.00e-05 | train loss 0.683 acc 0.899 | val loss 1.305 UAR 0.672 *
+[m4_wave_actor_f4_s0_main] ep  12 lr 5.00e-05 | train loss 0.653 acc 0.922 | val loss 1.574 UAR 0.617
+[m4_wave_actor_f4_s0_main] ep  13 lr 5.00e-05 | train loss 0.603 acc 0.940 | val loss 1.419 UAR 0.637
+[m4_wave_actor_f4_s0_main] ep  14 lr 5.00e-05 | train loss 0.623 acc 0.941 | val loss 1.271 UAR 0.691 *
+[m4_wave_actor_f4_s0_main] ep  15 lr 5.00e-05 | train loss 0.615 acc 0.941 | val loss 1.505 UAR 0.656
+[m4_wave_actor_f4_s0_main] ep  16 lr 5.00e-05 | train loss 0.592 acc 0.945 | val loss 1.292 UAR 0.699 *
+[m4_wave_actor_f4_s0_main] ep  17 lr 5.00e-05 | train loss 0.627 acc 0.931 | val loss 1.309 UAR 0.699
+[m4_wave_actor_f4_s0_main] ep  18 lr 5.00e-05 | train loss 0.594 acc 0.943 | val loss 1.278 UAR 0.703 *
+[m4_wave_actor_f4_s0_main] ep  19 lr 5.00e-05 | train loss 0.584 acc 0.950 | val loss 1.300 UAR 0.719 *
+[m4_wave_actor_f4_s0_main] ep  20 lr 5.00e-05 | train loss 0.574 acc 0.950 | val loss 1.362 UAR 0.676
+[m4_wave_actor_f4_s0_main] ep  21 lr 5.00e-05 | train loss 0.608 acc 0.946 | val loss 1.354 UAR 0.660
+[m4_wave_actor_f4_s0_main] ep  22 lr 5.00e-05 | train loss 0.555 acc 0.966 | val loss 1.181 UAR 0.734 *
+[m4_wave_actor_f4_s0_main] ep  23 lr 5.00e-05 | train loss 0.582 acc 0.953 | val loss 1.220 UAR 0.723
+[m4_wave_actor_f4_s0_main] ep  24 lr 5.00e-05 | train loss 0.532 acc 0.974 | val loss 1.498 UAR 0.641
+[m4_wave_actor_f4_s0_main] ep  25 lr 5.00e-05 | train loss 0.554 acc 0.963 | val loss 1.258 UAR 0.707
+[m4_wave_actor_f4_s0_main] ep  26 lr 5.00e-05 | train loss 0.557 acc 0.965 | val loss 1.419 UAR 0.691
+[m4_wave_actor_f4_s0_main] ep  27 lr 5.00e-05 | train loss 0.546 acc 0.971 | val loss 1.272 UAR 0.715
+[m4_wave_actor_f4_s0_main] ep  28 lr 5.00e-05 | train loss 0.516 acc 0.981 | val loss 1.421 UAR 0.691
+[m4_wave_actor_f4_s0_main] ep  29 lr 2.50e-05 | train loss 0.530 acc 0.970 | val loss 1.225 UAR 0.746 *
+[m4_wave_actor_f4_s0_main] ep  30 lr 2.50e-05 | train loss 0.504 acc 0.988 | val loss 1.190 UAR 0.777 *
+   best epoch 30 val UAR 0.7773 | TEST UAR 0.8789 acc 0.8750 F1 0.8732 | 301s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 42217.15it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f4_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f4_s1_main] ep   1 lr 5.00e-05 | train loss 2.037 acc 0.189 | val loss 1.967 UAR 0.281 *
+[m4_wave_actor_f4_s1_main] ep   2 lr 5.00e-05 | train loss 1.724 acc 0.410 | val loss 1.655 UAR 0.348 *
+[m4_wave_actor_f4_s1_main] ep   3 lr 5.00e-05 | train loss 1.405 acc 0.562 | val loss 1.502 UAR 0.504 *
+[m4_wave_actor_f4_s1_main] ep   4 lr 5.00e-05 | train loss 1.199 acc 0.648 | val loss 1.484 UAR 0.492
+[m4_wave_actor_f4_s1_main] ep   5 lr 5.00e-05 | train loss 1.054 acc 0.733 | val loss 1.324 UAR 0.586 *
+[m4_wave_actor_f4_s1_main] ep   6 lr 5.00e-05 | train loss 0.947 acc 0.787 | val loss 1.486 UAR 0.551
+[m4_wave_actor_f4_s1_main] ep   7 lr 5.00e-05 | train loss 0.893 acc 0.800 | val loss 1.252 UAR 0.656 *
+[m4_wave_actor_f4_s1_main] ep   8 lr 5.00e-05 | train loss 0.795 acc 0.848 | val loss 1.188 UAR 0.695 *
+[m4_wave_actor_f4_s1_main] ep   9 lr 5.00e-05 | train loss 0.769 acc 0.868 | val loss 1.523 UAR 0.598
+[m4_wave_actor_f4_s1_main] ep  10 lr 5.00e-05 | train loss 0.706 acc 0.893 | val loss 1.344 UAR 0.660
+[m4_wave_actor_f4_s1_main] ep  11 lr 5.00e-05 | train loss 0.685 acc 0.902 | val loss 1.253 UAR 0.684
+[m4_wave_actor_f4_s1_main] ep  12 lr 5.00e-05 | train loss 0.664 acc 0.921 | val loss 1.314 UAR 0.645
+[m4_wave_actor_f4_s1_main] ep  13 lr 5.00e-05 | train loss 0.667 acc 0.916 | val loss 1.194 UAR 0.699 *
+[m4_wave_actor_f4_s1_main] ep  14 lr 5.00e-05 | train loss 0.641 acc 0.931 | val loss 1.189 UAR 0.762 *
+[m4_wave_actor_f4_s1_main] ep  15 lr 5.00e-05 | train loss 0.650 acc 0.917 | val loss 1.324 UAR 0.699
+[m4_wave_actor_f4_s1_main] ep  16 lr 5.00e-05 | train loss 0.606 acc 0.941 | val loss 1.342 UAR 0.695
+[m4_wave_actor_f4_s1_main] ep  17 lr 5.00e-05 | train loss 0.601 acc 0.943 | val loss 1.305 UAR 0.688
+[m4_wave_actor_f4_s1_main] ep  18 lr 5.00e-05 | train loss 0.606 acc 0.943 | val loss 1.467 UAR 0.652
+[m4_wave_actor_f4_s1_main] ep  19 lr 5.00e-05 | train loss 0.592 acc 0.945 | val loss 1.285 UAR 0.691
+[m4_wave_actor_f4_s1_main] ep  20 lr 5.00e-05 | train loss 0.604 acc 0.948 | val loss 1.415 UAR 0.680
+[m4_wave_actor_f4_s1_main] ep  21 lr 2.50e-05 | train loss 0.553 acc 0.966 | val loss 1.494 UAR 0.680
+[m4_wave_actor_f4_s1_main] ep  22 lr 2.50e-05 | train loss 0.524 acc 0.977 | val loss 1.375 UAR 0.699
+[m4_wave_actor_f4_s1_main] ep  23 lr 2.50e-05 | train loss 0.533 acc 0.974 | val loss 1.441 UAR 0.672
+[m4_wave_actor_f4_s1_main] ep  24 lr 2.50e-05 | train loss 0.526 acc 0.977 | val loss 1.266 UAR 0.746
+[m4_wave_actor_f4_s1_main] ep  25 lr 2.50e-05 | train loss 0.517 acc 0.977 | val loss 1.392 UAR 0.676
+[m4_wave_actor_f4_s1_main] ep  26 lr 2.50e-05 | train loss 0.515 acc 0.978 | val loss 1.377 UAR 0.727
+[m4_wave_actor_f4_s1_main] ep  27 lr 1.25e-05 | train loss 0.497 acc 0.989 | val loss 1.222 UAR 0.766 *
+[m4_wave_actor_f4_s1_main] ep  28 lr 1.25e-05 | train loss 0.490 acc 0.991 | val loss 1.217 UAR 0.754
+[m4_wave_actor_f4_s1_main] ep  29 lr 1.25e-05 | train loss 0.487 acc 0.993 | val loss 1.280 UAR 0.746
+[m4_wave_actor_f4_s1_main] ep  30 lr 1.25e-05 | train loss 0.476 acc 0.999 | val loss 1.272 UAR 0.730
+   best epoch 27 val UAR 0.7656 | TEST UAR 0.8086 acc 0.8083 F1 0.7992 | 302s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 35190.19it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f4_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f4_s2_main] ep   1 lr 5.00e-05 | train loss 2.042 acc 0.180 | val loss 1.971 UAR 0.203 *
+[m4_wave_actor_f4_s2_main] ep   2 lr 5.00e-05 | train loss 1.749 acc 0.396 | val loss 1.825 UAR 0.285 *
+[m4_wave_actor_f4_s2_main] ep   3 lr 5.00e-05 | train loss 1.412 acc 0.544 | val loss 1.583 UAR 0.445 *
+[m4_wave_actor_f4_s2_main] ep   4 lr 5.00e-05 | train loss 1.152 acc 0.681 | val loss 1.303 UAR 0.574 *
+[m4_wave_actor_f4_s2_main] ep   5 lr 5.00e-05 | train loss 0.978 acc 0.756 | val loss 1.335 UAR 0.602 *
+[m4_wave_actor_f4_s2_main] ep   6 lr 5.00e-05 | train loss 0.932 acc 0.793 | val loss 1.340 UAR 0.586
+[m4_wave_actor_f4_s2_main] ep   7 lr 5.00e-05 | train loss 0.847 acc 0.816 | val loss 1.276 UAR 0.637 *
+[m4_wave_actor_f4_s2_main] ep   8 lr 5.00e-05 | train loss 0.849 acc 0.815 | val loss 1.178 UAR 0.707 *
+[m4_wave_actor_f4_s2_main] ep   9 lr 5.00e-05 | train loss 0.735 acc 0.894 | val loss 1.284 UAR 0.680
+[m4_wave_actor_f4_s2_main] ep  10 lr 5.00e-05 | train loss 0.707 acc 0.897 | val loss 1.342 UAR 0.656
+[m4_wave_actor_f4_s2_main] ep  11 lr 5.00e-05 | train loss 0.683 acc 0.904 | val loss 1.208 UAR 0.699
+[m4_wave_actor_f4_s2_main] ep  12 lr 5.00e-05 | train loss 0.649 acc 0.927 | val loss 1.170 UAR 0.707
+[m4_wave_actor_f4_s2_main] ep  13 lr 5.00e-05 | train loss 0.628 acc 0.928 | val loss 1.209 UAR 0.734 *
+[m4_wave_actor_f4_s2_main] ep  14 lr 5.00e-05 | train loss 0.611 acc 0.933 | val loss 1.263 UAR 0.680
+[m4_wave_actor_f4_s2_main] ep  15 lr 5.00e-05 | train loss 0.621 acc 0.936 | val loss 1.442 UAR 0.637
+[m4_wave_actor_f4_s2_main] ep  16 lr 5.00e-05 | train loss 0.626 acc 0.933 | val loss 1.290 UAR 0.715
+[m4_wave_actor_f4_s2_main] ep  17 lr 5.00e-05 | train loss 0.627 acc 0.931 | val loss 1.110 UAR 0.758 *
+[m4_wave_actor_f4_s2_main] ep  18 lr 5.00e-05 | train loss 0.590 acc 0.946 | val loss 1.164 UAR 0.723
+[m4_wave_actor_f4_s2_main] ep  19 lr 5.00e-05 | train loss 0.583 acc 0.953 | val loss 1.310 UAR 0.715
+[m4_wave_actor_f4_s2_main] ep  20 lr 5.00e-05 | train loss 0.603 acc 0.944 | val loss 1.228 UAR 0.684
+[m4_wave_actor_f4_s2_main] ep  21 lr 5.00e-05 | train loss 0.576 acc 0.957 | val loss 1.371 UAR 0.672
+[m4_wave_actor_f4_s2_main] ep  22 lr 5.00e-05 | train loss 0.556 acc 0.963 | val loss 1.362 UAR 0.707
+[m4_wave_actor_f4_s2_main] ep  23 lr 5.00e-05 | train loss 0.599 acc 0.944 | val loss 1.215 UAR 0.754
+[m4_wave_actor_f4_s2_main] ep  24 lr 2.50e-05 | train loss 0.541 acc 0.967 | val loss 1.419 UAR 0.672
+[m4_wave_actor_f4_s2_main] ep  25 lr 2.50e-05 | train loss 0.519 acc 0.974 | val loss 1.378 UAR 0.699
+[m4_wave_actor_f4_s2_main] ep  26 lr 2.50e-05 | train loss 0.503 acc 0.984 | val loss 1.230 UAR 0.727
+[m4_wave_actor_f4_s2_main] ep  27 lr 2.50e-05 | train loss 0.508 acc 0.981 | val loss 1.399 UAR 0.711
+[m4_wave_actor_f4_s2_main] ep  28 lr 2.50e-05 | train loss 0.489 acc 0.992 | val loss 1.469 UAR 0.688
+[m4_wave_actor_f4_s2_main] ep  29 lr 2.50e-05 | train loss 0.528 acc 0.976 | val loss 1.509 UAR 0.668
+[m4_wave_actor_f4_s2_main] ep  30 lr 1.25e-05 | train loss 0.491 acc 0.991 | val loss 1.329 UAR 0.730
+   best epoch 17 val UAR 0.7578 | TEST UAR 0.8164 acc 0.8125 F1 0.8042 | 296s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 26361.20it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f5_s0_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f5_s0_main] ep   1 lr 5.00e-05 | train loss 2.054 acc 0.165 | val loss 1.942 UAR 0.305 *
+[m4_wave_actor_f5_s0_main] ep   2 lr 5.00e-05 | train loss 1.736 acc 0.428 | val loss 1.464 UAR 0.488 *
+[m4_wave_actor_f5_s0_main] ep   3 lr 5.00e-05 | train loss 1.348 acc 0.580 | val loss 1.291 UAR 0.598 *
+[m4_wave_actor_f5_s0_main] ep   4 lr 5.00e-05 | train loss 1.072 acc 0.730 | val loss 1.234 UAR 0.629 *
+[m4_wave_actor_f5_s0_main] ep   5 lr 5.00e-05 | train loss 0.983 acc 0.752 | val loss 1.162 UAR 0.641 *
+[m4_wave_actor_f5_s0_main] ep   6 lr 5.00e-05 | train loss 0.858 acc 0.825 | val loss 1.084 UAR 0.707 *
+[m4_wave_actor_f5_s0_main] ep   7 lr 5.00e-05 | train loss 0.822 acc 0.845 | val loss 1.217 UAR 0.648
+[m4_wave_actor_f5_s0_main] ep   8 lr 5.00e-05 | train loss 0.778 acc 0.860 | val loss 1.086 UAR 0.703
+[m4_wave_actor_f5_s0_main] ep   9 lr 5.00e-05 | train loss 0.717 acc 0.891 | val loss 1.165 UAR 0.711 *
+[m4_wave_actor_f5_s0_main] ep  10 lr 5.00e-05 | train loss 0.704 acc 0.900 | val loss 1.276 UAR 0.688
+[m4_wave_actor_f5_s0_main] ep  11 lr 5.00e-05 | train loss 0.734 acc 0.878 | val loss 1.122 UAR 0.723 *
+[m4_wave_actor_f5_s0_main] ep  12 lr 5.00e-05 | train loss 0.685 acc 0.915 | val loss 1.150 UAR 0.715
+[m4_wave_actor_f5_s0_main] ep  13 lr 5.00e-05 | train loss 0.613 acc 0.936 | val loss 1.150 UAR 0.691
+[m4_wave_actor_f5_s0_main] ep  14 lr 5.00e-05 | train loss 0.626 acc 0.929 | val loss 1.065 UAR 0.770 *
+[m4_wave_actor_f5_s0_main] ep  15 lr 5.00e-05 | train loss 0.587 acc 0.952 | val loss 1.177 UAR 0.730
+[m4_wave_actor_f5_s0_main] ep  16 lr 5.00e-05 | train loss 0.601 acc 0.950 | val loss 1.201 UAR 0.750
+[m4_wave_actor_f5_s0_main] ep  17 lr 5.00e-05 | train loss 0.605 acc 0.939 | val loss 1.318 UAR 0.703
+[m4_wave_actor_f5_s0_main] ep  18 lr 5.00e-05 | train loss 0.595 acc 0.940 | val loss 1.169 UAR 0.715
+[m4_wave_actor_f5_s0_main] ep  19 lr 5.00e-05 | train loss 0.598 acc 0.941 | val loss 1.086 UAR 0.758
+[m4_wave_actor_f5_s0_main] ep  20 lr 5.00e-05 | train loss 0.598 acc 0.938 | val loss 1.072 UAR 0.762
+[m4_wave_actor_f5_s0_main] ep  21 lr 2.50e-05 | train loss 0.523 acc 0.975 | val loss 1.136 UAR 0.738
+[m4_wave_actor_f5_s0_main] ep  22 lr 2.50e-05 | train loss 0.542 acc 0.971 | val loss 1.114 UAR 0.730
+[m4_wave_actor_f5_s0_main] ep  23 lr 2.50e-05 | train loss 0.512 acc 0.982 | val loss 1.112 UAR 0.738
+[m4_wave_actor_f5_s0_main] ep  24 lr 2.50e-05 | train loss 0.495 acc 0.991 | val loss 1.169 UAR 0.746
+[m4_wave_actor_f5_s0_main] ep  25 lr 2.50e-05 | train loss 0.503 acc 0.985 | val loss 1.183 UAR 0.750
+[m4_wave_actor_f5_s0_main] ep  26 lr 2.50e-05 | train loss 0.522 acc 0.977 | val loss 1.217 UAR 0.723
+[m4_wave_actor_f5_s0_main] ep  27 lr 1.25e-05 | train loss 0.509 acc 0.979 | val loss 1.198 UAR 0.770
+[m4_wave_actor_f5_s0_main] ep  28 lr 1.25e-05 | train loss 0.501 acc 0.983 | val loss 1.118 UAR 0.754
+[m4_wave_actor_f5_s0_main] ep  29 lr 1.25e-05 | train loss 0.491 acc 0.992 | val loss 1.107 UAR 0.777 *
+[m4_wave_actor_f5_s0_main] ep  30 lr 1.25e-05 | train loss 0.483 acc 0.996 | val loss 1.152 UAR 0.754
+   best epoch 29 val UAR 0.7773 | TEST UAR 0.6836 acc 0.6875 F1 0.6749 | 298s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 35176.21it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f5_s1_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f5_s1_main] ep   1 lr 5.00e-05 | train loss 2.044 acc 0.172 | val loss 2.022 UAR 0.270 *
+[m4_wave_actor_f5_s1_main] ep   2 lr 5.00e-05 | train loss 1.846 acc 0.303 | val loss 1.719 UAR 0.410 *
+[m4_wave_actor_f5_s1_main] ep   3 lr 5.00e-05 | train loss 1.441 acc 0.541 | val loss 1.351 UAR 0.531 *
+[m4_wave_actor_f5_s1_main] ep   4 lr 5.00e-05 | train loss 1.187 acc 0.659 | val loss 1.282 UAR 0.598 *
+[m4_wave_actor_f5_s1_main] ep   5 lr 5.00e-05 | train loss 0.991 acc 0.746 | val loss 1.264 UAR 0.625 *
+[m4_wave_actor_f5_s1_main] ep   6 lr 5.00e-05 | train loss 0.995 acc 0.759 | val loss 1.238 UAR 0.648 *
+[m4_wave_actor_f5_s1_main] ep   7 lr 5.00e-05 | train loss 0.876 acc 0.808 | val loss 1.208 UAR 0.668 *
+[m4_wave_actor_f5_s1_main] ep   8 lr 5.00e-05 | train loss 0.805 acc 0.850 | val loss 1.206 UAR 0.668
+[m4_wave_actor_f5_s1_main] ep   9 lr 5.00e-05 | train loss 0.768 acc 0.858 | val loss 1.150 UAR 0.715 *
+[m4_wave_actor_f5_s1_main] ep  10 lr 5.00e-05 | train loss 0.725 acc 0.869 | val loss 1.370 UAR 0.645
+[m4_wave_actor_f5_s1_main] ep  11 lr 5.00e-05 | train loss 0.692 acc 0.902 | val loss 1.256 UAR 0.727 *
+[m4_wave_actor_f5_s1_main] ep  12 lr 5.00e-05 | train loss 0.672 acc 0.909 | val loss 1.250 UAR 0.680
+[m4_wave_actor_f5_s1_main] ep  13 lr 5.00e-05 | train loss 0.652 acc 0.923 | val loss 1.129 UAR 0.723
+[m4_wave_actor_f5_s1_main] ep  14 lr 5.00e-05 | train loss 0.637 acc 0.925 | val loss 1.102 UAR 0.727
+[m4_wave_actor_f5_s1_main] ep  15 lr 5.00e-05 | train loss 0.579 acc 0.951 | val loss 1.232 UAR 0.711
+[m4_wave_actor_f5_s1_main] ep  16 lr 5.00e-05 | train loss 0.625 acc 0.939 | val loss 1.164 UAR 0.711
+[m4_wave_actor_f5_s1_main] ep  17 lr 5.00e-05 | train loss 0.588 acc 0.956 | val loss 1.281 UAR 0.715
+[m4_wave_actor_f5_s1_main] ep  18 lr 2.50e-05 | train loss 0.569 acc 0.956 | val loss 1.086 UAR 0.742 *
+[m4_wave_actor_f5_s1_main] ep  19 lr 2.50e-05 | train loss 0.544 acc 0.964 | val loss 1.132 UAR 0.758 *
+[m4_wave_actor_f5_s1_main] ep  20 lr 2.50e-05 | train loss 0.541 acc 0.967 | val loss 1.109 UAR 0.742
+[m4_wave_actor_f5_s1_main] ep  21 lr 2.50e-05 | train loss 0.521 acc 0.976 | val loss 1.154 UAR 0.754
+[m4_wave_actor_f5_s1_main] ep  22 lr 2.50e-05 | train loss 0.507 acc 0.984 | val loss 1.210 UAR 0.730
+[m4_wave_actor_f5_s1_main] ep  23 lr 2.50e-05 | train loss 0.527 acc 0.975 | val loss 1.140 UAR 0.742
+[m4_wave_actor_f5_s1_main] ep  24 lr 2.50e-05 | train loss 0.508 acc 0.980 | val loss 1.195 UAR 0.742
+[m4_wave_actor_f5_s1_main] ep  25 lr 2.50e-05 | train loss 0.505 acc 0.983 | val loss 1.087 UAR 0.766 *
+[m4_wave_actor_f5_s1_main] ep  26 lr 2.50e-05 | train loss 0.528 acc 0.977 | val loss 1.098 UAR 0.746
+[m4_wave_actor_f5_s1_main] ep  27 lr 2.50e-05 | train loss 0.501 acc 0.986 | val loss 1.198 UAR 0.746
+[m4_wave_actor_f5_s1_main] ep  28 lr 2.50e-05 | train loss 0.504 acc 0.980 | val loss 1.153 UAR 0.738
+[m4_wave_actor_f5_s1_main] ep  29 lr 2.50e-05 | train loss 0.502 acc 0.989 | val loss 1.188 UAR 0.758
+[m4_wave_actor_f5_s1_main] ep  30 lr 2.50e-05 | train loss 0.495 acc 0.991 | val loss 1.150 UAR 0.754
+   best epoch 25 val UAR 0.7656 | TEST UAR 0.7070 acc 0.7083 F1 0.7060 | 304s
+   outputs verified: runs.csv row, curves, 240 test predictions
+Loading weights:   0%|          | 0/211 [00:00<?, ?it/s]Loading weights: 100%|##########| 211/211 [00:00<00:00, 34926.32it/s]
+[transformers] [1mWav2Vec2Model LOAD REPORT[0m from: facebook/wav2vec2-base
+Key                          | Status     |  | 
+-----------------------------+------------+--+-
+project_q.bias               | UNEXPECTED |  | 
+quantizer.weight_proj.bias   | UNEXPECTED |  | 
+project_hid.bias             | UNEXPECTED |  | 
+quantizer.codevectors        | UNEXPECTED |  | 
+quantizer.weight_proj.weight | UNEXPECTED |  | 
+project_q.weight             | UNEXPECTED |  | 
+project_hid.weight           | UNEXPECTED |  | 
+
+Notes:
+- UNEXPECTED:	can be ignored when loading from different task/architecture; not ok if you expect identical arch.
+== m4_wave_actor_f5_s2_main | cuda | params 94,377,864 (trainable 90,177,416) | cfg 248cb365de
+[m4_wave_actor_f5_s2_main] ep   1 lr 5.00e-05 | train loss 2.044 acc 0.177 | val loss 1.971 UAR 0.273 *
+[m4_wave_actor_f5_s2_main] ep   2 lr 5.00e-05 | train loss 1.800 acc 0.380 | val loss 1.574 UAR 0.457 *
+[m4_wave_actor_f5_s2_main] ep   3 lr 5.00e-05 | train loss 1.424 acc 0.564 | val loss 1.236 UAR 0.586 *
+[m4_wave_actor_f5_s2_main] ep   4 lr 5.00e-05 | train loss 1.142 acc 0.703 | val loss 1.165 UAR 0.602 *
+[m4_wave_actor_f5_s2_main] ep   5 lr 5.00e-05 | train loss 0.999 acc 0.756 | val loss 1.131 UAR 0.672 *
+[m4_wave_actor_f5_s2_main] ep   6 lr 5.00e-05 | train loss 0.907 acc 0.804 | val loss 1.309 UAR 0.617
+[m4_wave_actor_f5_s2_main] ep   7 lr 5.00e-05 | train loss 0.838 acc 0.827 | val loss 1.118 UAR 0.695 *
+[m4_wave_actor_f5_s2_main] ep   8 lr 5.00e-05 | train loss 0.788 acc 0.863 | val loss 1.035 UAR 0.723 *
+[m4_wave_actor_f5_s2_main] ep   9 lr 5.00e-05 | train loss 0.729 acc 0.887 | val loss 1.074 UAR 0.727 *
+[m4_wave_actor_f5_s2_main] ep  10 lr 5.00e-05 | train loss 0.685 acc 0.909 | val loss 1.084 UAR 0.746 *
+[m4_wave_actor_f5_s2_main] ep  11 lr 5.00e-05 | train loss 0.696 acc 0.905 | val loss 1.070 UAR 0.730
+[m4_wave_actor_f5_s2_main] ep  12 lr 5.00e-05 | train loss 0.622 acc 0.929 | val loss 1.081 UAR 0.777 *
+[m4_wave_actor_f5_s2_main] ep  13 lr 5.00e-05 | train loss 0.614 acc 0.933 | val loss 1.389 UAR 0.695
+[m4_wave_actor_f5_s2_main] ep  14 lr 5.00e-05 | train loss 0.622 acc 0.940 | val loss 1.057 UAR 0.773
+[m4_wave_actor_f5_s2_main] ep  15 lr 5.00e-05 | train loss 0.632 acc 0.928 | val loss 1.127 UAR 0.734
+[m4_wave_actor_f5_s2_main] ep  16 lr 5.00e-05 | train loss 0.621 acc 0.930 | val loss 1.134 UAR 0.715
+[m4_wave_actor_f5_s2_main] ep  17 lr 5.00e-05 | train loss 0.660 acc 0.917 | val loss 1.056 UAR 0.773
+[m4_wave_actor_f5_s2_main] ep  18 lr 5.00e-05 | train loss 0.573 acc 0.955 | val loss 1.261 UAR 0.715
+[m4_wave_actor_f5_s2_main] ep  19 lr 2.50e-05 | train loss 0.547 acc 0.968 | val loss 1.156 UAR 0.750
+[m4_wave_actor_f5_s2_main] ep  20 lr 2.50e-05 | train loss 0.540 acc 0.972 | val loss 1.133 UAR 0.742
+[m4_wave_actor_f5_s2_main] ep  21 lr 2.50e-05 | train loss 0.545 acc 0.970 | val loss 1.197 UAR 0.719
+[m4_wave_actor_f5_s2_main] ep  22 lr 2.50e-05 | train loss 0.531 acc 0.972 | val loss 1.106 UAR 0.738
+[m4_wave_actor_f5_s2_main] ep  23 lr 2.50e-05 | train loss 0.524 acc 0.979 | val loss 1.023 UAR 0.805 *
+[m4_wave_actor_f5_s2_main] ep  24 lr 2.50e-05 | train loss 0.507 acc 0.982 | val loss 1.044 UAR 0.805
+[m4_wave_actor_f5_s2_main] ep  25 lr 2.50e-05 | train loss 0.500 acc 0.986 | val loss 1.029 UAR 0.789
+[m4_wave_actor_f5_s2_main] ep  26 lr 2.50e-05 | train loss 0.524 acc 0.977 | val loss 1.067 UAR 0.762
+[m4_wave_actor_f5_s2_main] ep  27 lr 2.50e-05 | train loss 0.506 acc 0.983 | val loss 1.104 UAR 0.777
+[m4_wave_actor_f5_s2_main] ep  28 lr 2.50e-05 | train loss 0.511 acc 0.979 | val loss 1.042 UAR 0.781
+[m4_wave_actor_f5_s2_main] ep  29 lr 2.50e-05 | train loss 0.501 acc 0.988 | val loss 1.133 UAR 0.742
+[m4_wave_actor_f5_s2_main] ep  30 lr 1.25e-05 | train loss 0.489 acc 0.992 | val loss 1.116 UAR 0.750
+   best epoch 23 val UAR 0.8047 | TEST UAR 0.7344 acc 0.7375 F1 0.7285 | 312s
+   outputs verified: runs.csv row, curves, 240 test predictions
+
+fold  seed  best_epoch  val_uar  test_uar  test_acc  test_macro_f1  train_time_s
+   0     0          20 0.781250  0.750000  0.766667       0.746883         316.0
+   0     1          19 0.765625  0.710938  0.716667       0.695429         308.8
+   0     2          30 0.761719  0.761719  0.775000       0.759830         301.8
+   1     0          20 0.769531  0.726562  0.729167       0.720639         302.6
+   1     1           6 0.765625  0.714844  0.729167       0.719416         210.9
+   1     2          30 0.765625  0.710938  0.729167       0.720546         300.9
+   2     0          23 0.816406  0.738281  0.733333       0.717721         302.5
+   2     1          16 0.796875  0.730469  0.729167       0.718802         301.3
+   2     2          30 0.824219  0.734375  0.733333       0.729284         301.4
+   3     0          21 0.855469  0.761719  0.779167       0.770346         300.0
+   3     1          18 0.832031  0.796875  0.804167       0.807580         301.5
+   3     2          17 0.851562  0.734375  0.754167       0.739381         302.4
+   4     0          30 0.777344  0.878906  0.875000       0.873192         301.2
+   4     1          27 0.765625  0.808594  0.808333       0.799228         301.8
+   4     2          17 0.757812  0.816406  0.812500       0.804190         296.5
+   5     0          29 0.777344  0.683594  0.687500       0.674887         298.4
+   5     1          25 0.765625  0.707031  0.708333       0.705975         303.9
+   5     2          23 0.804688  0.734375  0.737500       0.728506         312.2
+test_uar: 0.7500 ± 0.0481 (n=18)
+test_acc: 0.7560 ± 0.0461 (n=18)
+test_macro_f1: 0.7462 ± 0.0487 (n=18)
+total time 5419 s
+[done] exit code 0
+
+[exit 0] 5423 s

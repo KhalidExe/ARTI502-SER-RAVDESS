@@ -1,4 +1,4 @@
-Checks run 2026-11-21 17:43:25 (61 s)
+Checks run 2026-11-24 14:09:31 (47 s)
 
 | # | Check | Result | Detail |
 |---|---|---|---|
@@ -26,7 +26,10 @@ Checks run 2026-11-21 17:43:25 (61 s)
 | 22 | mask invariance (strict): m1/mfcc padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 2.55e-06 |
 | 23 | mask invariance (strict): m2/logmel padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 8.76e-06 |
 | 24 | mask invariance (strict): m3/logmel padded-in-batch == alone (tol 0.0001) | PASS | max /diff/ = 1.79e-07 |
-| 25 | sanity: m1/logmel overfits a tiny batch (32 utts) | PASS | loss 2.074 -> 0.0008, acc 1.000 |
-| 26 | sanity: m1/mfcc overfits a tiny batch (32 utts) | PASS | loss 2.077 -> 0.0003, acc 1.000 |
-| 27 | sanity: m2/logmel overfits a tiny batch (32 utts) | PASS | loss 2.095 -> 0.0013, acc 1.000 |
-| 28 | sanity: m3/logmel overfits a tiny batch (32 utts) | PASS | loss 2.303 -> 0.0026, acc 1.000 |
+| 25 | mask invariance (approximate, informational): m4/wave padded-in-batch vs alone | PASS | max /logit diff/ = 3.29e-01; expected > 0 (no attention_mask, group norm sees zeros); eval uses batch size 1 -> evaluation predictions are padding-free |
+| 26 | M4 (D-09): masked mean-pooling uses _get_feat_extract_output_lengths (lengths match) | PASS | 16000->49/49, 27000->84/84, 40000->124/124, 51000->159/159 |
+| 27 | sanity: m1/logmel overfits a tiny batch (32 utts) | PASS | loss 2.074 -> 0.0008, acc 1.000 |
+| 28 | sanity: m1/mfcc overfits a tiny batch (32 utts) | PASS | loss 2.077 -> 0.0003, acc 1.000 |
+| 29 | sanity: m2/logmel overfits a tiny batch (32 utts) | PASS | loss 2.095 -> 0.0013, acc 1.000 |
+| 30 | sanity: m3/logmel overfits a tiny batch (32 utts) | PASS | loss 2.303 -> 0.0026, acc 1.000 |
+| 31 | sanity: m4/wave overfits a tiny batch (16 utts) | PASS | loss 2.066 -> 0.0420, acc 1.000 |

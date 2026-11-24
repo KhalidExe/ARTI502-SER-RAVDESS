@@ -1,0 +1,4 @@
+model,combined config,val UAR combined (%),val UAR default (%),best single factor,val UAR best single (%),choice,final overrides
+m1,"{""train.lr"": 0.002, ""model.dropout"": 0.3, ""model.hidden"": 256}",60.29,58.4,"{""model.hidden"": 256}",61.91,combined,"{""train.lr"": 0.002, ""model.dropout"": 0.3, ""model.hidden"": 256}"
+m2,"{""train.lr"": 0.001, ""model.dropout"": 0.2, ""model.hidden"": 256}",67.45,64.91,"{""model.hidden"": 256}",65.69,combined,"{""train.lr"": 0.001, ""model.dropout"": 0.2, ""model.hidden"": 256}"
+m3,"{""train.lr"": 0.001, ""model.dropout"": 0.2, ""model.n_layers"": 2, ""model.n_heads"": 8}",57.42,57.1,"{""model.n_layers"": 2}",57.94,combined,"{""train.lr"": 0.001, ""model.dropout"": 0.2, ""model.n_layers"": 2, ""model.n_heads"": 8}"

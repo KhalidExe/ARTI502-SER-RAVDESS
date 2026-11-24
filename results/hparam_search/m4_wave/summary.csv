@@ -1,0 +1,4 @@
+factor,value,is_default,n,val_uar_mean,val_uar_std,mean_best_epoch,mean_time_s
+train.lr,1e-05,False,2,0.76171875,0.011048543456039806,24.0,279.75
+train.lr,3e-05,True,2,0.80859375,0.04419417382415922,21.5,292.04999999999995
+train.lr,5e-05,False,2,0.837890625,0.04695630968816917,19.0,279.6

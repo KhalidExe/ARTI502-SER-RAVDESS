@@ -1,0 +1,9 @@
+,neutral,calm,happy,sad,angry,fearful,disgust,surprised
+neutral,155,54,27,36,4,4,4,4
+calm,47,423,13,64,0,20,9,0
+happy,34,16,329,48,25,78,11,35
+sad,52,80,44,241,8,86,47,18
+angry,2,0,13,13,473,13,50,12
+fearful,19,26,52,76,18,351,14,20
+disgust,5,2,13,48,61,19,419,9
+surprised,3,5,54,24,18,49,33,390

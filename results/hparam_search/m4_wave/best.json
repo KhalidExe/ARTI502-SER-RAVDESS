@@ -1,0 +1,18 @@
+{
+  "model": "m4",
+  "features": "wave",
+  "rounds": [
+    0,
+    3
+  ],
+  "seeds": [
+    0
+  ],
+  "selection": "one-factor-at-a-time on VALIDATION folds only (test never evaluated); per factor, the value with the highest mean validation UAR; values combined. Limitation: OFAT does not capture interactions between hyper-parameters.",
+  "defaults": {
+    "train.lr": 3e-05
+  },
+  "overrides": {
+    "train.lr": 5e-05
+  }
+}

@@ -1,0 +1,44 @@
+{
+  "model": "m3",
+  "features": "logmel",
+  "rounds": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5
+  ],
+  "seeds": [
+    0
+  ],
+  "combined_overrides": {
+    "train.lr": 0.001,
+    "model.dropout": 0.2,
+    "model.n_layers": 2,
+    "model.n_heads": 8
+  },
+  "combined_val_uar": 0.57421875,
+  "combined_per_round": [
+    0.52734375,
+    0.65234375,
+    0.58984375,
+    0.60546875,
+    0.546875,
+    0.5234375
+  ],
+  "default_val_uar": 0.5709635416666666,
+  "best_single_factor": {
+    "model.n_layers": 2
+  },
+  "best_single_factor_val_uar": 0.5794270833333334,
+  "choice": "combined",
+  "overrides": {
+    "train.lr": 0.001,
+    "model.dropout": 0.2,
+    "model.n_layers": 2,
+    "model.n_heads": 8
+  },
+  "rule": "combined >= default -> combined; else best single-factor setting (validation UAR only)",
+  "created": "2026-11-24 15:10:14"
+}

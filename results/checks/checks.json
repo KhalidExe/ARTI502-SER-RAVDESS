@@ -1,6 +1,6 @@
 {
-  "timestamp": "2026-11-21 17:43:25",
-  "seconds": 60.9,
+  "timestamp": "2026-11-24 14:09:31",
+  "seconds": 47.2,
   "env": {
     "os": "Windows-10-10.0.26200-SP0",
     "python": "3.10.11",
@@ -157,6 +157,16 @@
       "detail": "max |diff| = 1.79e-07"
     },
     {
+      "check": "mask invariance (approximate, informational): m4/wave padded-in-batch vs alone",
+      "passed": true,
+      "detail": "max |logit diff| = 3.29e-01; expected > 0 (no attention_mask, group norm sees zeros); eval uses batch size 1 -> evaluation predictions are padding-free"
+    },
+    {
+      "check": "M4 (D-09): masked mean-pooling uses _get_feat_extract_output_lengths (lengths match)",
+      "passed": true,
+      "detail": "16000->49/49, 27000->84/84, 40000->124/124, 51000->159/159"
+    },
+    {
       "check": "sanity: m1/logmel overfits a tiny batch (32 utts)",
       "passed": true,
       "detail": "loss 2.074 -> 0.0008, acc 1.000"
@@ -175,6 +185,11 @@
       "check": "sanity: m3/logmel overfits a tiny batch (32 utts)",
       "passed": true,
       "detail": "loss 2.303 -> 0.0026, acc 1.000"
+    },
+    {
+      "check": "sanity: m4/wave overfits a tiny batch (16 utts)",
+      "passed": true,
+      "detail": "loss 2.066 -> 0.0420, acc 1.000"
     }
   ]
 }
